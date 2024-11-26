@@ -1,0 +1,5 @@
+flutter_native_splash:
+  color: "#000000"
+  image: lib/assets/riskore-logo.png
+  # branding: "From Invisible to Eligible."
+  # branding_mode: bottom
