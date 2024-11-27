@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:riskore/presets/colors.dart';
+import 'package:riskore/core/presets/colors.dart';
 
 class AppFonts {
 
