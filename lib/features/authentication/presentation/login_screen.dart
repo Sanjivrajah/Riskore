@@ -47,15 +47,6 @@ class _LoginScreenState extends State<LoginScreen> {
         width: double.infinity,
         height: double.infinity,
         decoration: BoxDecoration(
-            // gradient: LinearGradient(
-            //   begin: Alignment.topCenter,
-            //   end: Alignment.bottomCenter,
-            //   colors: [
-            //     Colors.black,
-            //     Color(0xFF1B1B1B),
-            //     Color.fromARGB(255, 0, 66, 33),
-            //   ],
-            // ),
             color: colors.AppColor.black),
         child: SingleChildScrollView(
           child: Padding(
@@ -125,7 +116,19 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                 ),
-                SizedBox(height: 32),
+                // Display error message if it exists
+                if (_errorMessage != null) ...[
+                  SizedBox(height: 8), // Space before the error message
+                  Text(
+                    _errorMessage!,
+                    style: TextStyle(
+                      color: Colors.red, // Set the error message color to red
+                      fontSize: 14,
+                    ),
+                  ),
+                ],
+                SizedBox(height: 48),
+                // Spacer(), // Push the login section to the bottom
                 SizedBox(
                   width: double.infinity,
                   height: 48,
