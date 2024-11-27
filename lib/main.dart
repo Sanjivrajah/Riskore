@@ -2,10 +2,10 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:riskore/core/navigation/navigation.dart';
 import 'package:riskore/core/presets/fonts.dart';
-import 'package:riskore/core/screens/welcome_screen.dart';
-import 'package:riskore/features/authentication/presentation/login_screen.dart';
-import 'package:riskore/features/authentication/presentation/signup_screen.dart';
-import 'package:riskore/features/dashboard/presentation/dashboard_screen.dart';
+import 'package:riskore/screens/splash_screen.dart';
+import 'package:riskore/screens/authentication/presentation/login_screen.dart';
+import 'package:riskore/screens/authentication/presentation/signup_screen.dart';
+import 'package:riskore/screens/dashboard/presentation/dashboard_screen.dart';
 import 'package:riskore/firebase_options.dart';
 // import 'package:riskore/features/authentication/presentation/auth_screen.dart';
 
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
         LoginScreen.routeName: (context) =>
             LoginScreen(),
         DashboardScreen.routeName: (context) => const DashboardScreen(),
-        WelcomeScreen.routeName: (context) => const WelcomeScreen()
+        SplashScreen.routeName: (context) => const SplashScreen()
       },
     );
   }

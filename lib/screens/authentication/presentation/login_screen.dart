@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:riskore/core/presets/colors.dart' as colors;
-import 'package:riskore/features/authentication/auth.dart';
-import 'package:riskore/features/authentication/presentation/signup_screen.dart';
-import 'package:riskore/features/dashboard/presentation/dashboard_screen.dart';
+import 'package:riskore/screens/authentication/auth.dart';
+import 'package:riskore/screens/authentication/presentation/signup_screen.dart';
+import 'package:riskore/screens/dashboard/presentation/dashboard_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   static const routeName = '/login-screen';
