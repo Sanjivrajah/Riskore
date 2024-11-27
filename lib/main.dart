@@ -1,8 +1,19 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:riskore/core/navigation/navigation.dart';
+import 'package:riskore/core/presets/fonts.dart';
 import 'package:riskore/core/screens/welcome_screen.dart';
+import 'package:riskore/features/authentication/presentation/login_screen.dart';
+import 'package:riskore/features/authentication/presentation/signup_screen.dart';
+import 'package:riskore/features/dashboard/presentation/dashboard_screen.dart';
+import 'package:riskore/firebase_options.dart';
 // import 'package:riskore/features/authentication/presentation/auth_screen.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -13,12 +24,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Riskore',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: WelcomeScreen()
+      home: LoginScreen(),
+      routes: {
+        SignUpScreen.routeName: (context) => SignUpScreen(),
+        LoginScreen.routeName: (context) =>
+            LoginScreen(),
+        DashboardScreen.routeName: (context) => const DashboardScreen(),
+        WelcomeScreen.routeName: (context) => const WelcomeScreen()
+      },
     );
   }
 }

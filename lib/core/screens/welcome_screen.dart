@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:riskore/core/presets/colors.dart';
 class WelcomeScreen extends StatelessWidget {
+  static const routeName = '/splash-screen';
+
   const WelcomeScreen({super.key});
 
   @override

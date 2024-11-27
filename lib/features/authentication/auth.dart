@@ -35,15 +35,7 @@ class Auth {
         "email": value.user!.email,
         "id": value.user!.uid,
         'name': '',
-        'complication': '',
-        'childAge': '',
-        'childGender': '',
-        'isPregnant': true,
-        'numberOfTimesPregnant': '',
-        'parentType': '',
-        'weight': '',
-        'medicalHistory': FieldValue.arrayUnion([]),
-        'notes': FieldValue.arrayUnion([])
+        
       });
     });
     return null;
