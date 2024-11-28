@@ -1,10 +1,23 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/widget_library_1.dart';
 import 'package:riskore/widget_library_2.dart';
 import 'package:sizer/sizer.dart';
+import 'package:riskore/core/navigation/navigation.dart';
+import 'package:riskore/presets/fonts.dart';
+import 'package:riskore/screens/splash_screen.dart';
+import 'package:riskore/screens/authentication/presentation/login_screen.dart';
+import 'package:riskore/screens/authentication/presentation/signup_screen.dart';
+import 'package:riskore/screens/dashboard/presentation/dashboard_screen.dart';
+import 'package:riskore/firebase_options.dart';
+// import 'package:riskore/features/authentication/presentation/auth_screen.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -123,3 +136,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
