@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:riskore/core/presets/colors.dart' as colors;
+import 'package:riskore/presets/colors.dart' as colors;
 import 'package:riskore/screens/authentication/auth.dart';
 import 'package:riskore/screens/authentication/presentation/login_screen.dart';
 

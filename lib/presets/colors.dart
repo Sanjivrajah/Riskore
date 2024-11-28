@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class AppColor {
   // primary app colors
   static Color black = const Color(0xff000000);
-  static Color white = const Color(0xffFFFFFF); 
+  static Color white = const Color(0xffFFFFFF);
   static Color green = const Color(0xff73E491);
   static Color red = const Color(0xffFF787A);
 
@@ -16,36 +16,33 @@ class AppColor {
 
   static Color grabPayColor = const Color(0xff00B14F);
   static Color bigPayColor = const Color(0xff53C5D8);
-  static Color shopeePayColor = const Color(0xffFE6033); 
+  static Color shopeePayColor = const Color(0xffFE6033);
 }
-
 
 // Use for all containers. Wrap with Opacity widget if need to change transparency.
 LinearGradient containerGradient() {
-  return const LinearGradient(
+  return LinearGradient(
     colors: [
-      Color(0xff898989),
-      Color(0xff343434),
+      const Color(0xff898989).withOpacity(0.35),
+      const Color(0xff343434).withOpacity(0.35),
     ],
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
   );
 }
-
 
 // Use for Splash Screen
 LinearGradient splashScreenGradient() {
   return LinearGradient(
     colors: [
-      Color(0xffFFFFFF).withOpacity(0.5),
-      Color(0xff94FCC5).withOpacity(0.5),
-      Color(0xff13FFC8).withOpacity(0.5)
+      const Color(0xffFFFFFF).withOpacity(0.5),
+      const Color(0xff94FCC5).withOpacity(0.5),
+      const Color(0xff13FFC8).withOpacity(0.5)
     ],
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
   );
 }
-
 
 // Use for Credit Risk score on home screen
 LinearGradient redToGreenGradient() {
@@ -54,23 +51,23 @@ LinearGradient redToGreenGradient() {
       Color(0xffFF787A),
       Color(0xff73E491),
     ],
-
   );
 }
 
-
-// Use for Nav Bar 
+// Use for Nav Bar
 LinearGradient navBarGradient() {
   return LinearGradient(
     colors: [
-      const Color(0xff343434).withOpacity(0.3),
-      const Color(0xffF7F7F7).withOpacity(0.3),
+      const Color.fromARGB(255, 12, 12, 12).withOpacity(0.6),
+      const Color.fromARGB(255, 47, 47, 47).withOpacity(0.6),
+      const Color.fromARGB(255, 60, 60, 60).withOpacity(0.6),
+      const Color.fromARGB(255, 80, 80, 80).withOpacity(0.6),
+      const Color.fromARGB(255, 134, 134, 134).withOpacity(0.4),
     ],
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
   );
 }
-
 
 // Use for all screens background except splash, and questions screens. (Refer to Figma)
 LinearGradient backgroundGlowGradient() {
