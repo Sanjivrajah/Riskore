@@ -1,138 +1,135 @@
 import 'package:flutter/material.dart';
 import 'package:riskore/presets/colors.dart';
+import 'package:sizer/sizer.dart';
 
 class AppFonts {
+  // equivalent to Figma 36 - Light, Green
+  static TextStyle largestExtraLightTextGreen(BuildContext context) {
+    return TextStyle(
+      fontFamily: "Inter",
+      fontSize: 22.sp,
+      fontWeight: FontWeight.w200,
+      color: AppColor.green,
+    );
+  }
 
-  // ---------------------------------LARGEST (36px)--------------------------------------
+  // equivalent to Figma 36 - Medium
+  static TextStyle largestLightTextGreen(BuildContext context) {
+    return TextStyle(
+      fontFamily: "Inter",
+      fontSize: 22.sp,
+      fontWeight: FontWeight.w400,
+      color: AppColor.green,
+    );
+  }
 
-  // use for auth screens "Login" and "Sign Up" headings.
-  static TextStyle largestMediumText = TextStyle(
-    fontFamily: "Inter",
-    fontSize: 36,
-    fontWeight: FontWeight.w500, // Medium
-    color: AppColor.white,
-    // height: 0,
-  );
+  // equivalent to Figma 20 - Regular
+  static TextStyle largeRegularText(BuildContext context) {
+    return TextStyle(
+      fontFamily: "Inter",
+      fontSize: 20.sp,
+      fontWeight: FontWeight.w400,
+      color: AppColor.white,
+    );
+  }
 
-  static TextStyle largestMediumTextBlack = TextStyle(
-    fontFamily: "Inter",
-    fontSize: 36,
-    fontWeight: FontWeight.w500, // Medium, Black
-    color: AppColor.black,
-    // height: 0,
-  );
+  // equivalent to Figma 20 - Extra Light
+  static TextStyle largeExtraLightText(BuildContext context) {
+    return TextStyle(
+      fontFamily: "Inter",
+      fontSize: 20.sp,
+      fontWeight: FontWeight.w200,
+      color: AppColor.white,
+    );
+  }
 
-  // use for Onboarding Questionnaire screen heading "Hey Ahmad".
-  static TextStyle largestLightTextGreen = TextStyle(
-    fontFamily: "Inter",
-    fontSize: 36,
-    fontWeight: FontWeight.w300, // Light, Green
-    color: AppColor.green,
-    // height: 0,
-  );
+// equivalent to Figma 16 - Light
+  static TextStyle normalLightText(BuildContext context) {
+    return TextStyle(
+      fontFamily: "Inter",
+      fontSize: 16.sp,
+      fontWeight: FontWeight.w300,
+      color: AppColor.white,
+    );
+  }
 
+  // equivalent to Figma 16 - Light, Green
+  static TextStyle normalLightTextGreen(BuildContext context) {
+    return TextStyle(
+      fontFamily: "Inter",
+      fontSize: 16.sp,
+      fontWeight: FontWeight.w300,
+      color: AppColor.green,
+    );
+  }
 
-  // ---------------------------------LARGE (24px)----------------------------------------
+  // equivalent to Figma 16 - Medium, Black (Use for big buttons)
+  static TextStyle normalLightTextBlack(BuildContext context) {
+    return TextStyle(
+      fontFamily: "Inter",
+      fontSize: 16.sp,
+      fontWeight: FontWeight.w500,
+      color: AppColor.black,
+    );
+  }
 
+  // equivalent to Figma 10 - Light
+  static TextStyle smallLightText(BuildContext context) {
+    return TextStyle(
+      fontFamily: "Inter",
+      fontSize: 14.sp,
+      fontWeight: FontWeight.w300,
+      color: AppColor.white,
+    );
+  }
 
-  // use for credit risk score dashboard % value
-  static TextStyle largeSemiBoldText = TextStyle(
-    fontFamily: "Inter",
-    fontSize: 24,
-    fontWeight: FontWeight.w600, // Semi-bold
-    color: AppColor.white,
-    // height: 0,
-  );
-  // use for screen titles, e.g., Credit Reports, My Account, etc.
-  static TextStyle largeExtraLightText = TextStyle(
-    fontFamily: "Inter",
-    fontSize: 24,
-    fontWeight: FontWeight.w200, // Extra Light
-    color: AppColor.white,
-    // height: 0,
-  );
+  // equivalent to Figma 10 - Light, Green
+  static TextStyle smallLightTextGreen(BuildContext context) {
+    return TextStyle(
+      fontFamily: "Inter",
+      fontSize: 14.sp,
+      fontWeight: FontWeight.w300,
+      color: AppColor.green,
+    );
+  }
 
+  // equivalent to Figma 10 - Regular (Use for small buttons)
+  static TextStyle smallRegularTextBlack(BuildContext context) {
+    return TextStyle(
+      fontFamily: "Inter",
+      fontSize: 14.sp,
+      fontWeight: FontWeight.w400,
+      color: AppColor.black,
+    );
+  }
 
-  // ---------------------------------NORMAL (16px)---------------------------------------
+  // equivalent to Figma 10 - Regular (Use for profile container)
+  static TextStyle smallRegularText(BuildContext context) {
+    return TextStyle(
+      fontFamily: "Inter",
+      fontSize: 14.sp,
+      fontWeight: FontWeight.w400,
+      color: AppColor.white,
+    );
+  }
 
+  // equivalent to Figma 8 - Light
+  static TextStyle extraSmallLightText(BuildContext context) {
+    return TextStyle(
+      fontFamily: "Inter",
+      fontSize: 12.sp,
+      fontWeight: FontWeight.w300,
+      color: AppColor.white,
+    );
+  }
 
-  // use for screen titles, e.g., Credit Reports, My Account, etc.
-  static TextStyle normalLightText = TextStyle(
-    fontFamily: "Inter",
-    fontSize: 16,
-    fontWeight: FontWeight.w300, // Light
-    color: AppColor.white,
-    // height: 0,
-  );
-
-  // use for questions screen - question number, e.g., "Question 1"
-  static TextStyle normalLightTextGreen = TextStyle(
-    fontFamily: "Inter",
-    fontSize: 16,
-    fontWeight: FontWeight.w300, // Light
-    color: AppColor.green,
-    // height: 0,
-  );
-
-  // ---------------------------------SMALL (12px)----------------------------------------
-
-
-  // use for screen titles, e.g., Credit Reports, My Account, etc.
-  static TextStyle smallLightText = TextStyle(
-    fontFamily: "Inter",
-    fontSize: 12,
-    fontWeight: FontWeight.w300, // Light
-    color: AppColor.white,
-    // height: 0,
-  );
-  // use for nav bar
-  static TextStyle smallLightTextGreen = TextStyle(
-    fontFamily: "Inter",
-    fontSize: 12,
-    fontWeight: FontWeight.w300, // Light, Green
-    color: AppColor.green,
-    // height: 0,
-  );
-  // use for button text
-  static TextStyle smallRegularText = TextStyle(
-    fontFamily: "Inter",
-    fontSize: 12,
-    fontWeight: FontWeight.w400, // Regular, Black
-    color: AppColor.black,
-    // height: 0,
-  );
-
-
-  // ---------------------------------EXTRA SMALL (10px)----------------------------------
-
-
-  // use for subtitles, e.g., 7% p.a. | 5 Years
-  static TextStyle extraSmallLightText = TextStyle(
-    fontFamily: "Inter",
-    fontSize: 10,
-    fontWeight: FontWeight.w300, // Light
-    color: AppColor.white,
-    // height: 0,
-  );
-
-
-  // ---------------------------------SMALLEST (8px)-------------------------------------
-
-
-  // use for exceptionally small subtitles & captions, e.g., Google One RM100.00 (Upcoming Payment in home screen)
-  static TextStyle smallestSemiBoldText = TextStyle(
-    fontFamily: "Inter",
-    fontSize: 8,
-    fontWeight: FontWeight.w600, // Semi-bold
-    color: AppColor.white,
-    // height: 0,
-  );
-
-  static TextStyle smallestLightText = TextStyle(
-    fontFamily: "Inter",
-    fontSize: 8,
-    fontWeight: FontWeight.w300, // Light
-    color: AppColor.white,
-    // height: 0,
-  );
+  // equivalent to Figma 8 - Semi Bold
+  static TextStyle extraSmallSemiBoldText(BuildContext context) {
+    return TextStyle(
+      fontFamily: "Inter",
+      fontSize: 12.sp,
+      fontWeight: FontWeight.w600,
+      color: AppColor.white,
+    );
+  }
 }
