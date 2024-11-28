@@ -2,8 +2,8 @@ import 'dart:async'; // Import the async library for Timer
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:riskore/core/navigation/navigation.dart';
-import 'package:riskore/core/screens/welcome_screen.dart';
-import 'package:riskore/features/authentication/presentation/login_screen.dart';
+import 'package:riskore/screens/splash_screen.dart';
+import 'package:riskore/screens/authentication/presentation/login_screen.dart';
 
 class AuthWidgetTree extends StatefulWidget {
   const AuthWidgetTree({super.key});
@@ -35,7 +35,7 @@ class _AuthWidgetTreeState extends State<AuthWidgetTree> {
         //   return const LoadingScreen();
         // }
         if (_showWelcomeScreen) {
-          return const WelcomeScreen(); // Show welcome screen for 5 seconds
+          return const SplashScreen(); // Show welcome screen for 5 seconds
         } else if (snapshot.hasData) {
           print('navigation');
           return const Navigation(); // Navigate to the main app if logged in
