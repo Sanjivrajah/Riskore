@@ -1,0 +1,501 @@
+full_name,age,gender,employment_status,occupation,monthly_income,education_level,residential_status,marital_status,employment_duration,industry,hobbies,user_id
+Brandon Molina,29,Female,Fresh Graduate,Occupational hygienist,3486.02,Bachelor,Family Home,Single,2,Education,"['Music', 'Gaming']",abacd1bb-982a-48af-8e5b-248048dc3711
+Stacy Mccann,21,Male,Employed,Fish farm manager,5413.67,Bachelor,Rent,Married,3,Technology,"['Cooking', 'Fitness', 'Reading']",6e59eef3-2f8b-412c-81c6-a7e70b359143
+Angela Lowe,22,Male,Fresh Graduate,Fast food restaurant manager,8292.27,Diploma,Rent,Married,7,Finance,"['Traveling', 'Gaming']",48a70efb-afc7-4550-a788-ad8aced83874
+Stephen Williams,22,Male,Fresh Graduate,"Scientist, biomedical",12048.72,Diploma,Rent,Married,2,Finance,['Music'],5689cfd3-ec6a-42db-bfab-9ea119d6fab4
+Monica Estrada,30,Male,Employed,Information officer,3980.9,Master,Rent,Married,4,Finance,"['Sports', 'Music', 'Fitness']",4c6657b7-4bd7-4e77-8f50-d6d3a06f29dc
+Michael Fuentes,27,Male,Contract,Chartered management accountant,6260.06,Diploma,Family Home,Single,6,Manufacturing,"['Reading', 'Cooking']",9f07fd49-6c4d-4e9a-bf5e-1e32d7ca4161
+Colleen Reyes,30,Male,Fresh Graduate,Patent attorney,9761.51,Master,Rent,Single,2,Finance,['Music'],cbc5ed05-49b6-494c-b155-a5ad0e373ca4
+Joseph Norris,22,Male,Fresh Graduate,Information systems manager,13533.61,Bachelor,Family Home,Married,5,Manufacturing,"['Music', 'Photography', 'Cooking']",02b5475a-f1c0-4d22-9029-7361e72ff563
+Justin Casey,27,Female,Fresh Graduate,"Psychologist, counselling",4950.52,Bachelor,Rent,Married,7,Finance,"['Fitness', 'Gaming', 'Music']",9f947189-787b-4076-a02f-1e8580cbc9eb
+James Patrick,28,Male,Contract,Environmental health practitioner,7605.36,Diploma,Rent,Single,0,Healthcare,"['Reading', 'Cooking']",7c7104a8-4a76-4bb7-9fa9-4e832458a4b5
+Brian Green,28,Male,Contract,Environmental manager,10353.42,Master,Rent,Married,5,Healthcare,['Fitness'],1b9c35ae-91e1-4488-b849-c3350010eb35
+Melissa Jackson,29,Female,Contract,Stage manager,13496.99,Diploma,Family Home,Single,8,Manufacturing,"['Gaming', 'Music']",fc321b67-d4d4-407a-a3c0-314f7c19c74f
+Michael Mason,21,Male,Fresh Graduate,Financial adviser,4870.68,Diploma,Family Home,Single,2,Technology,"['Gaming', 'Photography', 'Fitness']",37772836-3143-4eb7-8148-8c75006b293a
+Ashley Gamble,21,Female,Contract,"Accountant, chartered",7800.19,Diploma,Family Home,Single,4,Healthcare,"['Traveling', 'Reading']",2ef6ffd6-f9a3-4b3c-b58b-fe840fc0254a
+Ann Shah,22,Female,Fresh Graduate,"Restaurant manager, fast food",11926.55,Master,Rent,Single,9,Education,"['Reading', 'Fitness']",50fe6fe4-dd5e-4c43-adaa-2aebb1b5f12c
+Dustin Daniels,28,Female,Fresh Graduate,Multimedia programmer,14640.98,Diploma,Rent,Married,0,Technology,['Traveling'],c7e7d387-6503-410a-ad22-6caea1e575ec
+Brenda Howell,30,Female,Fresh Graduate,Occupational psychologist,4333.1,Master,Family Home,Married,5,Finance,['Sports'],5b29a7ab-83cc-4e1e-ab1e-620f8d55ce74
+William Evans,22,Female,Fresh Graduate,Manufacturing engineer,6987.57,Master,Family Home,Married,6,Finance,['Music'],b9a7f478-471f-42e0-b50e-7595bd82a0e2
+Margaret Freeman,22,Female,Employed,Health promotion specialist,8990.53,Bachelor,Family Home,Single,1,Education,"['Reading', 'Fitness', 'Photography']",63c51978-7f82-464f-8fac-82dda3063c62
+Theresa Leonard,25,Female,Fresh Graduate,Clinical molecular geneticist,13969.17,Diploma,Family Home,Married,4,Healthcare,"['Traveling', 'Gaming', 'Cooking']",fcb600d7-a846-457c-93e8-453f494ef2b0
+Darryl Nguyen,26,Female,Fresh Graduate,"Psychologist, educational",4220.92,Bachelor,Rent,Single,9,Finance,"['Sports', 'Gaming', 'Cooking']",ca1dfbe7-a09b-4a13-9208-b61c6dd73440
+Jennifer Gray,28,Male,Fresh Graduate,"Scientist, biomedical",7739.2,Bachelor,Family Home,Single,2,Manufacturing,"['Music', 'Traveling']",06522faf-a3ca-4828-a17f-93f51e59eab6
+Christopher Casey,28,Male,Employed,Bookseller,10533.79,Diploma,Rent,Single,3,Finance,"['Photography', 'Gaming']",b764a8d4-4f1b-4d00-b647-3f7459fd7198
+Alicia Acevedo,22,Male,Employed,"Exhibitions officer, museum/gallery",14888.43,Diploma,Family Home,Single,6,Manufacturing,['Fitness'],de9b13db-ce86-47df-ad77-91751860db05
+Jeffrey Glass,30,Male,Fresh Graduate,Building surveyor,2742.34,Master,Rent,Single,2,Technology,['Reading'],3129eaa4-63a8-421d-88b0-f916bdad7a9b
+David Hodge,30,Male,Fresh Graduate,Fitness centre manager,7079.83,Bachelor,Family Home,Single,5,Technology,"['Sports', 'Traveling', 'Gaming']",95721145-65e4-485b-92b2-e6e1af1438d0
+Elizabeth Pope,30,Male,Fresh Graduate,Health physicist,10793.28,Diploma,Family Home,Single,8,Education,['Sports'],b528fbcd-b861-4d50-b9d3-cf8d84c1d535
+Robert Hawkins,29,Female,Contract,Petroleum engineer,12399.79,Diploma,Family Home,Married,0,Finance,"['Music', 'Photography']",aabf4648-e06d-4320-8f6a-14811e78ae9b
+Carol Hernandez,30,Female,Contract,Facilities manager,3423.49,Master,Rent,Married,4,Manufacturing,['Sports'],2477582e-6290-46c7-9910-6de62c204ce3
+Lawrence Case,21,Male,Employed,Pension scheme manager,7036.14,Bachelor,Family Home,Married,7,Education,"['Reading', 'Traveling']",92aff663-3e08-42e7-9fb0-3e0e569a7971
+David Jones,24,Female,Fresh Graduate,Recruitment consultant,9082.55,Master,Rent,Married,1,Education,"['Sports', 'Reading', 'Traveling']",66be52f7-5124-4147-b6cd-b0dc78806642
+Patrick Thompson,22,Male,Fresh Graduate,Teaching laboratory technician,13545.78,Diploma,Family Home,Single,5,Finance,"['Cooking', 'Gaming']",1dc47704-2763-4e7f-b544-5a9353871373
+Ronald Obrien,28,Female,Employed,Careers information officer,2731.9,Diploma,Rent,Single,6,Manufacturing,['Sports'],a2cfd8a9-79ac-4254-ad64-0d542e5fe9df
+Melissa Green,30,Female,Fresh Graduate,"Therapist, horticultural",6163.04,Master,Rent,Married,0,Healthcare,"['Photography', 'Music', 'Traveling']",4f0e5664-bc75-4ee7-9f01-3946d8c2017d
+Corey Hernandez,27,Female,Contract,Industrial/product designer,10531.69,Bachelor,Family Home,Single,4,Finance,['Sports'],57060cfb-269d-4474-a61f-14916403acdc
+Sheila Woodward DDS,22,Male,Employed,"Teacher, primary school",13064.64,Bachelor,Rent,Single,8,Technology,"['Reading', 'Gaming']",52bf6b78-f9e3-472f-9b9f-434c833b6eda
+Nicole Ritter,21,Female,Contract,"Librarian, public",4083.68,Bachelor,Family Home,Married,2,Education,['Music'],f2d768cd-02f0-4b29-8967-a03778874059
+Eric York,29,Male,Fresh Graduate,Food technologist,6356.63,Diploma,Rent,Married,3,Healthcare,"['Cooking', 'Traveling', 'Fitness']",e3eca34f-db2f-4130-ab49-a59d84aeb95b
+Brandi Rodriguez,22,Male,Employed,"Psychologist, counselling",11867.08,Diploma,Rent,Single,8,Finance,"['Sports', 'Cooking']",04d4748a-61b2-467b-a308-248d59fac863
+William Brown,28,Male,Employed,Trade mark attorney,13370.8,Diploma,Family Home,Married,2,Education,['Sports'],f613920e-c334-485a-9b84-adec2ea9553f
+Scott Foster,27,Male,Employed,Printmaker,4805.83,Diploma,Family Home,Married,4,Education,"['Sports', 'Fitness', 'Music']",3ed98d8a-bc7c-43ed-98e4-04cfbea076f6
+Christopher Anderson,23,Male,Employed,Industrial/product designer,6856.97,Diploma,Family Home,Married,7,Healthcare,"['Gaming', 'Cooking', 'Reading']",b1b3b88f-d9f0-4860-8d7b-8ec657d69c35
+Cynthia Brown,28,Female,Fresh Graduate,Trade mark attorney,11335.62,Diploma,Family Home,Single,2,Healthcare,"['Gaming', 'Reading', 'Fitness']",5609a9c1-3e75-4663-b4de-7ecd513fb05f
+Justin Vargas,21,Male,Fresh Graduate,Land,14587.84,Bachelor,Family Home,Single,4,Healthcare,"['Gaming', 'Music', 'Traveling']",b89aa97c-ac26-42bf-9aea-0765014c1a92
+Sarah Montes,26,Male,Fresh Graduate,"Surveyor, hydrographic",4133.22,Diploma,Rent,Married,8,Finance,['Reading'],2df4dbf3-136e-40da-81ba-b733c9d1482e
+Christopher Perez,28,Female,Fresh Graduate,Copy,6288.52,Master,Rent,Single,0,Education,"['Reading', 'Fitness']",15cc9289-81c4-4c72-9555-a6f25e29aea9
+Clayton Jackson,22,Female,Fresh Graduate,Clinical embryologist,8090.4,Bachelor,Family Home,Married,5,Manufacturing,"['Traveling', 'Fitness']",48e7a010-a6e1-4fcd-b33b-b9f13d94e549
+Sharon Owen,25,Male,Fresh Graduate,Podiatrist,14479.99,Bachelor,Family Home,Married,9,Healthcare,"['Fitness', 'Music']",f0f03257-5393-4879-a5fe-e016ba11d379
+Meghan Wilkerson,23,Female,Fresh Graduate,"Engineer, biomedical",3733.68,Diploma,Family Home,Single,1,Technology,"['Traveling', 'Fitness', 'Photography']",e0ac2b79-0f59-44e6-a6da-1096117aef7a
+Samuel Adams,28,Male,Employed,"Exhibitions officer, museum/gallery",5247.54,Diploma,Rent,Married,4,Finance,"['Photography', 'Traveling']",04879676-a911-421f-830e-184d985a996c
+Linda Salazar,24,Male,Employed,Tax adviser,11824.5,Bachelor,Family Home,Single,6,Education,"['Fitness', 'Cooking', 'Reading']",cf0704df-7de3-40d0-a88d-cc5397abf01a
+Sherry Rodriguez,25,Male,Fresh Graduate,Film/video editor,14913.44,Bachelor,Rent,Single,0,Finance,"['Reading', 'Photography', 'Fitness']",adfba363-d923-46bf-8fcd-192777b8e859
+Rhonda Richards,29,Female,Contract,"Education officer, environmental",2519.71,Master,Rent,Single,3,Healthcare,"['Reading', 'Sports']",60588eb7-2f1c-435f-9c62-3e8c73de669f
+Melissa Peters,22,Male,Fresh Graduate,"Accountant, chartered public finance",5922.31,Bachelor,Family Home,Single,6,Manufacturing,"['Traveling', 'Music', 'Gaming']",8177c5b5-6208-401e-8b35-f2b281c0f2dd
+Kiara Pierce,22,Female,Employed,"Surveyor, mining",8238.78,Bachelor,Rent,Married,0,Education,"['Music', 'Sports']",f50e30d7-99f1-436c-bd6b-71290b176d80
+Jennifer Scott DDS,21,Female,Employed,Retail buyer,13564.74,Master,Rent,Married,3,Education,['Cooking'],93b363d2-3eb5-48f7-8877-ea432c1d9760
+Deborah Parker,27,Male,Contract,Dealer,3140.15,Diploma,Family Home,Single,9,Healthcare,['Cooking'],5fcfcd5d-34d9-4121-a7d6-24e358051988
+Tina Taylor,21,Female,Fresh Graduate,Exercise physiologist,5667.05,Master,Family Home,Single,1,Manufacturing,"['Fitness', 'Gaming']",99b1e5f0-9d05-4dc1-a051-1798765fd712
+Kimberly Lewis,28,Male,Fresh Graduate,"Scientist, water quality",9703.65,Master,Rent,Single,3,Manufacturing,"['Fitness', 'Cooking', 'Music']",5fb86dfb-25e6-4cea-af42-de04ddb9c76f
+Kelli Tate,25,Female,Fresh Graduate,Writer,13162.14,Diploma,Family Home,Single,8,Technology,"['Music', 'Traveling', 'Cooking']",4c59ac1f-e127-4143-9471-522304033895
+Richard George,24,Male,Employed,Structural engineer,3224.63,Master,Rent,Single,2,Education,['Photography'],6f1e71e4-92b7-4cf1-928c-5584418290b1
+Melissa Berry,26,Male,Contract,Lobbyist,7910.26,Diploma,Family Home,Single,3,Education,['Traveling'],2bbc8655-e464-4e87-a411-f7a7108a84be
+Mr. Derek Mack,23,Male,Fresh Graduate,Ambulance person,8526.77,Master,Rent,Married,6,Education,['Music'],6987c306-27af-461f-985d-f3b35f20181e
+Rodney Matthews,28,Female,Employed,Mudlogger,14749.05,Diploma,Rent,Single,0,Education,"['Traveling', 'Fitness']",638060d1-b062-462c-995b-8cd9e11758a3
+Michael Gonzalez,28,Male,Fresh Graduate,"Surveyor, insurance",2998.49,Bachelor,Family Home,Single,3,Finance,"['Photography', 'Music']",2257c5dc-1ecb-41e0-8db1-a0e44a48380c
+Jason Cannon,27,Female,Contract,"Chemist, analytical",7485.85,Bachelor,Family Home,Married,7,Technology,"['Traveling', 'Gaming', 'Sports']",24f36559-950a-4aa1-9436-911781f4c772
+Jacob Henry,26,Male,Employed,Records manager,8867.48,Bachelor,Rent,Married,1,Manufacturing,"['Cooking', 'Traveling', 'Gaming']",904c39f8-0960-4e98-9f92-48df30d03b31
+George Romero,23,Female,Contract,Insurance account manager,13523.26,Bachelor,Family Home,Married,5,Healthcare,"['Traveling', 'Music', 'Fitness']",b24f37f9-8b44-48ec-80e7-f3a79fa40794
+Melanie Bell,30,Male,Employed,"Librarian, public",2799.48,Bachelor,Rent,Single,9,Education,"['Reading', 'Sports', 'Cooking']",f399f388-a6bb-4df9-8d8a-f111975e5af5
+Barbara Fox,27,Female,Contract,Maintenance engineer,5126.58,Diploma,Family Home,Single,2,Manufacturing,"['Photography', 'Cooking', 'Music']",799fb034-8911-40b8-a4bd-611a350f2c19
+Adriana Cisneros,25,Male,Employed,Astronomer,8887.01,Master,Rent,Single,5,Healthcare,['Gaming'],cf467fbb-7e52-4c22-8833-d78218ad06a4
+Jeffery Barrera,22,Male,Contract,Chief Operating Officer,13708.84,Bachelor,Rent,Single,6,Education,"['Music', 'Reading']",286f72db-c56d-443e-bd36-b50fe1469030
+Zachary Herman,27,Female,Contract,"Scientist, marine",4813.71,Bachelor,Rent,Single,0,Manufacturing,"['Cooking', 'Reading']",57c05821-2a23-479b-a4e6-515a4487b033
+Michelle Cowan DDS,21,Female,Contract,Photographer,6657.15,Master,Rent,Single,4,Technology,"['Fitness', 'Traveling']",970baaa7-5d85-48ca-ac35-b9875b1e1638
+Rose Fuller,28,Male,Fresh Graduate,Barista,8376.22,Bachelor,Rent,Single,6,Healthcare,['Reading'],2e47a31e-8c72-402a-a5e7-c225980e6e2e
+John Brooks,22,Male,Employed,"Journalist, magazine",14028.92,Master,Family Home,Single,2,Technology,"['Photography', 'Traveling']",30823211-5bb5-477d-8ea7-8486aa5d6724
+Robert Smith,23,Male,Employed,Graphic designer,4797.97,Diploma,Family Home,Single,3,Healthcare,"['Fitness', 'Photography']",a81266e7-91c1-4436-a3d7-19bfe5f84ec1
+Sean Patterson,27,Female,Contract,Management consultant,6200.52,Diploma,Rent,Single,6,Manufacturing,['Cooking'],54f5615f-dfac-4f2d-af3e-8dbae2573f1d
+Michael Williams,23,Female,Employed,Orthoptist,9532.71,Bachelor,Rent,Single,1,Healthcare,"['Traveling', 'Photography']",0119c8fc-b7fe-464a-8add-987227abfaf7
+Carmen Ramirez,29,Male,Fresh Graduate,Radiation protection practitioner,13387.98,Diploma,Family Home,Married,3,Manufacturing,['Sports'],670e8dde-415d-442e-9251-e4091cc380cc
+Joel Tyler,26,Female,Contract,Cartographer,4747.81,Diploma,Family Home,Married,9,Manufacturing,['Gaming'],759ead36-8ada-4b72-bc11-7eb6a5b424a5
+Christopher Stewart,28,Female,Employed,Trading standards officer,7542.37,Bachelor,Rent,Single,0,Education,"['Gaming', 'Cooking']",fdddcdde-a422-49cb-82ed-21e5adc09d23
+Sarah Mooney,23,Male,Contract,"Pilot, airline",11743.6,Master,Family Home,Married,4,Education,"['Gaming', 'Traveling']",4646d23e-3d91-4c36-aad5-30741e0a42e9
+Teresa Matthews,25,Male,Fresh Graduate,Minerals surveyor,12502.78,Diploma,Rent,Married,7,Manufacturing,"['Reading', 'Fitness', 'Music']",62303684-5c2a-416e-b803-5fc79bc77b1b
+Jessica Garza,29,Female,Employed,Trading standards officer,2582.54,Bachelor,Family Home,Single,2,Education,['Music'],d1fc9b7d-530b-4795-93c2-92b4b161367c
+Elizabeth Johnson,30,Female,Contract,Phytotherapist,6105.48,Diploma,Rent,Married,3,Finance,['Gaming'],86f85e48-c573-4d0f-8129-ed637e768aaf
+Jennifer Pittman,26,Male,Fresh Graduate,"Production assistant, radio",8198.75,Bachelor,Rent,Married,8,Education,"['Gaming', 'Cooking', 'Music']",dd78a64a-7579-42da-b5ee-535a656cf72c
+Cassandra Waters,23,Male,Fresh Graduate,Speech and language therapist,12631.48,Diploma,Rent,Married,1,Technology,"['Music', 'Photography']",3c84688c-59a6-42c8-a5cc-6163a52b2440
+Justin Mccullough,25,Female,Fresh Graduate,Ophthalmologist,3523.63,Master,Rent,Married,5,Technology,['Reading'],87ecfca0-aafd-4bcb-9fda-e20da8dbd7d0
+Ashley Cochran,30,Male,Fresh Graduate,Local government officer,6912.24,Diploma,Rent,Single,8,Manufacturing,"['Music', 'Photography']",6b12a611-d2ab-4af1-bbe8-d3d97b8761c4
+Grant Miller,29,Male,Fresh Graduate,"Pilot, airline",8471.3,Bachelor,Rent,Single,2,Technology,"['Gaming', 'Fitness']",8dd07760-6fd1-4df3-8857-04dd6d11449e
+Janice Simpson,21,Male,Contract,Intelligence analyst,13236.87,Diploma,Rent,Single,5,Technology,['Cooking'],127f73b3-ca5d-4415-8df3-0dca3a4e68ad
+Rhonda Jones,30,Female,Employed,Audiological scientist,4662.48,Bachelor,Family Home,Married,7,Education,"['Reading', 'Cooking']",e195a7f3-a17a-4c1f-8ec5-bc2a3a940cfc
+Xavier Adkins,22,Female,Employed,Occupational hygienist,6239.36,Bachelor,Family Home,Single,2,Education,"['Gaming', 'Music']",34a1a13c-b897-4934-a51f-02102925efff
+Hailey Wright,24,Female,Employed,Arts administrator,8653.42,Master,Rent,Married,4,Education,"['Traveling', 'Sports']",d5fcdc9f-ea2b-4c39-9bef-059456a7791c
+Caroline Thompson,22,Male,Fresh Graduate,Sports coach,13622.94,Master,Rent,Married,6,Manufacturing,"['Sports', 'Traveling', 'Reading']",b873a197-e4da-4bde-98f7-c9c9f0b73349
+Andrea Murillo,24,Female,Fresh Graduate,"Engineer, manufacturing systems",4007.94,Diploma,Family Home,Married,2,Technology,['Photography'],588c1467-47ca-4968-8c34-ad3ffb9da9c4
+Gary Wallace,26,Male,Contract,Pensions consultant,6087.44,Master,Rent,Single,4,Technology,['Photography'],38a4529f-3b93-4902-89d4-4637cd7b990a
+Lisa Ferguson,29,Male,Fresh Graduate,"Programme researcher, broadcasting/film/video",9535.34,Bachelor,Family Home,Single,6,Education,"['Traveling', 'Music', 'Reading']",62b49935-98a4-45ef-99bc-bd5b289a23c0
+Gregory Reyes,27,Female,Employed,Recycling officer,14943.76,Diploma,Family Home,Single,1,Manufacturing,"['Traveling', 'Music', 'Gaming']",ddd69964-d047-4aa2-a9a5-d59e1ae9d03c
+Jacob Brown,27,Male,Contract,Make,2573.24,Master,Rent,Married,3,Manufacturing,['Gaming'],8ba05fb0-095e-466e-a2ad-fa3580682d0f
+Gilbert Berger MD,30,Male,Contract,Theme park manager,6162.42,Bachelor,Family Home,Single,6,Healthcare,"['Reading', 'Cooking']",b14c4db0-698b-42a7-8cba-b9f07f05a7f0
+Ronald Price,30,Female,Contract,"Psychologist, forensic",10240.07,Diploma,Rent,Single,1,Finance,"['Reading', 'Fitness', 'Gaming']",8667d6f1-b5d5-4493-805a-b21e4fe8029d
+Ralph Cook,22,Female,Fresh Graduate,Holiday representative,12055.33,Diploma,Family Home,Single,3,Healthcare,"['Cooking', 'Fitness']",601fe48d-3572-4167-b71a-9fac053ff014
+Lindsey Perez,30,Female,Contract,"Social research officer, government",3093.86,Master,Family Home,Married,7,Finance,['Fitness'],194762e4-c7ae-4fe1-b519-2f7d88b653f7
+Andrea Chavez,21,Female,Contract,Armed forces technical officer,6798.71,Master,Family Home,Married,1,Finance,"['Sports', 'Fitness']",cd90a847-cb4f-4e46-b98b-1cb40deeaa21
+Summer Gamble,23,Female,Employed,"Optician, dispensing",10120.82,Diploma,Rent,Married,4,Healthcare,"['Photography', 'Reading']",cfbaf8a2-6b2a-4e68-a331-74e785082b1f
+Rebecca Nelson,27,Female,Contract,Chief Executive Officer,13171.38,Bachelor,Rent,Single,6,Healthcare,"['Cooking', 'Music', 'Sports']",a0c987a6-3c14-43c8-a202-856fef6a6e82
+Jeffrey Caldwell,29,Male,Fresh Graduate,Higher education lecturer,3987.89,Diploma,Family Home,Married,2,Finance,"['Fitness', 'Sports']",9842405f-34d4-4b49-bcfd-33277e3205ee
+Catherine Gillespie,29,Male,Fresh Graduate,"Lecturer, higher education",6854.34,Diploma,Rent,Single,5,Finance,"['Sports', 'Gaming']",be725f11-2588-4da0-b5b4-77f8e966fe74
+Caitlin Hansen,29,Female,Fresh Graduate,Further education lecturer,11955.26,Diploma,Rent,Married,7,Education,['Music'],587f9faf-f176-41df-98dc-f5198d77556e
+Jacob Olson,22,Male,Fresh Graduate,"Engineer, biomedical",13599.82,Bachelor,Rent,Married,1,Finance,"['Reading', 'Gaming']",1ebe15ac-69c6-479f-a01e-ec2ad671dc42
+Michelle Moreno,30,Male,Contract,Commercial art gallery manager,3226.32,Diploma,Family Home,Married,3,Technology,"['Music', 'Cooking', 'Gaming']",ee18aab2-7e60-425b-bf71-73218992b5d4
+William Castillo,28,Male,Contract,Industrial/product designer,7562.21,Bachelor,Family Home,Single,8,Education,"['Music', 'Sports']",2bcf7175-8e48-4776-810a-982b71b1d66e
+Brian Ruiz,29,Female,Employed,Accommodation manager,10569.3,Master,Family Home,Single,0,Finance,['Gaming'],08b98c81-8338-4377-84fe-e15fe63531a3
+Michelle Jones,26,Male,Fresh Graduate,Teaching laboratory technician,13197.81,Bachelor,Rent,Single,3,Manufacturing,['Cooking'],30009472-68f6-4fee-9a4c-fe37be7521a5
+Jessica Kent,22,Male,Contract,Music tutor,3019.42,Master,Family Home,Single,7,Education,"['Cooking', 'Sports', 'Music']",399ef84f-7854-4e0b-88b2-d9d2f735b8a8
+Michael Gray,22,Male,Employed,Field trials officer,7176.47,Master,Rent,Single,2,Technology,"['Photography', 'Reading']",44a8651c-4122-4775-9fb6-8e5566235b7e
+Mrs. Dorothy Kirk,30,Female,Fresh Graduate,"Psychotherapist, dance movement",8687.11,Bachelor,Family Home,Married,3,Healthcare,"['Traveling', 'Cooking', 'Reading']",754e6216-0daa-46c9-b83d-b27cef986479
+Sherry Taylor,29,Male,Employed,"Secretary, company",14875.56,Master,Rent,Married,6,Education,"['Reading', 'Gaming']",18a18746-0cf9-4e56-88b1-4c22f6783798
+Jasmine Sawyer,29,Female,Employed,Financial trader,4612.03,Master,Family Home,Single,2,Education,"['Fitness', 'Traveling']",646d423f-7448-48d3-986b-a8dc90906020
+Heather Johnson,27,Female,Fresh Graduate,Television production assistant,7670.71,Diploma,Family Home,Single,4,Manufacturing,['Traveling'],56fb3ace-d9cd-4b82-8b94-a1a8a9e63705
+Steve Smith,24,Female,Contract,Geophysicist/field seismologist,11649.1,Bachelor,Family Home,Married,6,Technology,['Cooking'],9cb13f54-164a-463f-9d5d-07cde1ea6893
+Glenn Lucero,25,Female,Fresh Graduate,Soil scientist,13087.49,Bachelor,Family Home,Single,1,Healthcare,"['Music', 'Traveling']",c86e76cb-dd98-4eb6-9bdd-7b63b1d90592
+Darrell Black,29,Male,Employed,Company secretary,4199.5,Bachelor,Family Home,Married,5,Finance,"['Cooking', 'Reading', 'Gaming']",62c2ba98-1f74-44a4-b0f9-10e25b63b069
+Melissa Mercado,26,Male,Fresh Graduate,Environmental consultant,7714.53,Master,Family Home,Single,6,Healthcare,"['Cooking', 'Sports', 'Fitness']",c56ff95f-aaa5-4f5f-a390-1b50f085088c
+Robert Cooke,23,Male,Employed,Trade mark attorney,8949.06,Diploma,Rent,Married,2,Finance,"['Traveling', 'Gaming', 'Reading']",e9231f23-90d9-4913-b9f6-6fc7e8a1d6f2
+Elizabeth Wright,22,Male,Fresh Graduate,Jewellery designer,12879.19,Diploma,Family Home,Married,3,Healthcare,['Reading'],dfca7028-ffde-4106-8ea9-7ae4d3a1171c
+Marissa Lucas,22,Female,Employed,Chartered public finance accountant,3807.0,Bachelor,Rent,Single,6,Technology,"['Traveling', 'Cooking']",d79f30d0-cac1-4c14-a8c7-99a9c298f40b
+Michelle Smith,30,Female,Fresh Graduate,Public house manager,6138.58,Master,Rent,Single,1,Healthcare,['Traveling'],b982d807-0558-4c70-8663-6b6f8fa557be
+Andre Butler,21,Female,Employed,"Editor, commissioning",9018.46,Bachelor,Family Home,Single,5,Healthcare,"['Traveling', 'Cooking']",ccd68b23-43ff-43e4-aca7-5b03b0bac4b4
+Felicia Schmidt,27,Male,Employed,Advertising account executive,12329.18,Master,Rent,Married,8,Education,"['Sports', 'Traveling', 'Reading']",03eb9a26-9ed7-4126-a96a-e715a113f1f5
+Billy Phillips,28,Female,Fresh Graduate,IT trainer,4217.7,Diploma,Family Home,Single,0,Technology,['Traveling'],dc451fd4-e75f-41a5-b95c-c3ac37266ed6
+Jesse Welch,26,Male,Contract,Advice worker,6843.13,Diploma,Family Home,Married,5,Technology,"['Traveling', 'Fitness', 'Photography']",4e769554-f53c-4e53-85e3-74b8bda5b98d
+Garrett Kelley,26,Male,Fresh Graduate,Pathologist,10557.85,Diploma,Family Home,Single,6,Technology,"['Gaming', 'Fitness', 'Traveling']",471e0f8b-70e2-462d-bd36-363235870da1
+Jessica Rodriguez,25,Male,Contract,Press photographer,13223.17,Master,Rent,Married,2,Healthcare,['Fitness'],8cfc3ea8-2290-45e7-b04e-34896aff5428
+Cynthia Conrad,29,Male,Employed,Leisure centre manager,2878.29,Diploma,Family Home,Married,5,Education,"['Music', 'Gaming', 'Photography']",b272485d-e285-49b7-8efd-b5507b450cef
+Mark Bass,21,Male,Employed,Legal secretary,7353.04,Bachelor,Family Home,Married,6,Manufacturing,"['Cooking', 'Sports', 'Music']",b397fdef-eca9-426a-8597-f0c71a1b07aa
+Michele Wilson,27,Male,Fresh Graduate,Financial manager,8971.23,Diploma,Rent,Single,2,Healthcare,"['Music', 'Fitness', 'Sports']",65d3d42f-c027-486a-b6d5-f67717eedacb
+Timothy Price,27,Female,Fresh Graduate,Landscape architect,13526.51,Bachelor,Family Home,Single,3,Technology,"['Reading', 'Photography']",f6dfe213-88ba-4a9f-96bb-88b5a26d94f5
+Raymond Castillo DVM,24,Female,Fresh Graduate,"Surveyor, building",4675.18,Master,Family Home,Single,9,Finance,"['Music', 'Gaming']",8acca62b-ddee-4877-938d-7e833a6c8a31
+Brandy Garcia,26,Female,Fresh Graduate,Financial manager,7557.42,Master,Rent,Married,0,Manufacturing,['Music'],189ee81e-cc71-4d58-948d-f107b6cf727b
+Miss Rachel Lee,22,Male,Employed,"Biochemist, clinical",9005.23,Diploma,Family Home,Married,5,Education,"['Cooking', 'Traveling']",12dd6344-5433-45a3-9ee8-fdd1024f5a7e
+Bruce Acosta,24,Male,Fresh Graduate,"Civil engineer, contracting",12967.93,Bachelor,Rent,Single,9,Manufacturing,"['Reading', 'Photography']",32c278a5-41b8-4998-999a-51fc34e00f8c
+Benjamin Price,26,Male,Fresh Graduate,"Secretary, company",3362.25,Diploma,Rent,Single,1,Healthcare,"['Sports', 'Music']",313f7d51-190d-413b-8e53-a020c54f07be
+Julie Hughes,22,Female,Employed,Water quality scientist,7587.35,Master,Family Home,Married,5,Finance,"['Sports', 'Traveling', 'Photography']",ca774345-9270-4a9f-8b71-edeba4d42e95
+Colin Yates,26,Male,Contract,Public relations account executive,10875.72,Master,Rent,Married,8,Technology,['Music'],849ea3b9-2c71-4d31-9315-eef8e2105e2c
+Jeffrey Harris,28,Male,Employed,"Psychologist, clinical",14781.5,Master,Rent,Married,0,Technology,"['Reading', 'Traveling']",f8cadce5-11a6-4608-8a34-e7a35161b23c
+Kelly Pittman,23,Female,Fresh Graduate,Financial controller,3693.47,Diploma,Family Home,Single,5,Manufacturing,['Cooking'],4f178c26-ec17-4dd7-acc7-8d90b32bb929
+Jessica Watson,26,Female,Fresh Graduate,"Psychotherapist, child",7769.42,Master,Rent,Married,7,Finance,"['Reading', 'Gaming', 'Photography']",d61aab3a-8c2a-46d8-893d-45f72fc2a833
+Kelly Brock,30,Male,Contract,Catering manager,11467.27,Diploma,Family Home,Single,0,Finance,"['Fitness', 'Reading', 'Photography']",e3d43e66-5675-4a88-9385-3c3f59012ca4
+Sandra Patterson,26,Female,Contract,Mechanical engineer,13527.21,Bachelor,Family Home,Married,4,Finance,"['Music', 'Gaming', 'Fitness']",2a45be64-7bab-45bd-a349-2df3cc7e1d20
+Jennifer Jimenez,21,Male,Employed,Primary school teacher,4667.53,Master,Family Home,Married,6,Technology,['Cooking'],95a7e070-70c1-4d0d-b96e-071f74df1cfe
+Melissa Jones,22,Female,Employed,Firefighter,5488.12,Diploma,Family Home,Single,0,Manufacturing,"['Music', 'Cooking', 'Gaming']",93e89a5d-87d2-4ac4-8313-2db1cf2447e9
+Robert Middleton,27,Male,Fresh Graduate,Dance movement psychotherapist,8839.41,Master,Rent,Married,5,Education,"['Cooking', 'Traveling']",452dc02a-737f-4baa-b44a-ff47ec682907
+Sharon Avery,25,Female,Employed,"Doctor, general practice",14933.08,Master,Family Home,Married,9,Healthcare,"['Traveling', 'Gaming']",50de17ca-d78f-4c18-b155-5fe76c7bae6f
+Robyn Perez,29,Female,Employed,Podiatrist,4619.73,Diploma,Family Home,Married,2,Education,"['Fitness', 'Traveling']",2cd2d85e-36ee-44a4-a7a8-1ec132692adc
+Joy Pierce,22,Female,Employed,Geographical information systems officer,5950.63,Master,Family Home,Married,3,Healthcare,"['Traveling', 'Photography', 'Sports']",2ce6712a-78ca-4444-a051-e9a66f53760c
+Mr. Ronnie Johnson,21,Male,Contract,Data scientist,11227.9,Master,Rent,Married,7,Technology,['Reading'],66d8bef7-dd09-42d4-ac2b-fbd1564ca750
+James Pope,23,Male,Contract,"Engineer, control and instrumentation",13416.46,Bachelor,Family Home,Married,2,Manufacturing,"['Reading', 'Fitness', 'Gaming']",12d4b5e6-3a6c-4b31-ad45-54bc1031cc66
+Tanner Morgan,23,Female,Contract,"Engineer, civil (contracting)",3878.7,Diploma,Family Home,Single,3,Education,['Music'],a5029248-b59d-4009-acb6-b1bac6b8311e
+Tara Wilson,28,Female,Employed,"Teacher, English as a foreign language",7420.89,Bachelor,Rent,Married,7,Healthcare,['Fitness'],d528cc6c-53ba-4ea6-836a-c2725bb4def1
+Sara Martinez,22,Female,Employed,"Exhibitions officer, museum/gallery",9479.69,Master,Family Home,Married,1,Education,"['Sports', 'Gaming']",1a20dfa7-28df-4dd8-a0a5-8c4e5e8a6a0b
+Andre Hood,25,Female,Contract,"Education officer, museum",13406.32,Bachelor,Rent,Single,3,Education,['Fitness'],df08e386-57df-4293-8ed6-d373a1991a71
+Megan Murphy,29,Female,Fresh Graduate,"Engineer, manufacturing",2630.35,Master,Rent,Single,7,Manufacturing,"['Photography', 'Gaming', 'Traveling']",907be950-38fd-4adf-a859-274e87f8e0bd
+Whitney Shelton,28,Male,Contract,"Engineer, energy",5412.06,Bachelor,Rent,Married,2,Manufacturing,"['Cooking', 'Gaming']",a69565b1-4301-4bd5-8977-46e2193bcf7e
+Angela Jacobson,26,Female,Fresh Graduate,Hydrologist,10050.07,Diploma,Rent,Single,5,Education,['Sports'],83f7bc1c-28ce-4243-90f8-eca87ae41ecb
+Andrew Martinez,22,Male,Fresh Graduate,Publishing copy,13048.21,Master,Family Home,Single,8,Finance,"['Traveling', 'Photography']",e245bdd2-3085-45b5-affa-af87eaf89329
+Paula Smith,27,Female,Fresh Graduate,Lexicographer,4967.45,Diploma,Family Home,Married,2,Technology,['Fitness'],9e402bd4-b60e-47bc-95e5-6af5a4b97be6
+Susan Hall,25,Male,Fresh Graduate,Media buyer,6065.89,Bachelor,Rent,Single,5,Manufacturing,"['Gaming', 'Traveling', 'Fitness']",0fa4e6fa-ed62-43c7-9e58-e70a7a596124
+Dustin Henry,30,Male,Fresh Graduate,IT consultant,11058.06,Master,Rent,Single,6,Finance,['Gaming'],3a31c16b-8678-4141-a835-2ddf336f1357
+Zachary Reese,27,Male,Employed,"Lecturer, higher education",14852.03,Master,Family Home,Married,0,Healthcare,"['Fitness', 'Reading', 'Traveling']",d7de4b1f-e3e1-4dba-8147-dd9ed14ce0a0
+Katelyn Hoffman,25,Male,Employed,"Research officer, political party",2543.02,Diploma,Family Home,Single,3,Manufacturing,"['Music', 'Gaming']",c61b48ca-a92f-47ee-bc9c-8aa5bc76025a
+Noah Werner,22,Female,Employed,Fish farm manager,5923.29,Master,Rent,Married,8,Manufacturing,"['Music', 'Sports', 'Fitness']",0beefce9-f944-4602-8cd0-486ea308aa8d
+Nathan Hardy,29,Female,Fresh Graduate,Records manager,8231.26,Diploma,Rent,Single,0,Education,['Photography'],0a93893e-4e22-473f-b977-11f4a2d7dff6
+Michael Lee,22,Male,Employed,Warden/ranger,13755.67,Diploma,Rent,Married,3,Healthcare,"['Gaming', 'Fitness', 'Cooking']",f66b7a6d-356b-488e-9335-75cf58a8fdfa
+Pamela Knight,28,Male,Contract,Building services engineer,4384.37,Bachelor,Rent,Married,7,Healthcare,['Reading'],c4b69609-330c-439d-b51e-5ce3120a0da8
+Paul Mcdonald,24,Female,Contract,"Teacher, secondary school",6637.8,Master,Family Home,Single,2,Manufacturing,"['Reading', 'Sports']",4c3b6300-8214-4ba3-ba5a-40ab67d9038f
+Mary Miller,22,Male,Fresh Graduate,"Psychologist, educational",8095.83,Diploma,Family Home,Single,5,Finance,['Sports'],a670338b-7ee6-4c73-9e7c-4324a9021e77
+Caleb Campbell,25,Male,Contract,"Teacher, adult education",12937.72,Master,Rent,Single,8,Healthcare,"['Reading', 'Fitness']",65cdf311-4e41-426b-bec4-bd94839a6298
+Michael Anderson,25,Female,Contract,Site engineer,4188.87,Master,Rent,Single,2,Technology,['Music'],f3672992-0895-4af0-b328-6144ec84e128
+Walter Gill,22,Female,Contract,Theatre manager,5232.8,Master,Family Home,Married,3,Technology,"['Sports', 'Reading']",0fc749e3-310d-4e5d-9d14-c720418fc540
+Andrea Miller,26,Female,Employed,Copy,10669.66,Master,Family Home,Single,6,Manufacturing,"['Reading', 'Music']",ae4e6379-fa34-40ef-9d96-f866f1d3cfcc
+Karen Rodriguez,26,Male,Employed,Mechanical engineer,13870.63,Bachelor,Rent,Married,1,Finance,"['Traveling', 'Reading']",273aa736-e17d-4a6f-926a-5020e1e9f06e
+Cindy Warren,26,Female,Contract,"Scientist, biomedical",3783.93,Bachelor,Rent,Single,4,Education,['Reading'],63d3a1d5-7cd1-4b32-8a6d-023699b6abfd
+David Carter,25,Male,Contract,Insurance broker,5622.85,Bachelor,Family Home,Married,6,Healthcare,"['Photography', 'Gaming', 'Traveling']",fcb44bfc-7c1c-4acd-9231-741aad034c94
+Michelle Becker,22,Male,Fresh Graduate,"Administrator, education",8861.63,Diploma,Family Home,Single,2,Manufacturing,"['Music', 'Gaming', 'Traveling']",67192f6b-ebc6-46b0-9111-b4f87085fb15
+Amy Payne,28,Male,Fresh Graduate,Health physicist,14868.38,Bachelor,Family Home,Married,4,Manufacturing,"['Photography', 'Reading']",d3ec6a03-48bd-4b6d-923a-c4f8842adbce
+Mia Cooke,28,Female,Contract,"Accountant, chartered",4950.3,Diploma,Rent,Single,7,Manufacturing,['Photography'],efdcc6ba-e3bc-4ca8-afff-6630dbc41cf9
+Matthew Mcdonald,30,Female,Employed,Contracting civil engineer,7036.53,Bachelor,Family Home,Single,2,Healthcare,"['Reading', 'Sports', 'Photography']",7275c251-493c-4bfe-912e-e010a29036ae
+Timothy Oneal,23,Male,Contract,Occupational hygienist,11426.74,Bachelor,Rent,Single,3,Finance,"['Photography', 'Sports']",d72e42f8-d787-4ff9-a37d-c69a99e509b8
+Olivia Lee,26,Male,Fresh Graduate,Health promotion specialist,14808.17,Bachelor,Family Home,Single,8,Education,"['Cooking', 'Sports']",43d28d28-f258-4302-9ca6-3d78cd01b4de
+Steven Avery,23,Female,Fresh Graduate,"Scientist, clinical (histocompatibility and immunogenetics)",4598.46,Master,Rent,Married,2,Technology,"['Music', 'Traveling', 'Cooking']",ec806915-ef3a-49dc-a74e-9f111dbc4cd0
+Elizabeth Jones,22,Male,Contract,Garment/textile technologist,7327.13,Master,Family Home,Single,4,Technology,"['Traveling', 'Photography']",84f677f9-6def-4794-916c-e50b64f397d0
+Lawrence Hansen,21,Male,Contract,"Psychologist, clinical",9903.48,Master,Rent,Single,8,Finance,"['Music', 'Fitness', 'Cooking']",f84e0318-7e32-4329-9192-fa88c4f7c5fa
+Sarah Howard DDS,30,Male,Contract,"Engineer, drilling",14644.9,Master,Family Home,Single,0,Education,"['Photography', 'Reading', 'Sports']",2a11d896-d23c-4636-906b-ad73128e931b
+Devon Rice Jr.,22,Male,Contract,Press sub,2534.8,Bachelor,Family Home,Single,4,Healthcare,"['Music', 'Sports']",0c878539-2ca3-4a71-a057-75bcabad2010
+Beth Sanchez,27,Male,Fresh Graduate,Barrister,7454.5,Master,Family Home,Married,7,Technology,"['Photography', 'Reading', 'Music']",1d1a5c4d-960b-4684-aecd-50093e2c2065
+Margaret Mckee,30,Female,Employed,Market researcher,11983.92,Bachelor,Rent,Single,1,Finance,"['Reading', 'Gaming']",a5de8534-336f-4499-8f3f-7ee17ee3f71b
+Joshua Herman,25,Male,Employed,Counsellor,14164.42,Diploma,Family Home,Single,5,Technology,"['Fitness', 'Gaming', 'Reading']",b9dd9703-33c4-444a-aa33-6d848e05cc91
+Ryan Clark,22,Female,Employed,Public affairs consultant,3420.29,Diploma,Family Home,Married,6,Technology,"['Traveling', 'Gaming', 'Reading']",565dc964-63d0-4925-81ab-bafa6438919d
+Dr. Larry James,26,Male,Fresh Graduate,Dentist,7552.92,Master,Family Home,Married,0,Technology,['Photography'],a2242f87-78d5-429d-801a-d5e520d7c044
+Elizabeth Rice,24,Male,Employed,Logistics and distribution manager,11859.91,Bachelor,Rent,Married,3,Technology,"['Music', 'Photography', 'Cooking']",b17ca137-818d-494f-a426-44b8c699929e
+Robert Roth,23,Male,Fresh Graduate,Land,14033.12,Master,Rent,Married,8,Technology,"['Gaming', 'Traveling', 'Cooking']",08f56b63-6e8f-4433-9409-10107a408883
+Julie Mckenzie,29,Male,Contract,Community education officer,4487.78,Diploma,Rent,Married,1,Healthcare,['Music'],a112bb66-af7b-4e5c-b83f-d308458b5e8b
+Eileen Smith,24,Female,Fresh Graduate,Ranger/warden,7839.29,Diploma,Rent,Married,5,Finance,"['Sports', 'Photography']",eccf9422-1900-4fd8-8328-c9b3e084a9ee
+Jake Weber,21,Female,Employed,Financial manager,11130.72,Diploma,Rent,Married,8,Education,"['Reading', 'Fitness']",0660812a-2644-4188-82c0-f05250f176ad
+Joshua Porter,25,Male,Contract,Industrial/product designer,14268.05,Master,Rent,Single,1,Healthcare,"['Sports', 'Fitness', 'Cooking']",75fe35a4-b333-4849-b6c6-e2e3338d3b99
+Bryan Farley,27,Male,Employed,Health service manager,3072.93,Diploma,Rent,Single,4,Manufacturing,['Music'],a4bb2b48-9cdf-4ae3-a10f-2b5fd22b21ac
+Jose Mayer,25,Male,Employed,"Development worker, international aid",7582.5,Master,Rent,Single,9,Finance,"['Gaming', 'Fitness', 'Sports']",99a3348f-63d1-4cae-94a8-d9470b86db70
+Christina Davila,25,Female,Employed,Jewellery designer,11821.57,Master,Rent,Single,2,Education,"['Sports', 'Gaming']",0f3f0434-8598-47d5-b335-52177db2ab38
+Cynthia Martin,23,Male,Contract,"Surveyor, planning and development",14563.67,Diploma,Rent,Single,4,Finance,['Sports'],b161e55b-5c0b-4024-9adc-3df988767633
+Lisa Lowe,30,Female,Contract,"Geneticist, molecular",2828.96,Bachelor,Family Home,Single,8,Manufacturing,['Gaming'],68f4e572-d114-4b8f-8416-36ce463c98bf
+Angela Moore,26,Female,Contract,Community development worker,6719.95,Master,Family Home,Single,1,Finance,"['Reading', 'Music']",ee1dba23-b7eb-47e6-a9b0-fec19f219370
+Laura Parker,26,Male,Fresh Graduate,Product/process development scientist,11350.53,Master,Rent,Married,4,Education,['Reading'],d733be4d-b0a9-4d35-a2fd-49895cf429aa
+Mary Burke,24,Female,Contract,"Engineer, materials",12359.1,Master,Rent,Single,7,Finance,"['Music', 'Gaming']",17a0f539-b43d-480f-84df-a17346e2796f
+Leah Sosa,27,Female,Contract,Science writer,3853.08,Master,Family Home,Single,1,Healthcare,"['Photography', 'Reading', 'Music']",3e26d7c4-d3b3-419d-b9d3-b585930792d8
+Michael Levy,24,Male,Contract,Chief of Staff,7803.79,Diploma,Family Home,Single,3,Healthcare,['Photography'],08988cf6-bb65-46ce-9793-aeba096bc139
+Austin Adams,30,Male,Contract,Financial controller,9866.45,Master,Family Home,Married,7,Education,"['Photography', 'Cooking']",18b1db5d-cc66-4d0f-ba6f-be15a6a59d5e
+Melissa Lyons,26,Female,Employed,Technical sales engineer,14687.64,Diploma,Family Home,Single,1,Technology,['Sports'],1dcb99a0-8251-446f-b23c-4ceb386435a9
+Jacob Anderson,21,Male,Employed,Firefighter,4176.94,Diploma,Family Home,Single,5,Education,['Sports'],19a13865-efcd-4c04-b394-d7c3b07dbdcb
+Erin Campbell,29,Female,Contract,Social worker,5485.05,Master,Rent,Married,8,Manufacturing,['Photography'],2906b654-7d36-4d73-9566-1dae569f025b
+Jose Martinez,21,Female,Employed,Insurance account manager,10710.36,Master,Family Home,Married,0,Manufacturing,"['Fitness', 'Gaming', 'Photography']",367e5cea-9b9c-4724-bb9b-d6ec5b48b635
+Cindy Eaton,30,Female,Employed,Fisheries officer,13545.42,Master,Family Home,Married,3,Technology,"['Traveling', 'Gaming', 'Reading']",20f9e6b4-4339-4205-a179-095287039721
+Victoria Williams,25,Female,Employed,Fine artist,4274.79,Master,Family Home,Married,7,Finance,"['Photography', 'Gaming']",88f4574f-2fe1-4442-a94b-54b0cf115b3b
+Andrew Haney,25,Male,Contract,Research scientist (maths),5362.93,Bachelor,Rent,Married,2,Manufacturing,"['Reading', 'Fitness']",5057c322-d9be-4524-b5f6-5e1b735d6151
+Timothy Mack,26,Male,Fresh Graduate,Land,9659.33,Diploma,Rent,Single,5,Technology,"['Cooking', 'Gaming']",eb7b807e-d0c3-4a94-87fc-f2af8511319d
+Amanda Moore,21,Female,Fresh Graduate,Building surveyor,12512.9,Diploma,Rent,Single,6,Manufacturing,['Cooking'],da07c4dd-5b82-4437-8181-fa66befc0d46
+Nina Griffin,21,Female,Contract,Medical laboratory scientific officer,4879.81,Diploma,Family Home,Single,2,Finance,"['Fitness', 'Reading', 'Music']",ca912f9f-145e-46a4-85ea-0919550c23cd
+John Schultz,30,Male,Contract,Armed forces operational officer,6838.63,Bachelor,Family Home,Single,4,Education,"['Reading', 'Gaming']",0da1526f-3b7b-48fb-91a0-c77e5807a3ab
+Ryan Holder,30,Male,Contract,Maintenance engineer,9089.6,Diploma,Rent,Single,9,Healthcare,"['Photography', 'Gaming']",d15ddada-891b-40c8-a0ae-d87c29aaf557
+Benjamin Roy,23,Female,Contract,Art therapist,14899.35,Diploma,Rent,Single,2,Education,"['Traveling', 'Sports', 'Reading']",f4c928e6-34fe-4c82-a64a-28adb3f20934
+James Ferguson,27,Male,Fresh Graduate,International aid/development worker,3877.71,Diploma,Family Home,Married,4,Education,"['Photography', 'Fitness']",2063272e-0655-4da8-a568-1faf6c551497
+Andrea Bender,23,Male,Fresh Graduate,"Psychologist, prison and probation services",7856.69,Diploma,Family Home,Married,9,Manufacturing,"['Sports', 'Cooking']",fbb4d5cf-c288-4273-816f-1c38927f2514
+Deanna Vega,22,Male,Contract,Television floor manager,8283.52,Master,Rent,Single,1,Finance,['Fitness'],f684950e-8ccc-4493-b3fb-2718526d9b52
+Sophia Rodriguez,30,Male,Employed,Barrister,13727.77,Bachelor,Rent,Married,5,Education,"['Music', 'Cooking']",d1c7b882-f9ee-442c-98d3-9cc7d7d2859d
+Christina Roberts,24,Female,Fresh Graduate,Police officer,4498.5,Master,Family Home,Married,7,Finance,"['Music', 'Sports']",5a8a0ce3-febe-48c9-9869-35e7a2ad492d
+Holly Thomas,21,Male,Fresh Graduate,"Designer, furniture",5208.21,Diploma,Family Home,Single,0,Healthcare,['Photography'],fca2d350-4eed-4bc4-9b91-a3de545c6639
+Teresa Jones,22,Male,Fresh Graduate,Animal technologist,11343.97,Diploma,Rent,Married,5,Finance,['Gaming'],0e5df1af-7fde-49ee-8c45-01bcf9dfc07c
+Megan Ellis,27,Female,Contract,Human resources officer,13068.53,Diploma,Family Home,Married,9,Manufacturing,"['Gaming', 'Photography']",bf879d59-4ada-4c9f-8ac8-fff4786d90ff
+Brenda Myers,23,Male,Contract,Sports development officer,3779.05,Master,Rent,Single,1,Technology,['Sports'],2ea5ad45-096b-48be-b70b-eedd5ceffb9c
+Sandra Holmes,25,Female,Employed,Social worker,6575.48,Master,Family Home,Married,4,Manufacturing,"['Photography', 'Reading']",38224978-0404-4610-922a-ac5c0803e974
+Jennifer Blair,22,Male,Contract,Computer games developer,10418.32,Bachelor,Rent,Married,8,Manufacturing,['Gaming'],a8cf30d1-b0e5-4238-b415-fe23a7add83f
+Kenneth Hamilton,22,Female,Fresh Graduate,"Designer, television/film set",13411.19,Master,Family Home,Married,2,Finance,['Music'],3e07efc0-86c9-4284-9071-2b2e0db37a0b
+Nicholas Richard,21,Male,Employed,"Librarian, academic",3277.62,Master,Rent,Single,4,Healthcare,"['Photography', 'Cooking']",30337293-bc54-4ddc-a5be-5974e0a9b5b3
+Michael Watts,25,Male,Employed,Adult guidance worker,6415.72,Diploma,Family Home,Single,7,Manufacturing,"['Cooking', 'Traveling']",4b544bf7-d69c-407e-afb2-99b91b9dcb4c
+Julia Greene,22,Female,Employed,"Journalist, broadcasting",9755.76,Master,Rent,Married,1,Education,"['Photography', 'Reading', 'Gaming']",cc9ba26d-10aa-45ba-8ed5-d6105b7b60d0
+Christina Colon,30,Male,Fresh Graduate,Commercial horticulturist,14372.71,Master,Family Home,Single,5,Education,"['Traveling', 'Music']",2026c5f0-f676-4d0c-8fc1-7d4c632b24fa
+Christina Heath,26,Female,Employed,Immigration officer,4681.31,Master,Rent,Single,6,Education,['Traveling'],ea24fda8-6cd3-4fa4-a04d-1603a2fc1c49
+Allison Finley,25,Female,Fresh Graduate,Patent attorney,5553.91,Diploma,Rent,Single,1,Healthcare,"['Photography', 'Music', 'Sports']",0240dd70-26c7-49b5-96b9-f5c4add0add7
+Michael Martinez,24,Male,Fresh Graduate,Nutritional therapist,10031.14,Bachelor,Family Home,Single,5,Education,['Sports'],92d0b5a9-35f0-42d0-a8a9-7e0387bfe029
+Jose Meyer,22,Female,Fresh Graduate,Clothing/textile technologist,13541.36,Diploma,Rent,Married,8,Technology,"['Sports', 'Fitness']",52d0f7c4-d3f1-4365-a734-ffdb9fc5b5e7
+Justin Medina,22,Male,Contract,Midwife,4946.64,Master,Rent,Married,1,Manufacturing,['Music'],98cea4ce-e500-4e8d-9b98-e9c1a015aac4
+Joanna Price,29,Male,Fresh Graduate,Geoscientist,5466.36,Diploma,Rent,Single,3,Technology,['Fitness'],813bd4dc-eb8d-4bb0-b0e1-cb6ffc7e558f
+Angel Baxter,27,Female,Employed,Housing manager/officer,8173.47,Bachelor,Family Home,Single,8,Finance,['Music'],65aa7dab-5306-48f4-a84c-137a854e8a11
+Gwendolyn Ellison,27,Male,Contract,Special effects artist,13331.28,Master,Rent,Married,2,Education,['Reading'],acf3f04c-2404-4614-af09-41cec141e5d3
+Todd Marshall,24,Female,Contract,"Investment banker, corporate",3471.56,Bachelor,Rent,Single,4,Manufacturing,"['Fitness', 'Gaming']",79cca8d2-02d1-4f68-a043-a7aa76e6c9d9
+Megan Richardson,29,Male,Employed,"Embryologist, clinical",6900.54,Master,Family Home,Married,8,Finance,"['Gaming', 'Music', 'Reading']",b4e27b16-11d7-4f95-a9e4-f785cc8b56e2
+Julie Velasquez,26,Female,Contract,Purchasing manager,8624.11,Bachelor,Family Home,Married,1,Technology,"['Gaming', 'Fitness', 'Music']",5ec7dffb-c00c-495a-9d9c-fa960f267aa6
+Anthony Heath,28,Female,Contract,Textile designer,12025.58,Master,Family Home,Married,5,Education,['Reading'],889d87d3-f34c-4b20-ad9c-e1e1f639e76a
+Nichole Leonard,27,Female,Fresh Graduate,Garment/textile technologist,4589.07,Diploma,Rent,Single,8,Manufacturing,"['Fitness', 'Photography']",2efce045-192e-4de5-bdac-909df3fadce1
+Laura Reynolds,24,Male,Contract,Community education officer,7502.3,Master,Rent,Married,1,Education,"['Reading', 'Fitness']",dba5bbe4-dec5-4b71-9c38-0a95173e36ae
+Dr. Shari King MD,27,Female,Employed,Chief of Staff,9647.16,Bachelor,Family Home,Single,4,Healthcare,['Gaming'],6b84a9c8-91c2-428f-a6f3-860f3293be3e
+Brenda Clarke,28,Female,Fresh Graduate,Product/process development scientist,13723.64,Master,Family Home,Single,9,Healthcare,"['Gaming', 'Sports', 'Music']",0c7eb533-1229-4131-a2d8-cbdacb77f7a2
+Kimberly Bradley,26,Male,Fresh Graduate,Lawyer,4752.27,Bachelor,Family Home,Married,1,Education,['Cooking'],daafccf6-eebd-49d9-8c91-e986896c8cb9
+Kevin Howard,25,Male,Employed,"Engineer, civil (contracting)",6635.67,Bachelor,Family Home,Married,4,Finance,['Traveling'],0f253c99-3f59-4912-ada4-27599952678f
+Brian Hopkins,26,Female,Fresh Graduate,Proofreader,9876.59,Master,Rent,Married,7,Healthcare,"['Traveling', 'Fitness']",086bc5c6-e8a9-4c14-8225-91e73bafaa64
+Frances Johnson DDS,26,Female,Fresh Graduate,"Therapist, music",13231.63,Master,Family Home,Married,2,Finance,"['Reading', 'Music']",f31d343e-2712-4e16-a8fb-6c99b5c42572
+William Morris,25,Male,Fresh Graduate,Clinical psychologist,3591.35,Diploma,Rent,Single,3,Technology,['Fitness'],dae14d74-40be-4b77-b7c6-7458e65a019b
+Joseph Franklin,25,Female,Employed,"Programmer, systems",6671.24,Diploma,Family Home,Single,6,Finance,"['Gaming', 'Sports', 'Reading']",ccd254fe-e5ff-410c-b996-af32b7b14215
+Steven Cochran,29,Female,Employed,"Buyer, retail",11414.16,Diploma,Family Home,Single,2,Technology,"['Photography', 'Traveling']",741ba2ae-05bd-49b5-b4ad-38a65a1c9d4f
+Robert Phillips,27,Female,Employed,Geochemist,12422.9,Master,Family Home,Single,4,Education,['Gaming'],28787fbc-6f1a-428c-800a-aa3d2bd825dd
+Trevor Schmidt,27,Male,Contract,Civil Service administrator,2989.92,Diploma,Family Home,Single,6,Finance,['Sports'],8779cdab-2264-4286-b2eb-ddb2be5b0b94
+Gregory Williams,29,Female,Fresh Graduate,Theme park manager,5621.43,Bachelor,Family Home,Single,1,Technology,"['Gaming', 'Music', 'Cooking']",a6a8b18f-e249-447a-b459-2b8fb038306d
+Carol Hughes,29,Male,Contract,Freight forwarder,8362.38,Master,Family Home,Married,5,Technology,"['Music', 'Gaming']",4dc65a20-ebe6-4066-97ce-336ee550b446
+Jessica Maynard DDS,25,Male,Contract,Sports coach,12966.84,Diploma,Family Home,Married,7,Healthcare,['Cooking'],645ca1f3-6377-4c95-9292-5821d0db966e
+Tanya Turner,28,Female,Contract,"Nurse, learning disability",3831.34,Bachelor,Family Home,Married,0,Education,['Gaming'],a3fcf16e-2a8a-424b-9558-6ae42153fb3b
+John Yang,24,Male,Contract,Estate manager/land agent,5166.68,Bachelor,Rent,Married,5,Technology,"['Fitness', 'Sports']",b4f97383-4625-4bc0-b340-2062e054e8ab
+Tricia Flores,22,Male,Employed,"Administrator, Civil Service",10797.16,Bachelor,Family Home,Single,6,Finance,"['Cooking', 'Photography', 'Gaming']",d71a9f8d-fe18-4936-bbec-d10c6d813707
+Leslie Ramirez,23,Male,Employed,"Engineer, aeronautical",13643.14,Bachelor,Family Home,Married,0,Healthcare,['Traveling'],0e791cb5-6a91-418f-a498-649970e5c8b3
+Mr. Mike Taylor,21,Female,Employed,Clinical molecular geneticist,3373.96,Master,Family Home,Single,3,Manufacturing,"['Traveling', 'Photography', 'Reading']",7e224cae-56c5-4ad9-909a-e6e3855e8293
+Hannah Johnson,28,Male,Contract,Radio broadcast assistant,7623.54,Bachelor,Rent,Single,9,Manufacturing,"['Sports', 'Traveling', 'Cooking']",182ed61e-96e3-4f05-bd63-a7d334b43190
+Robert Miles,21,Male,Contract,Health service manager,11870.57,Master,Rent,Married,0,Healthcare,['Cooking'],8050df6c-cc7d-4b0e-a11e-8a91ef59c9f7
+Julia Young,27,Female,Employed,IT sales professional,13004.36,Bachelor,Family Home,Single,3,Healthcare,"['Traveling', 'Music', 'Sports']",8fc16e74-3337-43aa-aa4c-340bafc63b7c
+Melissa Olson,25,Male,Fresh Graduate,Tourist information centre manager,3137.89,Diploma,Rent,Married,9,Manufacturing,"['Photography', 'Sports']",018e3861-ca31-49d6-a48b-0360d3f9b972
+Julie Pope,21,Female,Contract,"Social research officer, government",7612.43,Diploma,Family Home,Married,0,Technology,"['Gaming', 'Sports', 'Photography']",3f2b1bb7-168d-4213-aa3f-d860b5b70969
+Michelle Soto,29,Female,Contract,Quality manager,9934.46,Bachelor,Family Home,Married,4,Technology,"['Traveling', 'Sports', 'Reading']",05f6c018-e457-4d81-8daf-76e470678e99
+Monique Cole,22,Male,Contract,Museum/gallery exhibitions officer,13249.28,Bachelor,Family Home,Single,9,Healthcare,"['Music', 'Photography']",db74aa62-ffd3-404c-a496-919139ecf8ab
+Jacob Clay,21,Male,Employed,Operational investment banker,4661.22,Bachelor,Family Home,Single,0,Manufacturing,"['Traveling', 'Gaming']",399cd113-d347-428a-acb7-1670382ac7a3
+Wendy Carpenter,21,Male,Employed,Geophysicist/field seismologist,7992.44,Diploma,Family Home,Married,4,Manufacturing,['Music'],54805c9b-2017-4980-b459-dbd640a43e1c
+Ricky Lam,26,Male,Employed,Merchant navy officer,9751.12,Bachelor,Rent,Single,6,Education,['Cooking'],7c5c3eb4-31ea-4895-9199-1f3349b94a0f
+Jay Watson,22,Female,Contract,Site engineer,14698.64,Bachelor,Family Home,Single,1,Education,"['Reading', 'Fitness', 'Cooking']",709936d8-5a52-4e59-9c88-9528cec6bf6f
+Melissa Shaffer,27,Male,Employed,Patent attorney,4704.46,Diploma,Family Home,Single,4,Manufacturing,"['Traveling', 'Reading']",2db2ad7e-f947-4713-8756-575a86ccc8b4
+Billy Anderson,23,Male,Employed,Barrister,5232.03,Master,Rent,Married,6,Manufacturing,"['Traveling', 'Music']",35a90527-2ca7-4685-88fe-b97ee78fd7ac
+John Webster,27,Male,Fresh Graduate,Geophysicist/field seismologist,10603.79,Diploma,Rent,Married,2,Manufacturing,['Reading'],4f5e9ab0-1b35-448b-b32d-8e6394a1da9a
+Kayla Brown,26,Female,Contract,Town planner,13019.57,Master,Rent,Single,3,Manufacturing,"['Cooking', 'Reading', 'Sports']",16aba3c0-d1d8-4470-9e0b-684263af00f7
+Mary Jones,27,Female,Contract,"Engineer, manufacturing",4149.04,Diploma,Rent,Married,6,Healthcare,['Gaming'],9bfb7a9a-2621-4c7e-9386-cd082afbf206
+Ian Smith,23,Female,Contract,"Journalist, newspaper",6735.3,Diploma,Rent,Married,2,Technology,"['Reading', 'Cooking', 'Photography']",372e05d6-2749-41ca-86fc-37900c7fa4e3
+Samuel Chen,27,Female,Employed,Fine artist,10138.2,Diploma,Rent,Single,5,Healthcare,['Fitness'],2727d3f1-ca64-4df4-b891-cbd68b4986cb
+Anthony Silva,21,Female,Contract,Advice worker,13957.95,Master,Family Home,Married,6,Manufacturing,"['Gaming', 'Reading']",e09bd648-442f-4c06-8597-978b633c5587
+Mrs. Laura Dunlap,30,Female,Contract,Transport planner,3689.73,Master,Family Home,Married,2,Technology,"['Reading', 'Music', 'Gaming']",f43086a7-df4f-499a-b7af-5fe19f8985c0
+Shelly Garcia,25,Male,Fresh Graduate,Water quality scientist,5435.08,Master,Rent,Single,3,Technology,"['Music', 'Photography', 'Traveling']",41236078-5502-4cc2-ba7f-48158257df36
+Timothy Mosley,30,Male,Employed,Multimedia specialist,9228.92,Master,Rent,Married,6,Manufacturing,"['Reading', 'Gaming', 'Sports']",3af51c55-b92c-4069-b3a0-7b76f2f5a8c7
+Laura Hudson,30,Female,Fresh Graduate,"Engineer, structural",13200.6,Diploma,Family Home,Married,2,Technology,"['Photography', 'Traveling', 'Cooking']",65e9ceca-db3e-4814-ae05-bda74b800933
+Jason Pope,21,Male,Contract,Illustrator,3663.58,Master,Rent,Married,3,Education,"['Gaming', 'Music']",90ccf05e-d68e-4076-afa2-717bcdf56a56
+Kristen Simmons,28,Male,Contract,Hospital pharmacist,7930.44,Bachelor,Family Home,Married,8,Finance,"['Traveling', 'Reading', 'Fitness']",98d0aeee-5164-4a3c-aa4f-a25f0f2ba2d3
+Courtney Shaffer,29,Female,Contract,Land/geomatics surveyor,8055.61,Diploma,Family Home,Married,0,Education,"['Sports', 'Traveling']",d8608727-4462-4990-819f-51935ad0cebd
+Tammy Hughes,27,Female,Employed,Optometrist,12299.75,Diploma,Rent,Married,3,Healthcare,['Music'],7e4fd7ee-e600-4514-9dcc-c8f0699a7e2b
+Jennifer Lane,25,Male,Fresh Graduate,Lexicographer,4027.1,Master,Rent,Single,6,Technology,"['Fitness', 'Gaming']",ae8a1c01-0731-4101-b8f6-0adafd0bf340
+Brian Moore,25,Female,Contract,Retail banker,6415.78,Master,Family Home,Single,1,Healthcare,['Photography'],a0c8f326-b068-4b5f-b674-26ac819d7038
+Patricia Martinez,29,Female,Contract,Art therapist,8268.13,Diploma,Family Home,Single,5,Manufacturing,"['Sports', 'Cooking', 'Gaming']",869a6b4c-4dcd-4919-b3d5-7f18ac166829
+Olivia Moody,26,Male,Contract,"Research officer, political party",12145.47,Diploma,Family Home,Married,9,Technology,"['Photography', 'Traveling']",1ddcb5b6-3965-455c-925c-75b74c23c43f
+William Martin,22,Male,Contract,Garment/textile technologist,4914.75,Master,Family Home,Single,2,Technology,"['Gaming', 'Traveling', 'Fitness']",92401903-2c31-41d0-882b-0ac826fe33cf
+Jennifer Cooke,24,Female,Contract,"Designer, textile",6934.99,Bachelor,Rent,Married,5,Education,['Music'],ead3a40f-4129-44a7-922f-705600ac30ec
+Michelle Gates,22,Male,Contract,Public relations account executive,8985.13,Master,Rent,Married,9,Technology,"['Reading', 'Cooking', 'Sports']",e7e9f716-3f16-4af9-89d2-3920cc311872
+Reginald Reed,22,Female,Contract,"Engineer, materials",12461.03,Master,Family Home,Married,2,Healthcare,['Music'],147fae61-48c7-4dc4-bf45-58139c2f44eb
+Bradley Graham,29,Male,Fresh Graduate,Occupational hygienist,4774.8,Bachelor,Rent,Single,4,Manufacturing,"['Cooking', 'Reading']",27942f46-bd3b-4912-ba63-e9804e38248b
+Mary Smith,27,Male,Contract,"Teacher, English as a foreign language",6807.06,Bachelor,Family Home,Single,7,Finance,"['Sports', 'Reading']",915f2816-cccf-49cc-a024-f902b925be20
+Michele Williams,26,Female,Employed,Electrical engineer,10541.5,Master,Rent,Single,1,Finance,"['Music', 'Cooking', 'Gaming']",9eaccf3e-ccf3-42ef-af11-9dbab68bb9bd
+Amanda Freeman,22,Female,Fresh Graduate,Insurance underwriter,12136.04,Bachelor,Rent,Single,3,Healthcare,['Reading'],569d0f6f-ed4e-4d74-a3ab-abc2bdcb194c
+Hannah Tran,27,Male,Fresh Graduate,Ship broker,3095.52,Bachelor,Rent,Married,7,Finance,"['Fitness', 'Music', 'Sports']",16b7627c-cd36-466c-b0dc-90ace4d33fc3
+Tina Blanchard,22,Male,Fresh Graduate,Graphic designer,6137.03,Master,Rent,Single,0,Finance,"['Sports', 'Gaming', 'Traveling']",e81461da-4d99-44fe-9f18-e259da8a0328
+Kimberly Nelson,23,Male,Employed,Lobbyist,9197.97,Bachelor,Family Home,Single,3,Healthcare,"['Music', 'Photography', 'Cooking']",b7b0e2f5-40b6-402d-b515-a58ca43439be
+Todd Moore,24,Male,Employed,Print production planner,13281.29,Diploma,Family Home,Single,6,Education,['Fitness'],00602000-b67b-4d7c-8cf7-3fecd320fd04
+Kayla Roman,30,Male,Fresh Graduate,Haematologist,4828.27,Diploma,Rent,Married,1,Technology,['Gaming'],c0f7ec4c-f67a-43c5-bc43-739e957ce369
+Frederick Collier,21,Female,Contract,"Journalist, newspaper",7170.18,Diploma,Family Home,Married,5,Finance,"['Gaming', 'Traveling']",0538b0bd-8020-4d21-aed6-431c680670b2
+Heather Alvarado,30,Male,Fresh Graduate,Quarry manager,11817.19,Diploma,Family Home,Single,6,Technology,"['Reading', 'Photography']",2fce4b3f-40e8-4b89-8003-652fd68c3f30
+Mr. Shane Rosario DDS,23,Female,Contract,Clinical cytogeneticist,14284.67,Diploma,Family Home,Married,2,Manufacturing,"['Music', 'Sports', 'Fitness']",cac414b1-9702-45e5-ba0a-79dc271d1f84
+William Mitchell,28,Female,Employed,Ranger/warden,4319.08,Bachelor,Family Home,Married,4,Technology,"['Cooking', 'Music']",857137e9-0e72-4030-93b4-d9600a097088
+Kimberly Lynn,26,Male,Contract,Immunologist,5350.06,Diploma,Rent,Married,6,Finance,"['Cooking', 'Fitness']",9b0c924d-1060-45d5-8d67-3637b6a5894b
+James Bass,21,Male,Employed,"Pharmacist, hospital",11047.93,Master,Family Home,Single,2,Finance,"['Cooking', 'Photography', 'Sports']",832aaeea-117b-4197-b63f-9e993a7bb2a3
+Loretta Molina,24,Female,Fresh Graduate,Publishing rights manager,13905.61,Diploma,Rent,Single,3,Manufacturing,"['Reading', 'Traveling', 'Fitness']",cfb808e5-2b97-4fa2-a574-42a0a02a1c4d
+Joe Arnold,28,Male,Contract,Bookseller,2798.88,Diploma,Family Home,Married,7,Technology,"['Fitness', 'Traveling']",af4a7a14-9171-4472-9fbd-4739da8437b4
+Michael Cole,25,Male,Employed,Lobbyist,6993.97,Diploma,Family Home,Married,0,Education,"['Sports', 'Music', 'Photography']",4a228af5-1035-4bb0-a1ae-8194d6e6f0fd
+Mrs. Kathryn Russell,23,Male,Fresh Graduate,"Programmer, multimedia",8385.41,Diploma,Rent,Married,4,Manufacturing,['Photography'],c7e01a23-d333-46eb-8164-006019665eba
+Christian Rosario,26,Female,Fresh Graduate,Network engineer,12124.48,Bachelor,Rent,Single,7,Technology,"['Traveling', 'Fitness', 'Music']",d20cdbea-ee11-4b25-a3dd-f19084d257ab
+Gloria Rocha,28,Female,Contract,"Therapist, art",4803.56,Bachelor,Family Home,Married,0,Technology,"['Photography', 'Music', 'Cooking']",ddf1274f-ee5b-452b-8f9e-536487889b58
+Christina Jones,27,Female,Contract,"Engineer, electrical",5262.71,Master,Rent,Single,3,Healthcare,"['Gaming', 'Cooking']",cd92490b-acc0-477e-84b5-ac0b40d55228
+Patricia Holmes,28,Male,Fresh Graduate,Drilling engineer,10428.51,Bachelor,Family Home,Single,7,Education,"['Sports', 'Gaming', 'Fitness']",e19ecebb-3b36-46cd-b92f-f2ecc06f9871
+Tina Carpenter,24,Female,Employed,Archivist,13563.7,Bachelor,Rent,Single,0,Manufacturing,"['Cooking', 'Fitness']",3842efc9-5c4e-4796-9ff9-53403b4b1339
+Edward Knight,29,Female,Contract,Systems developer,4455.17,Diploma,Family Home,Single,5,Technology,['Cooking'],5a6b133d-9910-4b62-8b48-d52ab8fe4141
+Jerry Bright,30,Female,Employed,"Accountant, chartered public finance",7722.78,Diploma,Rent,Single,8,Technology,"['Cooking', 'Music']",99b2538e-7b69-4d10-97ae-345138fa61f9
+Travis Rodriguez,30,Female,Employed,"Engineer, civil (contracting)",8888.03,Diploma,Family Home,Married,2,Finance,['Gaming'],74fcbad9-cdc5-44e3-b370-7a06bce527c5
+Amy Barr,24,Male,Employed,Tree surgeon,12209.69,Master,Rent,Single,5,Healthcare,"['Sports', 'Photography']",f7800c9f-5498-4777-9ff7-b043e7df93ef
+Benjamin Meyer,22,Male,Fresh Graduate,"Copywriter, advertising",2767.42,Diploma,Family Home,Married,7,Finance,"['Traveling', 'Music']",7b7b435b-2111-485e-b7fe-dcd888ec21f4
+Maria Woodward,21,Male,Fresh Graduate,Furniture designer,7675.47,Diploma,Rent,Married,0,Education,"['Gaming', 'Fitness']",92ae61a6-d5f9-4c7b-9cf0-71494d5f4b8e
+Adam Murray,27,Male,Employed,Administrator,10800.53,Diploma,Family Home,Single,5,Healthcare,"['Sports', 'Music']",00c0e163-4a67-4f7d-adfd-3a5d515fdf3f
+Robert Morris,26,Female,Employed,"Engineer, communications",13508.37,Diploma,Family Home,Single,6,Education,"['Sports', 'Cooking', 'Music']",aa54ba0c-aab9-4de6-af3c-52e856389d98
+Christina Burke,21,Male,Fresh Graduate,Air traffic controller,3878.91,Diploma,Family Home,Married,0,Technology,"['Sports', 'Gaming']",c61eb4e9-4854-4265-ba76-8fe3120a74a0
+Nicholas Williams,21,Male,Fresh Graduate,Legal secretary,6957.19,Diploma,Family Home,Single,4,Manufacturing,"['Fitness', 'Sports', 'Gaming']",c1fced79-72fe-40d9-9b51-e847a9b41198
+James Johnson,27,Male,Contract,"Journalist, magazine",11955.76,Master,Family Home,Single,9,Finance,"['Music', 'Reading']",733abcbc-928b-45cc-a288-ef4aa5953a03
+Daniel Stein,22,Female,Employed,Data scientist,14419.97,Bachelor,Rent,Single,1,Finance,"['Music', 'Photography', 'Fitness']",bd60c770-60ed-41be-a0fc-db77ce1b0b77
+Mark Kim,27,Male,Fresh Graduate,"Engineer, petroleum",3463.18,Bachelor,Family Home,Single,5,Technology,"['Cooking', 'Music', 'Fitness']",d12be4a3-aa80-4a3b-b242-a68a6545b106
+Ruben Jones,22,Male,Contract,Magazine journalist,5958.88,Master,Family Home,Single,9,Healthcare,['Traveling'],33856d8c-b905-470d-a089-d11080758773
+Mark Robinson,27,Female,Contract,Clothing/textile technologist,11693.67,Master,Rent,Single,1,Finance,['Cooking'],32a092f5-3212-4863-81d7-8c1c324cdcf8
+Christopher Leon,21,Male,Contract,Tour manager,13294.17,Diploma,Rent,Married,4,Manufacturing,"['Traveling', 'Photography', 'Gaming']",a0fc9db4-ee3a-43b3-8de6-90fdad3bd7d1
+Natalie Lloyd,29,Male,Fresh Graduate,Broadcast engineer,4612.29,Diploma,Rent,Single,7,Education,"['Cooking', 'Photography']",5e5d417a-c84f-4310-991e-a5b53be1c57a
+Taylor May,25,Female,Employed,Contractor,5990.05,Master,Family Home,Married,1,Education,"['Traveling', 'Music', 'Fitness']",8a0157fb-8929-4c14-b213-c1097b58558d
+Ann Wallace,27,Female,Employed,Civil Service fast streamer,9500.78,Diploma,Family Home,Single,5,Technology,"['Sports', 'Reading']",8f89d9b3-8601-4159-b714-01aad8992cf2
+Jessica Williams,28,Male,Contract,Clinical cytogeneticist,13768.37,Bachelor,Family Home,Married,7,Manufacturing,"['Reading', 'Traveling', 'Music']",a76eaa54-08ac-48fd-bcde-4e7b6421c052
+Elizabeth Dickerson,26,Male,Contract,"Engineer, energy",3137.04,Master,Family Home,Married,1,Education,"['Traveling', 'Photography']",f1264064-5517-4e96-a8de-e50bc11b05ca
+Jeffrey Lawrence,28,Female,Contract,Civil Service fast streamer,5558.55,Diploma,Family Home,Single,5,Education,"['Fitness', 'Gaming']",8a3f1945-e424-46b9-a537-62fe1c4e29d1
+Dawn Greer,30,Male,Fresh Graduate,"Surveyor, mining",10510.3,Bachelor,Family Home,Married,6,Healthcare,"['Traveling', 'Cooking', 'Reading']",b8f69632-465c-4f37-af11-73d5afe9be6a
+Jennifer Sims,29,Female,Employed,Microbiologist,13113.38,Master,Family Home,Married,0,Healthcare,['Traveling'],9f2596ad-8d79-4536-82e9-8baa5c7f7925
+Misty Allen,28,Female,Fresh Graduate,Politician's assistant,4236.09,Master,Family Home,Married,5,Manufacturing,['Photography'],e5bdbba4-bee4-40ca-b303-c0e5be7ea0b7
+Daniel Benson,29,Male,Employed,"Engineer, automotive",5240.43,Master,Family Home,Single,6,Education,['Traveling'],35305eee-3d0f-40e4-9786-762d36339665
+Susan Alvarado,29,Female,Fresh Graduate,Bookseller,10332.21,Bachelor,Rent,Married,0,Technology,"['Photography', 'Fitness']",8da92171-49c2-42fd-bf6a-e3e29cd2893d
+Nicholas Jones,21,Female,Employed,"Social research officer, government",12622.58,Master,Family Home,Married,4,Education,['Music'],0512feca-5e84-4217-8e8e-8fe2516104ee
+Joseph Ross,30,Female,Employed,Television floor manager,3587.11,Bachelor,Rent,Married,9,Education,['Reading'],4ff813b0-3506-4edd-a492-19aafdfe69a9
+John Gomez,27,Male,Fresh Graduate,Biomedical scientist,7597.18,Master,Rent,Married,1,Manufacturing,"['Sports', 'Gaming', 'Music']",21aba3de-d392-4250-8b1b-fcc23f8790ae
+Shelley Snyder,22,Male,Employed,"Conservation officer, nature",9978.53,Master,Family Home,Single,5,Education,"['Sports', 'Gaming', 'Fitness']",444c2ef0-de17-4026-86fd-c8d877e3ecd0
+Christine Wood,21,Female,Contract,"Designer, interior/spatial",13698.35,Bachelor,Rent,Single,6,Technology,"['Traveling', 'Photography']",4be46443-94a3-4e5b-9d00-fd5555b21726
+Robert Wilson,30,Female,Contract,Health and safety adviser,2973.71,Master,Rent,Married,1,Healthcare,"['Gaming', 'Fitness', 'Reading']",cdf0639b-c20f-45e9-91b2-32e41457b469
+Christopher Duke,24,Female,Fresh Graduate,Broadcast presenter,6488.94,Bachelor,Family Home,Single,4,Finance,['Sports'],27169278-5daa-4e1a-8080-fa1842ecbf67
+Mary Williams,30,Female,Employed,Advertising copywriter,11218.65,Master,Rent,Married,6,Healthcare,['Cooking'],98ca46e8-dc3e-4f45-8107-f17e3086c10c
+John Wagner,24,Male,Fresh Graduate,"Surveyor, insurance",13730.71,Diploma,Rent,Married,0,Healthcare,"['Cooking', 'Sports', 'Reading']",83e18439-1fff-43aa-80f6-48d51492fdb5
+Shannon Jackson,22,Male,Fresh Graduate,Product designer,3022.91,Bachelor,Family Home,Single,4,Manufacturing,"['Sports', 'Fitness']",34a41733-5d66-4d34-95ee-5906679b4e32
+James Romero,28,Male,Contract,Technical brewer,7600.02,Master,Rent,Married,8,Finance,"['Reading', 'Music', 'Sports']",b582112e-cbeb-4222-9716-f82d6e1ea30b
+Mitchell Ibarra,27,Male,Fresh Graduate,Analytical chemist,8866.63,Bachelor,Rent,Single,0,Technology,['Reading'],d84841b9-4b02-46d0-b361-079f6894e72c
+Nancy Jones,23,Female,Employed,"Geneticist, molecular",14274.41,Bachelor,Family Home,Single,3,Education,"['Sports', 'Traveling', 'Gaming']",6f1b29ab-396a-4613-ac3e-60418bce3644
+Taylor Bullock,21,Female,Fresh Graduate,"Designer, industrial/product",4051.89,Bachelor,Family Home,Married,7,Technology,"['Sports', 'Cooking', 'Music']",51f991cc-6961-4360-8082-800d8114bba2
+Deborah Cook,28,Male,Fresh Graduate,Fast food restaurant manager,7506.38,Master,Family Home,Single,0,Healthcare,"['Music', 'Traveling']",07475999-d3d8-4514-b9f6-139287d98bf5
+Bianca Johnson,24,Male,Contract,Chief Executive Officer,8530.51,Bachelor,Family Home,Single,4,Technology,['Cooking'],2fe77c0a-a17e-4336-87d6-9cf81e35acb2
+Brandon Walker,27,Male,Employed,"Surveyor, quantity",12079.01,Master,Rent,Single,6,Education,"['Cooking', 'Fitness', 'Gaming']",a121e699-6141-4bcc-9235-d7403be2ff87
+Katelyn Miranda,21,Female,Employed,Aeronautical engineer,4730.96,Bachelor,Family Home,Married,0,Technology,"['Music', 'Traveling']",b2bc54f7-5ef8-401f-9af1-5070f4b40fef
+Kenneth Howell,24,Female,Fresh Graduate,Probation officer,7706.35,Bachelor,Rent,Married,3,Technology,['Traveling'],894a18ce-3776-4dad-a6df-f1878b98877e
+Patricia Nelson,25,Male,Employed,Quantity surveyor,11896.35,Bachelor,Family Home,Married,8,Education,"['Sports', 'Cooking', 'Music']",4312c377-b845-4366-a9e9-eb95df70b9f2
+Joyce King,23,Female,Contract,Podiatrist,13124.46,Master,Rent,Married,1,Education,"['Sports', 'Fitness', 'Cooking']",7030b471-abcd-4ceb-9fd7-357dc1052422
+James Baker,29,Female,Fresh Graduate,Sales promotion account executive,4801.13,Bachelor,Family Home,Married,5,Technology,"['Reading', 'Gaming']",defb5b4e-b6f3-40e3-9b56-325edcffc38d
+Lauren Meyers,23,Female,Employed,Professor Emeritus,5200.67,Bachelor,Rent,Single,8,Manufacturing,"['Music', 'Sports']",0d51e75f-dea1-4b18-bc44-46d874434f73
+Heather Brown,29,Male,Employed,Pension scheme manager,11481.72,Master,Rent,Single,0,Education,['Music'],8c8e1bed-b35c-4d71-98cd-127b1dce5d42
+Scott White,22,Male,Fresh Graduate,Multimedia programmer,13813.52,Diploma,Rent,Married,4,Technology,"['Sports', 'Reading']",9c1588bd-185b-47ad-82fa-32ffe357e0fa
+Melissa Preston,29,Female,Employed,"Surveyor, hydrographic",4220.97,Bachelor,Rent,Single,6,Healthcare,"['Gaming', 'Reading', 'Music']",71f56c39-7c88-4577-88bc-96c5ef12ee38
+Dr. Michael Savage MD,23,Male,Fresh Graduate,Administrator,7335.23,Bachelor,Family Home,Single,0,Manufacturing,['Photography'],aa4a8213-df00-4444-9cba-6a618760027e
+Mrs. Angela Brown,26,Female,Fresh Graduate,"Conservator, museum/gallery",9024.08,Bachelor,Rent,Married,5,Finance,"['Music', 'Reading', 'Cooking']",a04dcfaf-8d6a-494a-8288-ab9a57769290
+Maria Wagner,28,Male,Employed,Mining engineer,12068.5,Diploma,Family Home,Single,8,Finance,['Cooking'],98d9c53e-541f-4894-b931-371abfc3cbbc
+Katherine Hernandez,22,Male,Contract,"Pharmacist, community",3965.82,Diploma,Rent,Single,1,Education,['Fitness'],97c299e1-d740-4756-8de8-3db92446f073
+Tammy Wilson,22,Male,Contract,Adult nurse,7011.78,Bachelor,Family Home,Single,4,Healthcare,"['Reading', 'Gaming', 'Cooking']",c2571e98-653d-45b6-8d80-c5e58e16d8a9
+Cody Cochran,27,Female,Contract,"Development worker, international aid",8851.93,Bachelor,Rent,Married,9,Technology,"['Music', 'Photography', 'Reading']",bcf72115-dcb4-4bf7-a593-adfdffbb059a
+Dr. Elizabeth Wilson,27,Male,Fresh Graduate,"Surveyor, planning and development",14933.09,Diploma,Family Home,Single,1,Technology,"['Gaming', 'Sports', 'Music']",f06e71dc-4cc5-4db6-ad35-52bb2501d4be
+Diana Armstrong,26,Female,Contract,Research scientist (maths),2619.32,Bachelor,Family Home,Single,5,Healthcare,['Traveling'],199f9657-b2a6-4408-ada5-651ad2febece
+Thomas Taylor,26,Female,Employed,Special educational needs teacher,6706.93,Bachelor,Family Home,Single,8,Manufacturing,"['Music', 'Fitness', 'Traveling']",5af4321d-4785-48f2-b15b-745796b3dc2c
+Theresa Hammond,24,Male,Contract,"Nurse, children's",9541.85,Bachelor,Rent,Married,0,Technology,"['Traveling', 'Fitness']",0dd79553-6416-464c-9a08-c1b0d6945051
+Tyler Montgomery,23,Female,Contract,Herbalist,13615.75,Master,Rent,Single,4,Manufacturing,"['Sports', 'Reading', 'Gaming']",bdf4d7bf-f76a-4175-b6f9-4edd0c80b5e6
+Gina Smith,28,Female,Contract,Copy,4750.37,Master,Rent,Single,9,Healthcare,['Music'],3224808e-5d86-4d9f-80b1-62bfe48955eb
+Allison Moore,26,Male,Fresh Graduate,Operations geologist,5656.44,Master,Family Home,Married,2,Manufacturing,"['Fitness', 'Reading']",74bc5d8d-10db-4253-923c-dc058d8efcf2
+Barry Stone,29,Male,Fresh Graduate,Media buyer,11234.02,Diploma,Rent,Married,3,Finance,"['Traveling', 'Fitness', 'Photography']",9ecaf911-e227-4f4b-909b-e27df02cbe81
+Brandy Davis,24,Male,Contract,Jewellery designer,12885.31,Master,Rent,Married,7,Technology,"['Sports', 'Photography', 'Fitness']",2f0ad8a1-5bf0-4960-a6ab-4117f7edeb8b
+Mary Burnett,30,Female,Fresh Graduate,Chief Financial Officer,4546.46,Bachelor,Family Home,Single,0,Manufacturing,"['Photography', 'Traveling', 'Music']",f219e6e0-a741-4208-aa6c-05425cd7998a
+Tina Chavez,21,Male,Fresh Graduate,"Surveyor, minerals",7037.26,Bachelor,Family Home,Married,4,Healthcare,"['Music', 'Gaming', 'Cooking']",9c7c4acc-e3a1-4aa9-a68f-892fb9cbe5b7
+Cindy Moreno,25,Female,Contract,Research scientist (medical),11804.22,Master,Rent,Single,6,Finance,"['Gaming', 'Music', 'Photography']",dd790da7-8e36-44cc-ab20-959c85d8a779
+Erin Miller,25,Female,Fresh Graduate,Air cabin crew,13933.16,Bachelor,Family Home,Single,2,Manufacturing,['Cooking'],7bae2be9-9e4d-45cd-b8fc-794a0e55e0e6
+Jordan Lynn,21,Female,Contract,Associate Professor,3385.54,Master,Family Home,Single,3,Technology,['Music'],7a2090c9-4aea-4346-9b72-8cc2b5b0ec67
+Jay Hopkins,29,Male,Employed,Dispensing optician,7639.92,Diploma,Rent,Married,9,Technology,"['Music', 'Sports']",fbf66799-a8c1-46e6-b315-04a551ef64e7
+David Mitchell DDS,25,Female,Fresh Graduate,Health and safety inspector,11027.28,Bachelor,Rent,Married,0,Technology,"['Gaming', 'Traveling', 'Cooking']",660d02f4-12f5-4989-87a5-2a7348d7a27d
+Walter Hart,30,Female,Employed,Fitness centre manager,12371.03,Master,Rent,Single,5,Manufacturing,['Music'],7ba6df7a-77a6-4318-a766-28fac009890f
+Joshua Castro,28,Female,Employed,"Therapist, speech and language",3979.09,Diploma,Family Home,Single,9,Healthcare,"['Cooking', 'Photography']",2db1983b-665d-4e65-bd81-1aae1079cb65
+Timothy Fisher,25,Male,Employed,Gaffer,5626.36,Bachelor,Rent,Married,0,Finance,"['Gaming', 'Sports']",fc9ab75f-1fb0-445b-827f-f8c22b37c1a0
+Jessica Clark,30,Male,Fresh Graduate,Exhibition designer,8536.48,Master,Family Home,Married,4,Finance,['Reading'],ba4400e3-9315-421d-b294-793638fd8958
+Taylor Harris,24,Male,Fresh Graduate,Insurance underwriter,13478.37,Diploma,Family Home,Married,7,Technology,['Photography'],07c4569f-687b-4507-848b-ad6eeadde676
+Linda Merritt,28,Male,Fresh Graduate,Trade union research officer,4321.38,Master,Rent,Single,0,Education,['Reading'],852c6d56-c57b-498d-971b-c34cc9f7ee35
+Stacey Jones,30,Female,Fresh Graduate,Chartered loss adjuster,5044.43,Diploma,Family Home,Single,4,Healthcare,"['Cooking', 'Music', 'Fitness']",1689a513-0ffc-45e3-afc4-a05b691a76bf
+Lisa Klein,29,Female,Employed,Insurance broker,10298.5,Bachelor,Rent,Single,9,Manufacturing,"['Cooking', 'Music']",277d2cd2-ae0e-46a2-af7b-75ee785aaba1
+Diana Miller,27,Female,Employed,Licensed conveyancer,14059.69,Bachelor,Rent,Married,0,Healthcare,"['Sports', 'Fitness']",afd756ee-0e01-46b7-8019-b43278e6ed7e
+Kathryn Rivas,22,Male,Employed,Equities trader,4470.57,Diploma,Rent,Single,5,Manufacturing,"['Reading', 'Gaming']",e156c223-72a6-4ec8-b2e1-21bf89a1098f
+Jessica Hernandez,23,Male,Fresh Graduate,Government social research officer,5844.62,Bachelor,Rent,Married,7,Healthcare,"['Traveling', 'Fitness']",7563a11b-73af-410e-a1a9-874eb2a3a6a3
+Frank Nichols,28,Female,Employed,Health service manager,10853.58,Diploma,Rent,Married,0,Education,['Cooking'],f5fab7b0-7163-4e42-9e61-34f98fe67ef5
+Peggy Jacobson,25,Female,Employed,"Horticulturist, commercial",13699.85,Bachelor,Family Home,Single,5,Healthcare,"['Fitness', 'Sports', 'Music']",f31d03cb-7081-4e24-b3b1-21f17fc93d49
+Brittany Baker,24,Male,Contract,"Accountant, chartered certified",3818.21,Master,Rent,Married,6,Finance,['Reading'],a3e86a79-17e1-4028-8624-53d0a5de31eb
+Jordan Russell,24,Male,Employed,Community arts worker,6921.85,Diploma,Family Home,Married,1,Education,"['Reading', 'Sports']",11f76f2f-9d7e-43e2-8191-dbbfa374ba91
+Donald Gibbs,24,Female,Fresh Graduate,Statistician,8563.89,Diploma,Rent,Married,4,Education,"['Photography', 'Traveling', 'Sports']",437038cc-ed15-4eef-83f4-d9c52b17202e
+Kathy Lara,22,Female,Fresh Graduate,Intelligence analyst,14834.89,Master,Rent,Single,6,Healthcare,"['Music', 'Fitness', 'Sports']",beb9b011-3e0f-4f44-8518-8f281c434de1
+Donna Juarez,30,Male,Employed,Dentist,3617.12,Bachelor,Rent,Single,1,Technology,['Gaming'],a9be51d4-e9c4-4e40-b4c3-96b0cc1bd9ba
+Lauren Ross,22,Male,Employed,Chief of Staff,5455.06,Diploma,Rent,Married,3,Healthcare,"['Cooking', 'Music', 'Gaming']",0a6b4ae3-3cc1-4d8f-92f0-344745011b33
+Chelsea Marsh,21,Male,Employed,Press photographer,9798.52,Bachelor,Family Home,Single,7,Healthcare,"['Reading', 'Gaming']",f4feb5c3-d847-4567-bd78-8bc0371dcecd
+Jill Rivera,24,Female,Contract,Energy engineer,12174.7,Master,Rent,Single,2,Finance,"['Gaming', 'Sports', 'Fitness']",f5b83a75-6a6f-4a37-a748-387c68694fc3
+Blake Nelson,21,Male,Employed,IT technical support officer,4949.44,Bachelor,Rent,Single,4,Technology,"['Sports', 'Fitness']",24b198f9-25f4-4928-b292-9f62d316a5fa
+Nicolas Rivera,25,Male,Fresh Graduate,Consulting civil engineer,6415.25,Master,Family Home,Married,6,Manufacturing,"['Music', 'Cooking']",23b66e3a-87cb-4911-845e-dc6a02f6006a
+Harold Watson,22,Female,Contract,Call centre manager,10538.86,Master,Family Home,Married,0,Education,"['Traveling', 'Fitness']",fff32de3-01d5-4994-9f78-744bd7cbe290
+Kristen Craig,27,Male,Fresh Graduate,Optometrist,13780.42,Master,Family Home,Single,3,Education,"['Reading', 'Fitness', 'Music']",f0a3dde6-0423-49d9-9362-4e2903e5963f
+Karen Wagner,30,Male,Fresh Graduate,"Social research officer, government",3056.94,Bachelor,Rent,Single,6,Finance,"['Music', 'Sports']",2d5e467c-5acd-404f-aec7-d64bb743726c
+Randy Simon,22,Female,Fresh Graduate,Community pharmacist,7588.65,Diploma,Rent,Married,2,Healthcare,['Fitness'],2fc6548f-e978-4c84-b756-5cac9bcee261
+Scott Gallagher,25,Female,Fresh Graduate,Archivist,8397.14,Bachelor,Family Home,Married,3,Healthcare,"['Reading', 'Traveling', 'Music']",077aa7ce-b081-4980-a0c6-1f8a4eea1796
+Jason Fletcher,27,Female,Employed,Engineering geologist,12627.34,Diploma,Rent,Married,9,Technology,"['Fitness', 'Gaming', 'Reading']",75f8f3b1-f1ac-47e4-a8d6-d1826d2fe5b3
+Ariana Cannon,24,Female,Fresh Graduate,Television floor manager,3515.07,Diploma,Rent,Single,2,Healthcare,"['Gaming', 'Photography']",ae913a1d-327e-4347-9293-128bbb9bee07
+Kristy Bray,21,Male,Contract,Textile designer,6507.68,Master,Rent,Single,5,Technology,"['Reading', 'Photography', 'Traveling']",975dc284-79a4-49d9-9d3c-1bb9a8120f89
+Dawn Jennings,22,Male,Employed,Financial planner,8417.56,Master,Family Home,Single,6,Education,['Fitness'],717ed559-fae1-439d-af86-e40140684c56
+Troy Williams,22,Male,Contract,Community pharmacist,14249.43,Master,Rent,Married,1,Manufacturing,['Music'],1456b74a-2227-456d-89df-eaec73836292
+Paige Robinson,27,Female,Contract,"Surveyor, land/geomatics",3434.99,Master,Family Home,Single,5,Finance,['Photography'],09802388-8a21-4215-8d9a-7eab682c4eb0
+Natasha Chapman,26,Male,Fresh Graduate,"Pharmacist, community",6547.18,Master,Family Home,Married,7,Technology,"['Music', 'Sports']",2461a04c-dc07-4e11-a3ab-3474780d7a31
+Victor Saunders,22,Female,Employed,Armed forces logistics/support/administrative officer,11121.08,Diploma,Rent,Married,2,Technology,['Traveling'],4351d985-2e00-4096-b239-ea170f6578db
+Howard Torres,26,Female,Employed,"Engineer, control and instrumentation",12224.56,Bachelor,Family Home,Married,4,Manufacturing,['Traveling'],2bbcccbe-15e0-4de6-9fe9-f3ef33090fee
+Carol Washington,27,Male,Contract,Armed forces technical officer,3349.8,Master,Family Home,Married,9,Healthcare,['Traveling'],ff1b911c-56d7-4176-b323-c1449b1d25b6
+Brandon Estes,26,Male,Fresh Graduate,Public librarian,6856.24,Master,Family Home,Single,0,Education,"['Music', 'Reading']",2684debd-bfb8-4d9f-9d48-f35343172bb5
+Donna Dixon,28,Female,Employed,Music therapist,9095.32,Master,Rent,Married,5,Manufacturing,['Gaming'],14a612c6-5793-4027-ae63-f7d5bf12cc6f
+Linda Gibson,30,Female,Contract,Leisure centre manager,14597.46,Master,Family Home,Married,8,Education,"['Gaming', 'Traveling', 'Cooking']",b45be878-5567-4668-88bc-7e747afb9d19
+Alicia Anderson,23,Male,Contract,Museum/gallery exhibitions officer,4244.92,Bachelor,Rent,Married,1,Technology,"['Gaming', 'Reading']",061f0274-de48-4ff9-9b0e-62671cdf462f
+Guy Flores,23,Female,Contract,Environmental manager,6731.54,Diploma,Rent,Married,5,Education,"['Cooking', 'Traveling', 'Gaming']",e41c929c-24da-4552-aba4-deb96725dedb
+Anthony Buchanan,22,Male,Employed,Tax adviser,10319.13,Bachelor,Rent,Single,7,Healthcare,"['Sports', 'Gaming', 'Traveling']",b32086c4-d65e-4d21-9f40-6bc6b2abc511
+Elizabeth Doyle,29,Male,Employed,"Pharmacist, hospital",14417.03,Master,Rent,Single,0,Healthcare,['Reading'],e013a539-7ee1-4eec-a1ef-0537ca18256e
+Sheila Martinez,22,Female,Contract,Data processing manager,4092.26,Diploma,Family Home,Single,4,Education,"['Cooking', 'Music']",8c5e03b3-7f4e-4b03-91fa-026cd0e060b0
+Tracy Pierce,21,Male,Contract,Retail merchandiser,7334.2,Master,Rent,Married,6,Technology,['Photography'],c8860406-a924-4cb3-ba81-3d6a17714ff8
+Robert Johnson,30,Male,Employed,"Therapist, sports",9948.77,Diploma,Family Home,Single,2,Technology,"['Sports', 'Music']",4a321dba-579f-4c1a-a5b9-55cc1b3b221d
+Jo Daniels,30,Male,Fresh Graduate,Chief of Staff,14421.48,Diploma,Family Home,Single,4,Manufacturing,['Music'],d82a49fd-ff04-4e06-9bd2-c4b358dc2a0a
+Sarah Rocha,23,Female,Contract,Food technologist,4160.72,Master,Rent,Married,9,Finance,"['Cooking', 'Fitness', 'Gaming']",4c383322-5c6a-42c4-8bc7-0a0c99e87ae3
+Melissa Garrett,25,Male,Contract,Volunteer coordinator,7772.78,Master,Rent,Married,0,Healthcare,"['Reading', 'Sports']",a232915b-696b-4860-9dd4-e32ff6faa658
+Heather Jackson,24,Female,Fresh Graduate,Diplomatic Services operational officer,9029.7,Diploma,Family Home,Single,3,Technology,['Traveling'],b8d1c138-3d96-4436-bced-550f3d9106b3
+Crystal Trevino,27,Female,Employed,Insurance account manager,14952.57,Master,Rent,Single,6,Healthcare,"['Sports', 'Traveling', 'Gaming']",c068845a-906b-48b3-bf19-401c88a18c65
+Angelica Moore,21,Female,Employed,Hotel manager,4213.59,Diploma,Rent,Single,0,Education,"['Cooking', 'Gaming']",57b72088-031d-474c-9ade-fbf563b0e60f
+Kevin Martinez,30,Female,Contract,Field seismologist,5279.95,Diploma,Family Home,Married,5,Education,['Cooking'],5f2e3d8e-7241-4a4f-8ff8-2b979ff79c63
+James Skinner,25,Female,Fresh Graduate,Health physicist,11290.39,Diploma,Family Home,Single,6,Healthcare,"['Cooking', 'Photography', 'Traveling']",2bce19f5-9bcf-4fd5-9b45-58493def9a91
+Lee Garza,23,Female,Fresh Graduate,"Designer, exhibition/display",13586.03,Diploma,Family Home,Married,0,Finance,"['Photography', 'Gaming']",41b26266-3044-4e18-9ba7-eb1b36c89382
+Jeffrey Brown,30,Female,Employed,Health promotion specialist,3799.94,Diploma,Family Home,Single,4,Manufacturing,"['Fitness', 'Photography']",d8ac6c24-af06-4482-8d75-6e43e617cc49
+Ashley Valdez,24,Female,Contract,Ecologist,6551.66,Diploma,Rent,Single,8,Manufacturing,"['Cooking', 'Photography', 'Fitness']",ccbaf25c-ee87-4d6f-9468-fb6e63725614
+Michael Johnson,21,Male,Employed,Health and safety inspector,8926.29,Diploma,Rent,Married,0,Technology,"['Photography', 'Sports', 'Fitness']",44543045-159b-4334-8bd0-ee5632ca54bf
+Dr. Melissa Howard,23,Female,Employed,"Engineer, technical sales",14028.44,Bachelor,Family Home,Married,5,Education,['Cooking'],86e11f28-983f-4a3a-8327-2614e475f7f2
+Jacob Morrison,30,Female,Contract,"Psychologist, educational",4543.61,Bachelor,Rent,Married,6,Technology,"['Fitness', 'Gaming']",d5f00ee6-b707-4493-9f2e-c6f1e6310bf0
+Mark Parrish,24,Male,Fresh Graduate,Art gallery manager,7325.88,Master,Rent,Married,0,Technology,['Reading'],e33a1f15-9097-4526-95be-11419b1ed950
+Tammy Fuller,30,Female,Employed,"Engineer, production",8510.62,Diploma,Family Home,Married,3,Manufacturing,"['Music', 'Traveling']",972ff7bc-07fe-4bf2-98be-28acf14dc0a8
+April Conley,23,Male,Employed,"Engineer, broadcasting (operations)",12247.78,Diploma,Family Home,Single,9,Healthcare,"['Fitness', 'Reading', 'Traveling']",86173d95-212a-4038-9c8d-7a35cf9a8db4
+Jennifer Thompson,27,Female,Fresh Graduate,Seismic interpreter,3232.52,Diploma,Family Home,Single,0,Education,"['Photography', 'Sports', 'Gaming']",c47e84b2-168c-4799-ae4b-527efd9e5277
+Martin Perkins,21,Female,Employed,"Conservator, museum/gallery",6163.43,Bachelor,Family Home,Married,5,Education,"['Fitness', 'Photography']",fd40f6b4-c149-4f19-ab83-987b2e130056
+Anthony Russell,21,Male,Fresh Graduate,Music therapist,11388.21,Diploma,Family Home,Married,7,Technology,['Reading'],7bba6efb-97bf-4c26-8c0b-a4f94085c817
+Wendy Weaver,27,Male,Fresh Graduate,"Scientist, research (life sciences)",14339.56,Diploma,Family Home,Married,2,Healthcare,['Traveling'],0e97f003-4610-4535-b046-7ae5665faa63
+Danielle Hernandez,25,Male,Fresh Graduate,"Surveyor, mining",3796.96,Master,Rent,Married,3,Manufacturing,"['Cooking', 'Music']",6d3ea952-104a-45db-85ac-31eabfdaea0d
+Lynn Moss,24,Male,Employed,Politician's assistant,7914.37,Master,Rent,Married,6,Education,"['Cooking', 'Photography', 'Traveling']",44e01b9a-f068-4fa2-a437-ed3e5e84a487
+Gene Stevens,30,Female,Employed,Health promotion specialist,10455.61,Master,Rent,Married,0,Finance,"['Music', 'Gaming', 'Traveling']",a4d1a185-8d0d-4cfd-a849-6d8b263df02d
+Seth Owen,30,Female,Employed,Dancer,13435.4,Bachelor,Rent,Married,3,Manufacturing,"['Reading', 'Traveling', 'Gaming']",250018c5-d3e6-46fe-8a7c-a8195066963e
+Derek Ibarra,23,Male,Employed,Fashion designer,4145.96,Diploma,Rent,Single,7,Education,"['Sports', 'Photography', 'Reading']",4c64a949-96be-4220-a7f5-ff58ce4d80d7
+Daniel Hardy,26,Male,Employed,Travel agency manager,5132.54,Master,Rent,Single,2,Education,"['Photography', 'Fitness', 'Cooking']",ddc32feb-e7dd-49bb-b56d-27217f9e4e11
+Michael Williams,27,Female,Contract,Applications developer,11911.75,Master,Family Home,Single,3,Education,"['Sports', 'Cooking', 'Traveling']",806d5e54-0b02-4447-88d2-f539c614d278
+Linda Smith,30,Female,Fresh Graduate,Agricultural consultant,12480.68,Bachelor,Family Home,Single,7,Finance,"['Traveling', 'Photography']",98a06f52-9eb9-4744-b9f1-eed26ba29694
+Kristen Marquez,24,Male,Contract,"Administrator, local government",4144.17,Bachelor,Family Home,Single,2,Finance,['Gaming'],6d8ae2e7-4b8f-42b5-af29-8fb9935f20a7
+Andrea Robles,26,Female,Employed,"Psychologist, clinical",7400.79,Bachelor,Rent,Single,4,Education,"['Traveling', 'Photography', 'Cooking']",cfa5c5bd-7edd-40e8-a4ec-b4d2e8c3358d
+Christopher Jordan,21,Male,Fresh Graduate,Higher education careers adviser,10027.79,Diploma,Rent,Single,9,Healthcare,['Sports'],de5e81bd-c288-4821-afb1-6a6e91d7a595
+Keith Richardson,30,Female,Contract,Press photographer,14751.46,Master,Rent,Single,0,Finance,"['Sports', 'Reading']",9917b1ca-9dd0-484b-ac81-8d1a665e2951
+Jose Valdez,28,Male,Fresh Graduate,Minerals surveyor,3411.16,Master,Family Home,Single,4,Education,['Fitness'],cd016bf7-c7b3-485f-b56c-4ab972e81a54
+Joshua Foster,29,Female,Employed,Forensic scientist,7678.03,Diploma,Family Home,Single,9,Manufacturing,['Gaming'],c06bb342-db3d-4fe7-bb41-e9c177f12421
+Christopher Ingram,24,Male,Contract,Product designer,8188.09,Diploma,Family Home,Single,0,Education,"['Photography', 'Sports', 'Cooking']",d1207d02-6d74-4622-a5c3-a73a8adc57fd
+Christopher Allison,27,Female,Employed,TEFL teacher,14347.32,Master,Rent,Single,4,Healthcare,"['Fitness', 'Photography', 'Traveling']",889a4ec7-f285-4a44-a072-24916ce4115f
