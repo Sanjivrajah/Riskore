@@ -95,21 +95,6 @@ class _WidgetLibrary2State extends State<WidgetLibrary2> {
                 const SizedBox(
                   height: 20,
                 ),
-                Container(
-                  // just to show the dark colour on top of light container
-                  padding: const EdgeInsets.symmetric(vertical: 15),
-                  decoration: BoxDecoration(
-                    color: AppColor.white.withOpacity(0.4),
-                  ),
-                  child: TabBarDark(
-                    selectedIndex: _selectedTabIndex2,
-                    onTabSelected: (int index) {
-                      setState(() {
-                        _selectedTabIndex2 = index;
-                      });
-                    },
-                  ),
-                ),
                 const SizedBox(
                   height: 50,
                 ),
