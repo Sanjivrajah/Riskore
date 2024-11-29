@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:riskore/presets/colors.dart';
+import 'package:riskore/presets/fonts.dart';
+import 'package:riskore/screens/credit_report/all_reports_screen.dart';
+import 'package:sizer/sizer.dart';
+
 class SplashScreen extends StatelessWidget {
   static const routeName = '/splash-screen';
 
@@ -10,42 +14,32 @@ class SplashScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black,
       body: Stack(
+        alignment: Alignment.bottomCenter,
         children: [
+          Image.asset("lib/assets/SemicircleGrad.png"),
           Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  width: 160,
-                  height: 40,
-                  child: Image.asset('lib/assets/images/logo.png', fit: BoxFit.cover),
+                  width: MediaQuery.sizeOf(context).width / 2.2,
+                  child: Image.asset('lib/assets/images/logo.png',
+                      fit: BoxFit.cover),
                 ),
-                SizedBox(height: 20,),
+                SizedBox(
+                  height: 20,
+                ),
                 AnimatedOpacity(
                   opacity: 1.0,
                   duration: Duration(seconds: 2),
                   child: Text(
-                    'From Invisible to Eligible',
-                    style: TextStyle(color: Colors.white, fontSize: 16),
+                    'From Invisible to Eligible.',
+                    style: AppFonts.normalLightText(context),
                   ),
                 ),
               ],
             ),
           ),
-          // Align(
-          //   alignment: Alignment.bottomCenter,
-          //   child: ClipPath(
-          //     clipper: HalfCircleClipper(),
-          //     child: Container(
-                
-          //       height: 200,
-          //       decoration: BoxDecoration(
-          //         gradient: splashScreenGradient(),
-          //         borderRadius: BorderRadius.circular(1000)
-          //       ),
-          //     ),
-          //   ),
-          // ),
         ],
       ),
     );
@@ -67,5 +61,3 @@ class HalfCircleClipper extends CustomClipper<Path> {
   @override
   bool shouldReclip(CustomClipper<Path> oldClipper) => true;
 }
-
-
