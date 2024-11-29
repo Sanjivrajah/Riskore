@@ -52,6 +52,7 @@ class MyApp extends StatelessWidget {
             LoginScreen.routeName: (context) => LoginScreen(),
             DashboardScreen.routeName: (context) => const DashboardScreen(),
             SplashScreen.routeName: (context) => const SplashScreen(),
+            // ignore: equal_keys_in_map
             LinkedAccountScreen.routeName:(context) => const LinkedAccountScreen(),
           },
         );
