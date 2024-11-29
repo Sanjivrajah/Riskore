@@ -17,6 +17,7 @@ class AppColor {
   static Color grabPayColor = const Color(0xff00B14F);
   static Color bigPayColor = const Color(0xff53C5D8);
   static Color shopeePayColor = const Color(0xffFE6033);
+  static Color tnGoColor = const Color(0xff005ABE);
 }
 
 // Use for all containers. Wrap with Opacity widget if need to change transparency.
