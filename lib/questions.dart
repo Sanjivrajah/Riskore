@@ -1,0 +1,78 @@
+const List<Map<String, dynamic>> questionsList = [
+  {
+    "QuestionNo": "1",
+    "ProgressText": "Let’s Start.",
+    "Question": "What is your age range?",
+    "button1": "18-25",
+    "button2": "26-35",
+    "button3": "36-45",
+    "button4": "45+",
+  },
+  {
+    "QuestionNo": "2",
+    "ProgressText": "Continue.",
+    "Question": "What is your current employment status?",
+    "button1": "Employed full-time",
+    "button2": "Self-employed",
+    "button3": "Unemployed",
+    "button4": "Student",
+  },
+  {
+    "QuestionNo": "3",
+    "ProgressText": "Go on...",
+    "Question": "What is your approximate monthly income range?",
+    "button1": "Less than RM2,000",
+    "button2": "RM2,000 - RM5,000",
+    "button3": "RM5,000 - RM10,000",
+    "button4": "More than RM10,000",
+  },
+  {
+    "QuestionNo": "4",
+    "ProgressText": "Halfway there!",
+    "Question":
+        "How often do you use e-wallets (Touch 'n Go, GrabPay, etc.) for expenses?",
+    "button1": "Daily",
+    "button2": "Weekly",
+    "button3": "Monthly",
+    "button4": "Rarely or Never",
+  },
+  {
+    "QuestionNo": "5",
+    "ProgressText": "Almost...",
+    "Question": "How often do you check your credit score?",
+    "button1": "Never",
+    "button2": "Annually",
+    "button3": "Quarterly",
+    "button4": "Monthly",
+  },
+  {
+    "QuestionNo": "6",
+    "ProgressText": "Hang in there",
+    "Question":
+        "If you were to take out a loan, what would be the primary purpose?",
+    "button1": "Car purchase",
+    "button2": "Home purchase",
+    "button3": "Personal expenses",
+    "button4": "Business expansion (SME)",
+  },
+  {
+    "QuestionNo": "7",
+    "ProgressText": "Just one more",
+    "Question":
+        "How many monthly subscription services (Netflix, Spotify, etc.) do you pay for?",
+    "button1": "None",
+    "button2": "1-3",
+    "button3": "4-8",
+    "button4": "More than 8",
+  },
+  {
+    "QuestionNo": "8",
+    "ProgressText": "All done!",
+    "Question":
+        "If you have any existing loans or credit cards, how much do you pay for them monthly?",
+    "button1": "Less than RM500",
+    "button2": "RM500 - RM1,000",
+    "button3": "RM1,000 - RM3,000",
+    "button4": "More than RM3,000",
+  },
+];
