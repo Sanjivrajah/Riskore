@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/screens/credit_report/all_reports_screen.dart';
+import 'package:riskore/screens/profile/linked_account_screen.dart';
 import 'package:riskore/screens/profile/profile_screen.dart';
 import 'package:riskore/widget_library_1.dart';
 import 'package:riskore/widget_library_2.dart';
@@ -50,7 +51,8 @@ class MyApp extends StatelessWidget {
             SignUpScreen.routeName: (context) => SignUpScreen(),
             LoginScreen.routeName: (context) => LoginScreen(),
             DashboardScreen.routeName: (context) => const DashboardScreen(),
-            SplashScreen.routeName: (context) => const SplashScreen()
+            SplashScreen.routeName: (context) => const SplashScreen(),
+            LinkedAccountScreen.routeName:(context) => const LinkedAccountScreen(),
           },
         );
       },

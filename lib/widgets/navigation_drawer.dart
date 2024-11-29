@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/presets/fonts.dart';
 import 'package:riskore/presets/styles.dart';
+import 'package:riskore/screens/profile/linked_account_screen.dart';
 import 'package:sizer/sizer.dart';
 
 class NavDrawer extends StatelessWidget {
@@ -35,9 +36,12 @@ class NavDrawer extends StatelessWidget {
                 image: "lib/assets/icons/profile_nav.png",
               ),
               SizedBox(height: 18.sp),
-              const NavDrawerRow(
-                text: 'Linked Accounts',
-                image: "lib/assets/icons/profile_nav.png",
+              GestureDetector(
+                onTap: () => Navigator.of(context).pushNamed(LinkedAccountScreen.routeName),
+                child: const NavDrawerRow(
+                  text: 'Linked Accounts',
+                  image: "lib/assets/icons/profile_nav.png",
+                ),
               ),
               SizedBox(height: 18.sp),
               const NavDrawerRow(
