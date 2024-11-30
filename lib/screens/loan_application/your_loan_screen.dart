@@ -25,7 +25,9 @@ class _YourLoanScreenState extends State<YourLoanScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarArrow(
-        press: () {},
+        press: () {
+          Navigator.pop(context);
+        },
       ),
       backgroundColor: AppColor.black,
       body: SafeArea(

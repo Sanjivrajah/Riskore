@@ -3,6 +3,8 @@ import 'package:riskore/presets/colors.dart';
 import 'package:riskore/presets/fonts.dart';
 import 'package:riskore/presets/styles.dart';
 import 'package:riskore/screens/financial_health/financial_health_screen.dart';
+import 'package:riskore/screens/loan_application/easy_loan_screen.dart';
+import 'package:riskore/screens/loan_application/your_loan_screen.dart';
 import 'package:riskore/widgets/appbar_profile.dart';
 import 'package:riskore/widgets/nav_bar.dart';
 import 'package:riskore/widgets/semicircle_progress.dart';
@@ -63,7 +65,7 @@ class DashboardScreen extends StatelessWidget {
                             children: [
                               SizedBox(height: 15),
                               Text(
-                                "82%",
+                                "89%",
                                 style: AppFonts.largeExtraLightText(context),
                               ),
                               //Change Indicator
@@ -295,8 +297,7 @@ class DashboardScreen extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) =>
-                                    const FinancialHealthScreen(),
+                                builder: (context) => const EasyLoanScreen(),
                               ),
                             );
                           },
