@@ -1,10 +1,12 @@
 import 'dart:convert';
+import 'dart:math';
 import 'dart:typed_data';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:riskore/core/models/user_model.dart';
+import 'package:riskore/screens/authentication/auth.dart';
 import 'package:tflite_flutter/tflite_flutter.dart';
 import 'package:http/http.dart' as http;
 
@@ -17,6 +19,26 @@ class FullDataUserProvider with ChangeNotifier {
   bool get isLoading => _isLoading;
 
   final String userId = 'LfC4h9Um06O2zSxNonJSRTFTNsi2';
+  int generateCreditScore(String creditCategory, int seed) {
+    Random random = Random(seed);
+    int score;
+
+    switch (creditCategory) {
+      case 'Low':
+        score = random.nextInt(41); 
+        break;
+      case 'Medium':
+        score = random.nextInt(40) + 41; 
+        break;
+      case 'High':
+        score = random.nextInt(20) + 81; 
+        break;
+      default:
+        score = 0; 
+    }
+
+    return score;
+  }
 
   Future<void> fetchUserData() async {
     try {
@@ -77,7 +99,6 @@ class FullDataUserProvider with ChangeNotifier {
   }
 
   Future<Map<String, dynamic>> predictUserRiskHttp(UserModel userData) async {
-    final Dio _dio = Dio();
     try {
       final url = Uri.parse('https://trpqmwwd-5000.asse.devtunnels.ms/predict');
 
@@ -129,7 +150,18 @@ class FullDataUserProvider with ChangeNotifier {
       );
 
       if (response.statusCode == 200) {
-        return json.decode(response.body);
+        final responseData = json.decode(response.body);
+        // Extract risk_category from the response
+        final riskCategory = responseData['risk_category'];
+        // Generate a credit scroe based on the risk category
+        int creditScore = generateCreditScore(riskCategory, 10);
+
+        return {
+          'risk_category': riskCategory,
+          'confidence': responseData['confidence'],
+          'status': responseData['status'],
+          'credit_score': creditScore, // Include the generated credit score
+        };
       } else {
         throw Exception('Failed to predict risk: ${response.statusCode}');
       }

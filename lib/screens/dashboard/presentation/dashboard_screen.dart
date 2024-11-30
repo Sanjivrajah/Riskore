@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:riskore/core/models/upcoming_payment_data.dart';
+import 'package:riskore/core/providers/full_user_data_provider.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/presets/fonts.dart';
 import 'package:riskore/presets/styles.dart';
@@ -29,14 +31,65 @@ class DashboardScreen extends StatefulWidget {
 }
 
 class _DashboardScreenState extends State<DashboardScreen> {
+  Map<String, dynamic>? riskScore;
+  bool _isLoading = true;
+  String? error;
+
   String selectedTab = "Pay Later";
 
   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _fetchAndPrintData();
+  }
+
+  Future<void> _fetchAndPrintData() async {
+    setState(() {
+      _isLoading = true;
+      error = null;
+    });
+
+    try {
+      final provider = context.read<FullDataUserProvider>();
+      await provider.fetchUserData();
+
+      if (provider.userData != null) {
+        print('User Data:');
+        print('${provider.userData!}');
+
+        final result = await provider.predictUserRiskHttp(provider.userData!);
+
+        setState(() {
+          riskScore = result;
+          _isLoading = false;
+        });
+
+        print('Risk Score Results:');
+        print('Risk Category: ${result['risk_category']}');
+        print('Confidence: ${result['confidence']}');
+        print('Status: ${result['status']}');
+      } else {
+        setState(() {
+          error = 'No user data found';
+          _isLoading = false;
+        });
+      }
+    } catch (e) {
+      setState(() {
+        error = 'Error: $e';
+        _isLoading = false;
+      });
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
+    final provider = context.read<FullDataUserProvider>();
     return Scaffold(
       appBar: AppBarProfile(press: () {}),
       backgroundColor: AppColor.black,
-      body: SafeArea(
+      body: _isLoading? CircularProgressIndicator(): SafeArea(
         child: SingleChildScrollView(
           child: Padding(
             padding: AppStyles.edgeInsetsLR_20,
@@ -49,7 +102,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   style: AppFonts.largeExtraLightText(context),
                 ),
                 Text(
-                  "Ahmad",
+                  "${provider.userData?.full_name}",
                   style: AppFonts.largestLightTextGreen(context),
                 ),
                 const SizedBox(height: 40),
@@ -69,12 +122,13 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         Stack(
                           alignment: Alignment.center,
                           children: [
-                            CircularArchProgressBar(value: 89.0),
+                            CircularArchProgressBar(value: riskScore!['credit_score']
+                                          .toDouble()),
                             Column(
                               children: [
                                 const SizedBox(height: 15),
                                 Text(
-                                  "89%",
+                                  "${riskScore!['credit_score']}%",
                                   style: AppFonts.largeExtraLightText(context),
                                 ),
                                 Text(
