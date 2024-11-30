@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:riskore/core/models/bank_offers_model.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/presets/fonts.dart';
 import 'package:riskore/presets/styles.dart';
@@ -14,7 +15,21 @@ import 'package:sizer/sizer.dart';
 import 'package:intl/intl.dart';
 
 class LoanApplicationScreen extends StatefulWidget {
-  const LoanApplicationScreen({super.key});
+  const LoanApplicationScreen({
+    super.key,
+    required this.image,
+    required this.bankName,
+    required this.interest,
+    required this.period,
+    required this.amount,
+    required this.maxValue,
+  });
+  final String image;
+  final String bankName;
+  final String interest;
+  final String period;
+  final String amount;
+  final String maxValue;
 
   @override
   State<LoanApplicationScreen> createState() => _LoanApplicationScreenState();
@@ -24,7 +39,7 @@ class _LoanApplicationScreenState extends State<LoanApplicationScreen> {
   double amount = 1.00;
 
   final double _minValue = 1000; // Desired minimum value
-  final double _maxValue = 50000; // Desired maximum value
+  late double _maxValue; // Initialize max value as double
   double _sliderValue = 0.0; // Initial normalized value (0.0 to 1.0)
 
   final List<String> dropdownItemsCategory = [
@@ -43,6 +58,21 @@ class _LoanApplicationScreenState extends State<LoanApplicationScreen> {
     '26-30 years',
   ];
   String? selectedValue;
+
+  @override
+  void initState() {
+    super.initState();
+    _maxValue = _cleanAmount(widget.maxValue);
+    _sliderValue = _getNormalizedValue(_minValue);
+  }
+
+  // Function to clean the amount string (removes non-numeric characters)
+  double _cleanAmount(String amount) {
+    String cleanedAmount = amount.replaceAll(RegExp(r'[^\d.]'),
+        ''); // Remove all non-numeric characters except the decimal point
+    return double.tryParse(cleanedAmount) ??
+        0.0; // If parsing fails, return 0.0
+  }
 
   // Function to convert normalized value to the actual value
   double _getActualValue(double normalizedValue) {
@@ -64,7 +94,9 @@ class _LoanApplicationScreenState extends State<LoanApplicationScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarArrow(
-        press: () {},
+        press: () {
+          Navigator.pop(context);
+        },
       ),
       backgroundColor: AppColor.black,
       body: SafeArea(
@@ -81,11 +113,13 @@ class _LoanApplicationScreenState extends State<LoanApplicationScreen> {
                   child: Column(
                     children: [
                       LoanOfferRow(
-                        image: "lib/assets/images/cimb_bank.png",
-                        bankName: "CIMB Bank",
-                        amount: "RM52,000.00",
-                        interest: "7% p.a. | 5 Years",
+                        image: widget.image,
+                        bankName: widget.bankName,
+                        interest: widget.interest,
+                        period: widget.period,
                         press: () {},
+                        amount: widget.amount,
+                        visible: false,
                       ),
                       SizedBox(
                         height: 10.sp,

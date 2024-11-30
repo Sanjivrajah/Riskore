@@ -13,7 +13,7 @@ class TabBarLight extends StatefulWidget {
 }
 
 class _TabBarLightState extends State<TabBarLight> {
-  String selectedTab = "Personal"; // Default selected tab
+  String selectedTab = "SME Loan"; // Default selected tab
 
   @override
   Widget build(BuildContext context) {
@@ -26,9 +26,9 @@ class _TabBarLightState extends State<TabBarLight> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          buildTabItem(tab: 'Personal'),
-          buildTabItem(tab: 'House'),
-          buildTabItem(tab: 'Car'),
+          buildTabItem(tab: 'SME Loan'),
+          buildTabItem(tab: 'House Loan'),
+          buildTabItem(tab: 'Car Loan'),
         ],
       ),
     );

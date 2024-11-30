@@ -50,7 +50,6 @@ class MyApp extends StatelessWidget {
             useMaterial3: true,
           ),
           home: AuthWidgetTree(),
-
           routes: {
             SignUpScreen.routeName: (context) => SignUpScreen(),
             LoginScreen.routeName: (context) => LoginScreen(),

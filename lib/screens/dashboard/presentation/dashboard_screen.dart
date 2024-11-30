@@ -10,6 +10,7 @@ import 'package:riskore/widgets/appbar_profile.dart';
 import 'package:riskore/widgets/semicircle_progress.dart';
 import 'package:riskore/widgets/shortcut_menu_button.dart';
 import 'package:riskore/widgets/standard_container.dart';
+import 'package:riskore/core/data/bank_offers_data.dart';
 
 class DashboardScreen extends StatelessWidget {
   static const routeName = '/dashboard-screen';
@@ -366,6 +367,7 @@ class DashboardScreen extends StatelessWidget {
                               MaterialPageRoute(
                                 builder: (context) =>
                                     const FinancialHealthScreen(), // Navigate to Navigation
+
                               ),
                             );
                           },
@@ -412,7 +414,10 @@ class DashboardScreen extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const EasyLoanScreen(),
+                                builder: (context) => EasyLoanScreen(
+                                  bankOffersList: bankOffersList,
+                                  index: 0,
+                                ),
                               ),
                             );
                           },
