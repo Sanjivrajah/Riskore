@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:riskore/core/data/expenses_data.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/presets/fonts.dart';
 import 'package:riskore/presets/styles.dart';
@@ -61,7 +62,11 @@ class AllReportsScreen extends StatelessWidget {
                         onTap: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (_) => const MonthlyReportScreen()),
+                              builder: (_) => MonthlyReportScreen(
+                                    monthYear: "May 2024",
+                                    expensesList: expensesList,
+                                    index: 0,
+                                  )),
                         ),
                         child: MonthlyReportContainer(
                           gradientColors: [
@@ -71,64 +76,137 @@ class AllReportsScreen extends StatelessWidget {
                           ],
                           month: '2024 | May',
                           height: 90.sp,
+                          monthYear: 'May 2024',
                         ),
                       ),
-                      MonthlyReportContainer(
-                        gradientColors: [
-                          const Color(0xff898989).withOpacity(0.25),
-                          const Color(0xff343434).withOpacity(0.15),
-                          const Color(0xff343434).withOpacity(0),
-                        ],
-                        month: '2024 | June',
-                        height: 84.sp,
+                      GestureDetector(
+                        onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (_) => MonthlyReportScreen(
+                                    monthYear: "June 2024",
+                                    expensesList: expensesList,
+                                    index: 0,
+                                  )),
+                        ),
+                        child: MonthlyReportContainer(
+                          gradientColors: [
+                            const Color(0xff898989).withOpacity(0.25),
+                            const Color(0xff343434).withOpacity(0.15),
+                            const Color(0xff343434).withOpacity(0),
+                          ],
+                          month: '2024 | June',
+                          height: 84.sp,
+                          monthYear: "June 2024",
+                        ),
                       ),
-                      MonthlyReportContainer(
-                        gradientColors: [
-                          const Color(0xff898989).withOpacity(0.3),
-                          const Color(0xff343434).withOpacity(0.2),
-                          const Color(0xff343434).withOpacity(0.3),
-                        ],
-                        month: '2024 | July',
-                        height: 77.5.sp,
+                      GestureDetector(
+                        onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (_) => MonthlyReportScreen(
+                                    monthYear: "July 2024",
+                                    expensesList: expensesList,
+                                    index: 0,
+                                  )),
+                        ),
+                        child: MonthlyReportContainer(
+                          gradientColors: [
+                            const Color(0xff898989).withOpacity(0.3),
+                            const Color(0xff343434).withOpacity(0.2),
+                            const Color(0xff343434).withOpacity(0.3),
+                          ],
+                          month: '2024 | July',
+                          height: 77.5.sp,
+                          monthYear: "July 2024",
+                        ),
                       ),
-                      MonthlyReportContainer(
-                        gradientColors: [
-                          const Color(0xff898989).withOpacity(0.35),
-                          const Color(0xff343434).withOpacity(0.2),
-                          const Color(0xff343434).withOpacity(0.3),
-                        ],
-                        month: '2024 | August',
-                        height: 70.5.sp,
+                      GestureDetector(
+                        onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (_) => MonthlyReportScreen(
+                                    monthYear: "August 2024",
+                                    expensesList: expensesList,
+                                    index: 0,
+                                  )),
+                        ),
+                        child: MonthlyReportContainer(
+                          gradientColors: [
+                            const Color(0xff898989).withOpacity(0.35),
+                            const Color(0xff343434).withOpacity(0.2),
+                            const Color(0xff343434).withOpacity(0.3),
+                          ],
+                          month: '2024 | August',
+                          height: 70.5.sp,
+                          monthYear: "August 2024",
+                        ),
                       ),
-                      MonthlyReportContainer(
-                        gradientColors: [
-                          const Color(0xff898989).withOpacity(0.45),
-                          const Color(0xff343434).withOpacity(0.4),
-                          const Color(0xff343434).withOpacity(0.4),
-                        ],
-                        month: '2024 | September',
-                        height: 62.5.sp,
+                      GestureDetector(
+                        onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (_) => MonthlyReportScreen(
+                                    monthYear: "September 2024",
+                                    expensesList: expensesList,
+                                    index: 0,
+                                  )),
+                        ),
+                        child: MonthlyReportContainer(
+                          gradientColors: [
+                            const Color(0xff898989).withOpacity(0.45),
+                            const Color(0xff343434).withOpacity(0.4),
+                            const Color(0xff343434).withOpacity(0.4),
+                          ],
+                          month: '2024 | September',
+                          height: 62.5.sp,
+                          monthYear: "September 2024",
+                        ),
                       ),
-                      MonthlyReportContainer(
-                        gradientColors: [
-                          const Color(0xff898989).withOpacity(0.6),
-                          const Color.fromARGB(255, 121, 120, 120)
-                              .withOpacity(0.4),
-                          const Color.fromARGB(255, 82, 82, 82)
-                              .withOpacity(0.4),
-                        ],
-                        month: '2024 | October',
-                        height: 53.5.sp,
+                      GestureDetector(
+                        onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (_) => MonthlyReportScreen(
+                                    monthYear: "October 2024",
+                                    expensesList: expensesList,
+                                    index: 0,
+                                  )),
+                        ),
+                        child: MonthlyReportContainer(
+                          gradientColors: [
+                            const Color(0xff898989).withOpacity(0.6),
+                            const Color.fromARGB(255, 121, 120, 120)
+                                .withOpacity(0.4),
+                            const Color.fromARGB(255, 82, 82, 82)
+                                .withOpacity(0.4),
+                          ],
+                          month: '2024 | October',
+                          height: 53.5.sp,
+                          monthYear: "October 2024",
+                        ),
                       ),
-                      MonthlyReportContainer(
-                        gradientColors: [
-                          const Color(0xff898989).withOpacity(0.7),
-                          const Color.fromARGB(255, 106, 106, 106)
-                              .withOpacity(0.7),
-                          const Color(0xff343434).withOpacity(0.7),
-                        ],
-                        month: '2024 | November',
-                        height: 42.5.sp,
+                      GestureDetector(
+                        onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (_) => MonthlyReportScreen(
+                                    monthYear: "November 2024",
+                                    expensesList: expensesList,
+                                    index: 0,
+                                  )),
+                        ),
+                        child: MonthlyReportContainer(
+                          gradientColors: [
+                            const Color(0xff898989).withOpacity(0.7),
+                            const Color.fromARGB(255, 106, 106, 106)
+                                .withOpacity(0.7),
+                            const Color(0xff343434).withOpacity(0.7),
+                          ],
+                          month: '2024 | November',
+                          height: 42.5.sp,
+                          monthYear: "November 2024",
+                        ),
                       ),
                     ],
                   ),

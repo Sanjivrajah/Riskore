@@ -42,7 +42,7 @@ class ExpenseRow extends StatelessWidget {
                 ),
               ),
               Text(
-                amount,
+                "RM " + amount,
                 style: AppFonts.smallLightText(
                   context,
                 ),
