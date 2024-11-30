@@ -129,13 +129,14 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 alignment: Alignment.center,
                                 children: [
                                   CircularArchProgressBar(
-                                      value: riskScore!['credit_score']
-                                          .toDouble()),
+                                      value: (riskScore?['credit_score']
+                                              ?.toDouble() ??
+                                          56.0)),
                                   Column(
                                     children: [
                                       const SizedBox(height: 15),
                                       Text(
-                                        "${riskScore!['credit_score']}%",
+                                        "${riskScore!['credit_score'] ?? 56}%",
                                         style: AppFonts.largeExtraLightText(
                                             context),
                                       ),

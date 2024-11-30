@@ -7,7 +7,6 @@ import 'package:riskore/core/providers/full_user_data_provider.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/screens/authentication/auth.dart';
 import 'package:riskore/screens/credit_report/all_reports_screen.dart';
-import 'package:riskore/screens/dashboard/presentation/testing.dart';
 import 'package:riskore/screens/onboarding/presentation/onboarding_screen.dart';
 import 'package:riskore/screens/profile/linked_account_screen.dart';
 import 'package:riskore/screens/profile/profile_screen.dart';
