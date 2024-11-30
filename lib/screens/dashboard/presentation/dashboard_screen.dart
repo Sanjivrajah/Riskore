@@ -62,7 +62,7 @@ class DashboardScreen extends StatelessWidget {
                           Column(
                             // Center Text Column {
                             children: [
-                              SizedBox(height: 15),
+                              const SizedBox(height: 15),
                               Text(
                                 "89%",
                                 style: AppFonts.largeExtraLightText(context),
@@ -91,9 +91,9 @@ class DashboardScreen extends StatelessWidget {
                           Column(
                             // Progress Bar Column {
                             children: [
-                              SizedBox(height: 15),
+                              const SizedBox(height: 15),
                               CircularArchProgressBar(value: 82.0),
-                              SizedBox(height: 15),
+                              const SizedBox(height: 15),
                             ],
                           ), // } end Progress Bar Column
                         ],
@@ -134,111 +134,228 @@ class DashboardScreen extends StatelessWidget {
                   style: AppFonts.normalLightText(
                       context), // equivalent to Figma 16 - Light
                 ),
-                const SizedBox(height: 5),
+                const SizedBox(height: 10),
 
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    StandardContainer(
-                        width: (MediaQuery.sizeOf(context).width / 2 - 25),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "Your Financial Matters",
-                              style: AppFonts.smallLightText(
-                                  context), // equivalent to Figma 16 - Light
-                            ),
-                            const SizedBox(height: 20),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Image.asset(
-                                  "lib/assets/icons/apply_for_loan.png",
-                                  width: 40,
-                                ),
-                                Column(
+                    //Subscriptions
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        StandardContainer(
+                            width: (MediaQuery.sizeOf(context).width / 2 - 25),
+                            child: SizedBox(
+                              height: 265,
+                              child: SingleChildScrollView(
+                                child: Column(
                                   children: [
                                     Text(
-                                      "Subscription",
-                                      style: AppFonts.extraSmallSemiBoldText(
-                                          context),
-                                    ),
-                                    Text(
-                                      "Amount",
+                                      "Subscriptions",
                                       style:
-                                          AppFonts.extraSmallLightText(context),
+                                          AppFonts.smallLightTextGreen(context),
+                                    ),
+                                    const SizedBox(height: 10),
+
+                                    //List Items
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Image.asset(
+                                          "lib/assets/icons/apply_for_loan.png",
+                                          width: 20,
+                                        ),
+                                        Column(
+                                          children: [
+                                            Text(
+                                              "Subscriptions",
+                                              style: AppFonts
+                                                  .extraSmallSemiBoldText(
+                                                      context),
+                                            ),
+                                            Text(
+                                              "Amount",
+                                              style:
+                                                  AppFonts.extraSmallLightText(
+                                                      context),
+                                            ),
+                                          ],
+                                        ),
+                                        Text(
+                                          "Date",
+                                          style: AppFonts.extraSmallLightText(
+                                              context),
+                                        ),
+                                      ],
+                                    ),
+                                    const SizedBox(height: 20),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Image.asset(
+                                          "lib/assets/icons/apply_for_loan.png",
+                                          width: 20,
+                                        ),
+                                        Column(
+                                          children: [
+                                            Text(
+                                              "Subscriptions",
+                                              style: AppFonts
+                                                  .extraSmallSemiBoldText(
+                                                      context),
+                                            ),
+                                            Text(
+                                              "Amount",
+                                              style:
+                                                  AppFonts.extraSmallLightText(
+                                                      context),
+                                            ),
+                                          ],
+                                        ),
+                                        Text(
+                                          "Date",
+                                          style: AppFonts.extraSmallLightText(
+                                              context),
+                                        ),
+                                      ],
+                                    ),
+                                    const SizedBox(height: 20),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Image.asset(
+                                          "lib/assets/icons/apply_for_loan.png",
+                                          width: 20,
+                                        ),
+                                        Column(
+                                          children: [
+                                            Text(
+                                              "Subscriptions",
+                                              style: AppFonts
+                                                  .extraSmallSemiBoldText(
+                                                      context),
+                                            ),
+                                            Text(
+                                              "Amount",
+                                              style:
+                                                  AppFonts.extraSmallLightText(
+                                                      context),
+                                            ),
+                                          ],
+                                        ),
+                                        Text(
+                                          "Date",
+                                          style: AppFonts.extraSmallLightText(
+                                              context),
+                                        ),
+                                      ],
+                                    ),
+                                    const SizedBox(height: 20),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Image.asset(
+                                          "lib/assets/icons/apply_for_loan.png",
+                                          width: 20,
+                                        ),
+                                        Column(
+                                          children: [
+                                            Text(
+                                              "Subscriptions",
+                                              style: AppFonts
+                                                  .extraSmallSemiBoldText(
+                                                      context),
+                                            ),
+                                            Text(
+                                              "Amount",
+                                              style:
+                                                  AppFonts.extraSmallLightText(
+                                                      context),
+                                            ),
+                                          ],
+                                        ),
+                                        Text(
+                                          "Date",
+                                          style: AppFonts.extraSmallLightText(
+                                              context),
+                                        ),
+                                      ],
+                                    ),
+                                    const SizedBox(height: 20),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Image.asset(
+                                          "lib/assets/icons/apply_for_loan.png",
+                                          width: 20,
+                                        ),
+                                        Column(
+                                          children: [
+                                            Text(
+                                              "Subscriptions",
+                                              style: AppFonts
+                                                  .extraSmallSemiBoldText(
+                                                      context),
+                                            ),
+                                            Text(
+                                              "Amount",
+                                              style:
+                                                  AppFonts.extraSmallLightText(
+                                                      context),
+                                            ),
+                                          ],
+                                        ),
+                                        Text(
+                                          "Date",
+                                          style: AppFonts.extraSmallLightText(
+                                              context),
+                                        ),
+                                      ],
+                                    ),
+                                    const SizedBox(height: 20),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Image.asset(
+                                          "lib/assets/icons/apply_for_loan.png",
+                                          width: 20,
+                                        ),
+                                        Column(
+                                          children: [
+                                            Text(
+                                              "Subscriptions",
+                                              style: AppFonts
+                                                  .extraSmallSemiBoldText(
+                                                      context),
+                                            ),
+                                            Text(
+                                              "Amount",
+                                              style:
+                                                  AppFonts.extraSmallLightText(
+                                                      context),
+                                            ),
+                                          ],
+                                        ),
+                                        Text(
+                                          "Date",
+                                          style: AppFonts.extraSmallLightText(
+                                              context),
+                                        ),
+                                      ],
                                     )
                                   ],
                                 ),
-                                Text(
-                                  "Date",
-                                  style:
-                                      AppFonts.extraSmallSemiBoldText(context),
-                                ),
-                              ],
-                            ),
-                            const SizedBox(height: 20),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Image.asset(
-                                  "lib/assets/icons/apply_for_loan.png",
-                                  width: 40,
-                                ),
-                                Column(
-                                  children: [
-                                    Text(
-                                      "Subscription",
-                                      style: AppFonts.extraSmallSemiBoldText(
-                                          context),
-                                    ),
-                                    Text(
-                                      "Amount",
-                                      style:
-                                          AppFonts.extraSmallLightText(context),
-                                    )
-                                  ],
-                                ),
-                                Text(
-                                  "Date",
-                                  style:
-                                      AppFonts.extraSmallSemiBoldText(context),
-                                ),
-                              ],
-                            ),
-                            const SizedBox(height: 20),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Image.asset(
-                                  "lib/assets/icons/apply_for_loan.png",
-                                  width: 40,
-                                ),
-                                Column(
-                                  children: [
-                                    Text(
-                                      "Subscription",
-                                      style: AppFonts.extraSmallSemiBoldText(
-                                          context),
-                                    ),
-                                    Text(
-                                      "Amount",
-                                      style:
-                                          AppFonts.extraSmallLightText(context),
-                                    )
-                                  ],
-                                ),
-                                Text(
-                                  "Date",
-                                  style:
-                                      AppFonts.extraSmallSemiBoldText(context),
-                                ),
-                              ],
-                            ),
-                            const SizedBox(height: 60)
-                          ],
-                        )),
+                              ),
+                            ))
+                      ],
+                    ),
+                    //Other financial info
                     Column(
                       children: [
                         GestureDetector(
@@ -248,7 +365,7 @@ class DashboardScreen extends StatelessWidget {
                             Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
                                 builder: (context) =>
-                                    FinancialHealthScreen(), // Navigate to Navigation
+                                    const FinancialHealthScreen(), // Navigate to Navigation
                               ),
                             );
                           },
@@ -264,9 +381,7 @@ class DashboardScreen extends StatelessWidget {
                                     style:
                                         AppFonts.smallLightTextGreen(context),
                                   ),
-                                  const SizedBox(
-                                    height: 5,
-                                  ),
+                                  const SizedBox(),
                                   Text(
                                     "89%",
                                     style: AppFonts.normalLightText(context),
@@ -284,14 +399,14 @@ class DashboardScreen extends StatelessWidget {
                                       const Icon(
                                         Icons.chevron_right,
                                         color: Colors.white,
-                                        size: 20,
+                                        size: 15,
                                       ),
                                     ],
                                   ), // } end Button Content Row
                                 ],
                               )),
                         ),
-                        const SizedBox(height: 10),
+                        const SizedBox(height: 15),
                         GestureDetector(
                           onTap: () {
                             Navigator.push(
@@ -321,7 +436,7 @@ class DashboardScreen extends StatelessWidget {
                             ),
                           ),
                         ),
-                        const SizedBox(height: 10),
+                        const SizedBox(height: 15),
                         GestureDetector(
                           onTap: () {
                             Navigator.push(
