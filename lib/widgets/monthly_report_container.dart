@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:riskore/core/data/expenses_data.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/presets/fonts.dart';
 import 'package:riskore/presets/styles.dart';
@@ -7,12 +8,14 @@ import 'package:riskore/screens/credit_report/monthly_report_screen.dart';
 class MonthlyReportContainer extends StatelessWidget {
   const MonthlyReportContainer({
     super.key,
-    required this.month,
+    required this.monthYear,
     required this.height,
     required this.gradientColors,
+    required this.month,
   });
 
   final String month;
+  final String monthYear;
   final double height;
   final List<Color> gradientColors;
 
@@ -37,7 +40,7 @@ class MonthlyReportContainer extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 10),
               child: Text(
-                month,
+                monthYear,
                 style: AppFonts.normalLightText(context),
               ),
             ),
@@ -45,7 +48,13 @@ class MonthlyReportContainer extends StatelessWidget {
             IconButton(
               onPressed: () => Navigator.push(
                 context,
-                MaterialPageRoute(builder: (_) => MonthlyReportScreen()),
+                MaterialPageRoute(
+                  builder: (_) => MonthlyReportScreen(
+                    expensesList: expensesList,
+                    index: 0,
+                    monthYear: monthYear,
+                  ),
+                ),
               ),
               icon: Icon(
                 size: 15,

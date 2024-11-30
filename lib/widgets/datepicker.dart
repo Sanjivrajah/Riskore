@@ -3,6 +3,7 @@ import 'package:riskore/presets/colors.dart';
 import 'package:riskore/presets/fonts.dart';
 import 'package:riskore/presets/styles.dart';
 import 'package:sizer/sizer.dart';
+import 'package:intl/intl.dart'; // Import for formatting the date
 
 class DatePickerButton extends StatefulWidget {
   final String text;
@@ -19,6 +20,15 @@ class DatePickerButton extends StatefulWidget {
 class _DatePickerButtonState extends State<DatePickerButton> {
   DateTime? _selectedDate;
 
+  // New variable to store the formatted date string
+  String _displayedDate = '';
+
+  @override
+  void initState() {
+    super.initState();
+    _displayedDate = widget.text; // Initialize with the initial text value
+  }
+
   void _selectDate() async {
     final DateTime? picked = await showDatePicker(
       context: context,
@@ -30,6 +40,8 @@ class _DatePickerButtonState extends State<DatePickerButton> {
     if (picked != null) {
       setState(() {
         _selectedDate = picked;
+        // Update the displayed date in the required format
+        _displayedDate = DateFormat('yyyy-MM-dd').format(_selectedDate!);
       });
     }
   }
@@ -47,7 +59,9 @@ class _DatePickerButtonState extends State<DatePickerButton> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-            widget.text,
+            _displayedDate.isEmpty
+                ? widget.text
+                : _displayedDate, // Use updated date
             style: AppFonts.smallLightText(context),
           ),
           IconButton(
