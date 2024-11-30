@@ -41,7 +41,7 @@ class Auth {
         'connectedEWallets': [''], 
         'employment_status': '', 
         'occupations': '',
-        'monthly_income': '', 
+        'monthly_income': 0.0, 
         'hobbies': ['']
         
       });
