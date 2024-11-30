@@ -49,11 +49,7 @@ class MyApp extends StatelessWidget {
             ),
             useMaterial3: true,
           ),
-
-          home: NavigationDrawer(),
-
-          home: AuthWidgetTree(),
-
+          home: const SpendingPatternScreen(),
           routes: {
             SignUpScreen.routeName: (context) => SignUpScreen(),
             LoginScreen.routeName: (context) => LoginScreen(),
@@ -69,7 +65,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -158,4 +153,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-
