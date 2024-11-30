@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:riskore/core/data/upcoming_payment_data.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/screens/dashboard/presentation/dashboard_screen.dart';
 import 'package:sizer/sizer.dart';
@@ -21,7 +22,10 @@ class _NavBarState extends State<NavBar> {
   int currentIndex = 0;
 
   List<Widget> screens = [
-    DashboardScreen(),
+    DashboardScreen(
+      upcomingPaymentList: upcomingPaymentList,
+      index: 0,
+    ),
     // (),
     // fina
     // ProfileScreen()
@@ -44,7 +48,10 @@ class _NavBarState extends State<NavBar> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const DashboardScreen(),
+                    builder: (context) => DashboardScreen(
+                      upcomingPaymentList: upcomingPaymentList,
+                      index: 0,
+                    ),
                   ),
                 );
               },

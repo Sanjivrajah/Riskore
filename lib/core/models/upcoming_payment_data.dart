@@ -1,17 +1,15 @@
-class BankOffers {
+class UpcomingPayment {
   final String image;
   final String name;
-  final String interest;
-  final String period;
   final String amount;
+  final String date;
   final String category;
 
-  BankOffers({
+  UpcomingPayment({
     required this.image,
     required this.name,
-    required this.interest,
-    required this.period,
     required this.amount,
+    required this.date,
     required this.category,
   });
 }
