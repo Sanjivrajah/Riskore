@@ -38,7 +38,7 @@ class _FinancialHealthScreenState extends State<FinancialHealthScreen> {
       _ChartData('Aug', 65),
       _ChartData('Sep', 52),
       _ChartData('Oct', 60),
-      _ChartData('Nov', 65),
+      _ChartData('Nov', 56),
     ];
     data2 = [
       _ChartData('Debt', debt),
