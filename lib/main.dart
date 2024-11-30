@@ -1,8 +1,12 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:riskore/core/auth_widget_tree.dart';
+import 'package:riskore/core/providers/full_user_data_provider.dart';
 import 'package:riskore/presets/colors.dart';
+import 'package:riskore/screens/authentication/auth.dart';
 import 'package:riskore/screens/credit_report/all_reports_screen.dart';
+import 'package:riskore/screens/dashboard/presentation/testing.dart';
 import 'package:riskore/screens/onboarding/presentation/onboarding_screen.dart';
 import 'package:riskore/screens/profile/linked_account_screen.dart';
 import 'package:riskore/screens/profile/profile_screen.dart';
@@ -35,29 +39,34 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Sizer(
       builder: (BuildContext, Orientation, ScreenType) {
-        return MaterialApp(
-          title: 'Flutter Demo',
-          theme: ThemeData(
-            fontFamily: 'Inter',
-            primaryColor: AppColor.green,
-            colorScheme: ColorScheme.light(
-              primary: AppColor.green,
-              onPrimary: AppColor.white,
-              secondary: AppColor.black,
-              onSecondary: Colors.white,
+        return MultiProvider(
+          providers: [
+            ChangeNotifierProvider(create: (_) => FullDataUserProvider()),
+          ],
+          child: MaterialApp(
+            title: 'Flutter Demo',
+            theme: ThemeData(
+              fontFamily: 'Inter',
+              primaryColor: AppColor.green,
+              colorScheme: ColorScheme.light(
+                primary: AppColor.green,
+                onPrimary: AppColor.white,
+                secondary: AppColor.black,
+                onSecondary: const Color.fromARGB(255, 164, 150, 150),
+              ),
+              useMaterial3: true,
             ),
-            useMaterial3: true,
+            home: AuthWidgetTree(),
+            routes: {
+              SignUpScreen.routeName: (context) => SignUpScreen(),
+              LoginScreen.routeName: (context) => LoginScreen(),
+              DashboardScreen.routeName: (context) => const DashboardScreen(),
+              SplashScreen.routeName: (context) => const SplashScreen(),
+              OnboardingScreen.routeName: (context) => const OnboardingScreen(),
+              // ignore: equal_keys_in_map
+              LinkedAccountScreen.routeName:(context) => const LinkedAccountScreen(),
+            },
           ),
-          home: AuthWidgetTree(),
-          routes: {
-            SignUpScreen.routeName: (context) => SignUpScreen(),
-            LoginScreen.routeName: (context) => LoginScreen(),
-            DashboardScreen.routeName: (context) => const DashboardScreen(),
-            SplashScreen.routeName: (context) => const SplashScreen(),
-            OnboardingScreen.routeName: (context) => const OnboardingScreen(),
-            // ignore: equal_keys_in_map
-            LinkedAccountScreen.routeName:(context) => const LinkedAccountScreen(),
-          },
         );
       },
     );
