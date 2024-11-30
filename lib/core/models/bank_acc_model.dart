@@ -6,7 +6,7 @@ class BankAccount {
   final double averageDailyBalance;
   final double monthlyInflow;
   final double monthlyOutflow;
-  final List<Transaction> transactionHistory;
+  final List<BankTransaction> transactionHistory;
   final List<IncomeDeposit> incomeDeposits;
   final List<RecurringPayment> recurringPayments;
 
@@ -24,14 +24,14 @@ class BankAccount {
   });
 }
 
-class Transaction {
+class BankTransaction {
   final DateTime date;
   final double amount;
   final String type;
   final String description;
   final String category;
 
-  Transaction({
+  BankTransaction({
     required this.date,
     required this.amount,
     required this.type,
