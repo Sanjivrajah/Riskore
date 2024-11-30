@@ -3,6 +3,7 @@ import 'package:riskore/presets/colors.dart';
 import 'package:riskore/presets/fonts.dart';
 import 'package:riskore/presets/styles.dart';
 import 'package:riskore/screens/credit_report/all_reports_screen.dart';
+import 'package:riskore/screens/spending_pattern/spending_pattern_screen.dart';
 import 'package:riskore/widgets/appbar_profile.dart';
 import 'package:riskore/widgets/border_button.dart';
 
@@ -21,7 +22,6 @@ class FinancialHealthScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBarProfile(press: () {}),
       backgroundColor: AppColor.black,
-      
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -119,7 +119,14 @@ class FinancialHealthScreen extends StatelessWidget {
                 SizedBox(height: 10.sp),
                 BorderButton(
                   text: 'Learn your spending pattern',
-                  press: () {},
+                  press: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SpendingPatternScreen(),
+                      ),
+                    );
+                  },
                   width: MediaQuery.sizeOf(context).width,
                   height: MediaQuery.sizeOf(context).width * 0.125,
                   borderColor: AppColor.green,
