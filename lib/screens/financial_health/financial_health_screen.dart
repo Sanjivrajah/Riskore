@@ -24,7 +24,11 @@ class FinancialHealthScreen extends StatefulWidget {
 
 class _FinancialHealthScreenState extends State<FinancialHealthScreen> {
   late List<_ChartData> data;
+  late List<_ChartData> data2;
   late TooltipBehavior _tooltip;
+
+  final double debt = 2500;
+  final double income = 3500;
 
   @override
   void initState() {
@@ -35,6 +39,10 @@ class _FinancialHealthScreenState extends State<FinancialHealthScreen> {
       _ChartData('Sep', 52),
       _ChartData('Oct', 60),
       _ChartData('Nov', 65),
+    ];
+    data2 = [
+      _ChartData('Debt', debt),
+      _ChartData('Income', income),
     ];
     _tooltip = TooltipBehavior(enable: true);
   }
@@ -58,7 +66,7 @@ class _FinancialHealthScreenState extends State<FinancialHealthScreen> {
                   child: Column(
                     children: [
                       Text(
-                        "Previous Months Credit Scores",
+                        "Previous 5 Months Credit Scores",
                         style: TextStyle(
                           fontFamily: "Inter",
                           fontSize: 16.sp,
@@ -69,6 +77,7 @@ class _FinancialHealthScreenState extends State<FinancialHealthScreen> {
                       ),
                       SizedBox(height: 15.sp),
                       SfCartesianChart(
+                        plotAreaBorderWidth: 0.3,
                         plotAreaBackgroundColor:
                             AppColor.maybankColor.withOpacity(0.2),
                         primaryXAxis: CategoryAxis(
@@ -78,7 +87,7 @@ class _FinancialHealthScreenState extends State<FinancialHealthScreen> {
                           labelStyle: AppFonts.smallLightText(context),
                           minimum: 0,
                           maximum: 100,
-                          interval: 20,
+                          interval: 10,
                         ),
                         tooltipBehavior: _tooltip,
                         series: <CartesianSeries<_ChartData, String>>[
@@ -94,21 +103,70 @@ class _FinancialHealthScreenState extends State<FinancialHealthScreen> {
                     ],
                   ),
                 ),
-                SizedBox(height: 15.sp),
+                SizedBox(height: 18.sp),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     _buildSparklineContainer(
                       context,
-                      "Income",
+                      "Income (k)",
                       AppColor.green,
+                      valueList: [3.5, 3.5, 3.5, 3.5, 3.5],
                     ),
                     _buildSparklineContainer(
                       context,
-                      "Expenses",
+                      "Expenses (k)",
                       AppColor.red,
+                      valueList: [1.2, 0.9, 1.3, 2.1, 1.3],
                     ),
                   ],
+                ),
+                SizedBox(height: 18.sp),
+                StandardContainer(
+                  width: MediaQuery.sizeOf(context).width,
+                  child: Column(
+                    children: [
+                      Text(
+                        "Debt-to-Income Ratio",
+                        style: TextStyle(
+                          fontFamily: "Inter",
+                          fontSize: 16.sp,
+                          fontWeight: FontWeight.w300,
+                          color: AppColor.white,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                      Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          SizedBox(
+                            height: 32.sp,
+                            child: Text(
+                              ((debt / income) * 100).toStringAsFixed(2) + "%",
+                              style: AppFonts.normalLightText(context),
+                            ),
+                          ),
+                          SfCircularChart(
+                              palette: [AppColor.red, AppColor.green],
+                              margin: EdgeInsets.zero,
+                              legend: Legend(
+                                  isVisible: true,
+                                  position: LegendPosition.bottom,
+                                  textStyle: AppFonts.smallLightText(context)),
+                              tooltipBehavior: _tooltip,
+                              series: <CircularSeries<_ChartData, String>>[
+                                DoughnutSeries<_ChartData, String>(
+                                    dataSource: data2,
+                                    xValueMapper: (_ChartData data2, _) =>
+                                        data2.x,
+                                    yValueMapper: (_ChartData data2, _) =>
+                                        data2.y,
+                                    name: 'Gold')
+                              ]),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
                 SizedBox(height: 25.sp),
                 const SectionHeading(text: "What can you do to improve?"),
@@ -168,7 +226,8 @@ class _FinancialHealthScreenState extends State<FinancialHealthScreen> {
   }
 
   Widget _buildSparklineContainer(
-      BuildContext context, String title, Color color) {
+      BuildContext context, String title, Color color,
+      {required List<double> valueList}) {
     return StandardContainer(
       width: (MediaQuery.sizeOf(context).width / 2) - 25,
       child: Column(
@@ -200,7 +259,7 @@ class _FinancialHealthScreenState extends State<FinancialHealthScreen> {
             ),
             labelDisplayMode: SparkChartLabelDisplayMode.all,
             labelStyle: AppFonts.extraSmallLightText(context),
-            data: <double>[1, 5, -6, 0, 1, -2, 1, 5, -6, 0, 1, -2],
+            data: valueList,
           ),
           SizedBox(height: 15.sp),
         ],
