@@ -2,11 +2,10 @@ import 'dart:convert';
 import 'dart:math';
 import 'package:crypto/crypto.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
 class SecurityLayer {
   static final SecurityLayer _instance = SecurityLayer._internal();
-  final FlutterSecureStorage _secureStorage = const FlutterSecureStorage();
+  final _secureStorage = const ();
   final List<String> _toxicityPatterns = [
     r'(hate|violent|offensive|harmful)',
     r'(threat|abuse|harassment)',
@@ -68,7 +67,7 @@ class SecurityLayer {
     for (var entry in maskedData.entries) {
       if (_isSensitiveField(entry.key)) {
         if (entry.value is String) {
-          maskedData[entry.key] = await _encryptValue(entry.value);
+          // maskedData[entry.key] = await _encryptValue(entry.value);
         }
       }
     }
@@ -88,20 +87,19 @@ class SecurityLayer {
     return sensitiveFields.contains(fieldName.toLowerCase());
   }
 
-  Future<String> _encryptValue(String value) async {
-    final key = await _secureStorage.read(key: 'encryption_key') ??
-        await _generateEncryptionKey();
-    final bytes = utf8.encode(value);
-    final hmac = Hmac(sha256, utf8.encode(key));
-    return base64.encode(hmac.convert(bytes).bytes);
-  }
+  // Future<String> _encryptValue(String value) async {
+  //   final key = await (key: 'encryption_key') ?? await _generateEncryptionKey();
+  //   final bytes = utf8.encode(value);
+  //   final hmac = Hmac(sha256, utf8.encode(key));
+  //   return base64.encode(hmac.convert(bytes).bytes);
+  // }
 
-  Future<String> _generateEncryptionKey() async {
-    final key =
-        base64.encode(List<int>.generate(32, (_) => Random().nextInt(256)));
-    await _secureStorage.write(key: 'encryption_key', value: key);
-    return key;
-  }
+  // Future<String> _generateEncryptionKey() async {
+  //   final key =
+  //       base64.encode(List<int>.generate(32, (_) => Random().nextInt(256)));
+  //   await _secureStorage.write(key: 'encryption_key', value: key);
+  //   return key;
+  // }
 
   Future<double> _analyzeToxicity(String content) async {
     double toxicityScore = 0.0;
