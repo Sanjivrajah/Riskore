@@ -27,7 +27,7 @@ class _NavBarState extends State<NavBar> {
     DashboardScreen(),
     // (),
     // fina
-    ProfileScreen()
+    // ProfileScreen()
   ];
   @override
   Widget build(BuildContext context) {
