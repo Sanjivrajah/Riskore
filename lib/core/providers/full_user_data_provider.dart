@@ -4,16 +4,16 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:riskore/core/models/full_user_data.dart';
+import 'package:riskore/core/models/user_model.dart';
 import 'package:tflite_flutter/tflite_flutter.dart';
 import 'package:http/http.dart' as http;
 
 class FullDataUserProvider with ChangeNotifier {
   final FirebaseFirestore _db = FirebaseFirestore.instance;
-  UserData? _userData;
+  UserModel? _userData;
   bool _isLoading = false;
 
-  UserData? get userData => _userData;
+  UserModel? get userData => _userData;
   bool get isLoading => _isLoading;
 
   final String userId = 'LfC4h9Um06O2zSxNonJSRTFTNsi2';
@@ -28,7 +28,7 @@ class FullDataUserProvider with ChangeNotifier {
 
       if (doc.exists) {
         final data = doc.data() as Map<String, dynamic>;
-        _userData = UserData(
+        _userData = UserModel(
           userId: data['userId'] ?? '',
           full_name: data['full_name'] ?? '',
           age: data['age'] ?? 0,
@@ -76,7 +76,7 @@ class FullDataUserProvider with ChangeNotifier {
     }
   }
 
-  Future<Map<String, dynamic>> predictUserRiskHttp(UserData userData) async {
+  Future<Map<String, dynamic>> predictUserRiskHttp(UserModel userData) async {
     final Dio _dio = Dio();
     try {
       final url = Uri.parse('https://trpqmwwd-5000.asse.devtunnels.ms/predict');
