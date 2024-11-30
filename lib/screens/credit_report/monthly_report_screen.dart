@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/presets/fonts.dart';
 import 'package:riskore/presets/styles.dart';
+import 'package:riskore/screens/report_screen.dart';
 import 'package:riskore/widgets/appbar_arrow.dart';
 import 'package:riskore/widgets/expense_row.dart';
 import 'package:riskore/widgets/fill_button.dart';
@@ -496,7 +497,13 @@ class _MonthlyReportScreenState extends State<MonthlyReportScreen> {
                     alignment: Alignment.bottomCenter,
                     child: FillButton(
                       text: "Download in PDF",
-                      press: () {},
+                      press: () {
+                        // navigate to download pdf screen
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => ReportScreen()));
+                      },
                       width: MediaQuery.sizeOf(context).width,
                       height: 45,
                     ),
