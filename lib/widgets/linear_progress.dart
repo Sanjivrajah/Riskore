@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/presets/fonts.dart'; // Assuming AppColor is defined here
 
-class RoundedLinearProgressBar extends StatelessWidget {
+class LinearProgressBar extends StatelessWidget {
   final double progress;
 
-  const RoundedLinearProgressBar({super.key, required this.progress});
+  const LinearProgressBar({super.key, required this.progress});
 
   @override
   Widget build(BuildContext context) {
