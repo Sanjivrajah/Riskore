@@ -25,7 +25,7 @@ class BorderButton extends StatelessWidget {
         width: width,
         height: height,
         child: ElevatedButton(
-          onPressed: () {},
+          onPressed: press,
           style: ElevatedButton.styleFrom(
             backgroundColor: Colors.transparent,
             foregroundColor: AppColor.white,
