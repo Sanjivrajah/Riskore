@@ -367,7 +367,6 @@ class DashboardScreen extends StatelessWidget {
                               MaterialPageRoute(
                                 builder: (context) =>
                                     const FinancialHealthScreen(), // Navigate to Navigation
-
                               ),
                             );
                           },
