@@ -49,35 +49,62 @@ class _SpendingPatternScreenState extends State<SpendingPatternScreen> {
                 "See what happens when you...",
                 style: AppFonts.largeExtraLightText(context),
               ),
-              SizedBox(height: 20.sp),
-              BorderButton(
-                text: "Don't pay BNPL on time",
-                press: () {
-                  print("Button clicked");
-                  _getAIResponse(
-                      "What are the consequences of not paying Buy Now Pay Later (BNPL) loans on time?");
-                },
-                width: MediaQuery.sizeOf(context).width,
-                height: MediaQuery.sizeOf(context).width * 0.125,
-                borderColor: AppColor.green,
-              ),
-              SizedBox(height: 20.sp),
-              BorderButton(
-                text: 'Spend too much on luxury items every month',
-                press: () => _getAIResponse(
-                    "What are the financial implications of overspending on luxury items monthly?"),
-                width: MediaQuery.sizeOf(context).width,
-                height: MediaQuery.sizeOf(context).width * 0.125,
-                borderColor: AppColor.green,
-              ),
-              SizedBox(height: 20.sp),
-              BorderButton(
-                text: 'Save up 10% of your salary every month',
-                press: () => _getAIResponse(
-                    "What are the benefits of saving 10% of your monthly salary over time?"),
-                width: MediaQuery.sizeOf(context).width,
-                height: MediaQuery.sizeOf(context).width * 0.125,
-                borderColor: AppColor.green,
+              SizedBox(
+                height: 200,
+                child: SingleChildScrollView(
+                    child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(height: 20.sp),
+                    BorderButton(
+                      text: "Don't pay BNPL on time",
+                      press: () {
+                        print("Button clicked");
+                        _getAIResponse(
+                            "What are the consequences of not paying Buy Now Pay Later (BNPL) loans on time, focusing on the context of alternative credit scoring?");
+                      },
+                      width: MediaQuery.sizeOf(context).width,
+                      height: MediaQuery.sizeOf(context).width * 0.125,
+                      borderColor: AppColor.green,
+                    ),
+                    SizedBox(height: 20.sp),
+                    BorderButton(
+                      text: 'Spend too much on luxury items every month',
+                      press: () => _getAIResponse(
+                          "What are the financial implications of overspending on luxury items monthly, focusing on the context of alternative credit scoring?"),
+                      width: MediaQuery.sizeOf(context).width,
+                      height: MediaQuery.sizeOf(context).width * 0.125,
+                      borderColor: AppColor.green,
+                    ),
+                    SizedBox(height: 20.sp),
+                    BorderButton(
+                      text: 'Save up 10% of your salary every month',
+                      press: () => _getAIResponse(
+                          "What are the benefits of saving 10% of your monthly salary over time, focusing on the context of alternative credit scoring?"),
+                      width: MediaQuery.sizeOf(context).width,
+                      height: MediaQuery.sizeOf(context).width * 0.125,
+                      borderColor: AppColor.green,
+                    ),
+                    SizedBox(height: 20.sp),
+                    BorderButton(
+                      text: 'Pay your BNPL on time',
+                      press: () => _getAIResponse(
+                          "What are the benefits paying BNPL on time, focusing on the context of alternative credit scoring?"),
+                      width: MediaQuery.sizeOf(context).width,
+                      height: MediaQuery.sizeOf(context).width * 0.125,
+                      borderColor: AppColor.green,
+                    ),
+                    SizedBox(height: 20.sp),
+                    BorderButton(
+                      text: 'Have too many subscription plans',
+                      press: () => _getAIResponse(
+                          "What are the downsides of subscribing to too many plans such as Netflix, Apple Music, Google One etc., focusing on the context of alternative credit scoring?"),
+                      width: MediaQuery.sizeOf(context).width,
+                      height: MediaQuery.sizeOf(context).width * 0.125,
+                      borderColor: AppColor.green,
+                    ),
+                  ],
+                )),
               ),
               SizedBox(height: 25.sp),
               StandardContainer(
