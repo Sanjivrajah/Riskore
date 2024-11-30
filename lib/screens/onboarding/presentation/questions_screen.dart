@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:riskore/core/data/upcoming_payment_data.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/presets/fonts.dart';
 import 'package:riskore/screens/dashboard/presentation/dashboard_screen.dart';
@@ -153,7 +154,11 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
       } else {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (_) => DashboardScreen()),
+          MaterialPageRoute(
+              builder: (_) => DashboardScreen(
+                    upcomingPaymentList: upcomingPaymentList,
+                    index: 0,
+                  )),
         );
       }
     });

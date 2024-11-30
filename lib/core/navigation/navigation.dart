@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:riskore/core/data/bank_offers_data.dart';
+import 'package:riskore/core/data/upcoming_payment_data.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/screens/dashboard/presentation/dashboard_screen.dart';
 
@@ -27,7 +28,10 @@ class _NavigationState extends State<Navigation> {
   late String selectedTab;
 
   List<Widget> screens = [
-    DashboardScreen(),
+    DashboardScreen(
+      upcomingPaymentList: upcomingPaymentList,
+      index: 0,
+    ),
     EasyLoanScreen(
       bankOffersList: bankOffersList,
       index: 0,

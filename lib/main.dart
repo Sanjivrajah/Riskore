@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:riskore/core/auth_widget_tree.dart';
+import 'package:riskore/core/data/upcoming_payment_data.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/screens/credit_report/all_reports_screen.dart';
 import 'package:riskore/screens/onboarding/presentation/onboarding_screen.dart';
@@ -53,7 +54,10 @@ class MyApp extends StatelessWidget {
           routes: {
             SignUpScreen.routeName: (context) => SignUpScreen(),
             LoginScreen.routeName: (context) => LoginScreen(),
-            DashboardScreen.routeName: (context) => const DashboardScreen(),
+            DashboardScreen.routeName: (context) => DashboardScreen(
+                  upcomingPaymentList: upcomingPaymentList,
+                  index: 0,
+                ),
             SplashScreen.routeName: (context) => const SplashScreen(),
             OnboardingScreen.routeName: (context) => const OnboardingScreen(),
             // ignore: equal_keys_in_map

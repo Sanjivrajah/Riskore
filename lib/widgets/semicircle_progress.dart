@@ -57,7 +57,6 @@ class _CircularArchProgressBarState extends State<CircularArchProgressBar>
           child: CustomPaint(
             painter: CircularArchProgressBarPainter(
               strokeWidth: widget.strokeWidth,
-              color: widget.backgroundColor,
               value: 100,
             ),
           ),
@@ -71,7 +70,6 @@ class _CircularArchProgressBarState extends State<CircularArchProgressBar>
               return CustomPaint(
                 painter: CircularArchProgressBarPainter(
                   strokeWidth: widget.strokeWidth,
-                  color: widget.fillColor,
                   value: _animation.value,
                 ),
               );
@@ -85,34 +83,70 @@ class _CircularArchProgressBarState extends State<CircularArchProgressBar>
 
 class CircularArchProgressBarPainter extends CustomPainter {
   final double strokeWidth;
-  final double value;
-  final Color color;
+  final double value; // Progress value in percentage (0 to 100)
+  final List<Color> segmentColors; // Colors for each segment
+  final Color backgroundColor; // Static background color (e.g., white)
 
   CircularArchProgressBarPainter({
     required this.strokeWidth,
     required this.value,
-    required this.color,
+    this.segmentColors = const [Colors.red, Colors.yellow, Colors.green],
+    this.backgroundColor = Colors.white, // Default background color
   });
 
   @override
   void paint(Canvas canvas, Size size) {
     final Paint paint = Paint()
-      ..color = color
       ..strokeWidth = strokeWidth
       ..strokeCap = StrokeCap.round
       ..style = PaintingStyle.stroke;
 
     final double radius = size.width / 2;
-    final double startAngle = -math.pi; // Start from the top-left
-    final double sweepAngle = math.pi * (value / 100); // Half-circle
+    final Offset center = Offset(radius, radius);
+    final Rect arcRect = Rect.fromCircle(center: center, radius: radius);
 
+    final double startAngle = -math.pi; // Start from the top-left
+    final double totalSweepAngle = math.pi; // Half-circle
+    final double progressSweepAngle = totalSweepAngle * (value / 100);
+
+    // 1. Draw static background arc (white) for the full range
+    paint.color = backgroundColor;
     canvas.drawArc(
-      Rect.fromCircle(center: Offset(radius, radius), radius: radius),
+      arcRect,
       startAngle,
-      sweepAngle,
+      totalSweepAngle,
       false,
       paint,
     );
+
+    // 2. Define segment angles and draw progress arcs
+    final double segmentSweepAngle =
+        totalSweepAngle / 3; // One-third of the half-circle
+
+    double drawnAngle = 0;
+    for (int i = 0; i < 3; i++) {
+      paint.color = segmentColors[i];
+
+      final double segmentStartAngle = startAngle + i * segmentSweepAngle;
+      final double segmentEndAngle = segmentStartAngle + segmentSweepAngle;
+
+      // Determine the angle to draw based on progress
+      final double currentEndAngle = math.min(
+        startAngle + progressSweepAngle,
+        segmentEndAngle,
+      );
+
+      if (currentEndAngle > segmentStartAngle) {
+        canvas.drawArc(
+          arcRect,
+          segmentStartAngle,
+          currentEndAngle - segmentStartAngle,
+          false,
+          paint,
+        );
+        drawnAngle += currentEndAngle - segmentStartAngle;
+      }
+    }
   }
 
   @override
