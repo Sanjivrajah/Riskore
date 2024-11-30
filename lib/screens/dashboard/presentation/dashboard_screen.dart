@@ -64,7 +64,7 @@ class DashboardScreen extends StatelessWidget {
                             children: [
                               SizedBox(height: 15),
                               Text(
-                                "82%",
+                                "89%",
                                 style: AppFonts.largeExtraLightText(context),
                               ),
                               //Change Indicator
@@ -297,8 +297,7 @@ class DashboardScreen extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) =>
-                                    const EasyLoanScreen(),
+                                builder: (context) => const EasyLoanScreen(),
                               ),
                             );
                           },
@@ -328,8 +327,7 @@ class DashboardScreen extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) =>
-                                    const AllReportsScreen(),
+                                builder: (context) => const AllReportsScreen(),
                               ),
                             );
                           },
