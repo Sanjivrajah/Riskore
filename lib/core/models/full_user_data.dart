@@ -1,34 +1,34 @@
 // This is a dummy data for user that can be as an input to the models
 // Class of userdata
 class UserData {
-  final String userId;
-  final String fullName;
-  final int age;
-  final String gender;
-  final String employmentStatus;
-  final String occupation;
-  final double monthlyIncome;
-  final String educationLevel;
-  final String residentialStatus;
-  final String maritalStatus;
-  final int employmentDuration;
-  final String industry;
+  String userId;
+  String fullName;
+  int age;
+  String gender;
+  String employmentStatus;
+  String occupation;
+  double monthlyIncome;
+  String educationLevel;
+  String residentialStatus;
+  String maritalStatus;
+  int employmentDuration;
+  String industry;
   List<String> hobbies;
-  final int numOfAccounts;
-  final double totalAccountBalance;
-  final double avgDailyBalance;
-  final double totalMonthlyInflow;
-  final double totalMonthlyOutflow;
-  final int numWallets;
-  final double totalWalletBalance;
-  final double avgWalletTransaction;
-  final int numUtilityBills;
-  final double avgUtilityAmount;
-  final int overdueBills;
-  final double rentAmount;
-  final String rentStatus;
-  final double monthlyPlanCost;
-  final int creditScore;
+  int numOfAccounts;
+  double totalAccountBalance;
+  double avgDailyBalance;
+  double totalMonthlyInflow;
+  double totalMonthlyOutflow;
+  int numWallets;
+  double totalWalletBalance;
+  double avgWalletTransaction;
+  int numUtilityBills;
+  double avgUtilityAmount;
+  int overdueBills;
+  double rentAmount;
+  String rentStatus;
+  double monthlyPlanCost;
+  int creditScore;
 
   UserData({
     required this.userId,
