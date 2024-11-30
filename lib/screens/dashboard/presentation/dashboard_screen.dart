@@ -248,7 +248,7 @@ class DashboardScreen extends StatelessWidget {
                             Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
                                 builder: (context) =>
-                                    Navigation(), // Navigate to Navigation
+                                    FinancialHealthScreen(), // Navigate to Navigation
                               ),
                             );
                           },
