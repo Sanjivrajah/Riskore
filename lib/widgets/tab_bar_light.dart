@@ -4,52 +4,44 @@ import 'package:riskore/presets/fonts.dart';
 import 'package:riskore/presets/styles.dart';
 
 class TabBarLight extends StatefulWidget {
-  final int selectedIndex;
-  final Function(int) onTabSelected; // Callback for handling selection
-  const TabBarLight(
-      {super.key, required this.selectedIndex, required this.onTabSelected});
+  final Function(String) onTabSelected;
+
+  const TabBarLight({super.key, required this.onTabSelected});
 
   @override
   State<TabBarLight> createState() => _TabBarLightState();
 }
 
 class _TabBarLightState extends State<TabBarLight> {
+  String selectedTab = "Personal"; // Default selected tab
+
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: AppColor.white.withOpacity(0.125),
+        color: AppColor.white.withOpacity(0.2),
         borderRadius: AppStyles.borderRadiusFullyRounded,
       ),
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          buildTabItem(
-            text: 'Bank Accounts',
-            index: 0,
-          ),
-          buildTabItem(
-            text: 'E-wallets',
-            index: 1,
-          ),
-          buildTabItem(
-            text: 'Repayment status',
-            index: 2,
-          ),
+          buildTabItem(tab: 'Personal'),
+          buildTabItem(tab: 'House'),
+          buildTabItem(tab: 'Car'),
         ],
       ),
     );
   }
 
-  Widget buildTabItem({required String text, required int index}) {
-    final isSelected = widget.selectedIndex == index; // Check if selected
+  Widget buildTabItem({required String tab}) {
+    bool isSelected = tab == selectedTab;
     return InkWell(
-      // Wrap with InkWell for click handling
       onTap: () {
         setState(() {
-          widget.onTabSelected(index); // Update selected index
+          selectedTab = tab; // Update selected tab locally
         });
+        widget.onTabSelected(tab); // Notify parent widget
       },
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
@@ -58,7 +50,7 @@ class _TabBarLightState extends State<TabBarLight> {
           borderRadius: AppStyles.borderRadiusFullyRounded,
         ),
         child: Text(
-          text,
+          tab,
           style: isSelected
               ? AppFonts.smallRegularTextBlack(context)
               : AppFonts.smallLightText(context),
