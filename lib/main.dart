@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:riskore/core/auth_widget_tree.dart';
+import 'package:riskore/core/data/upcoming_payment_data.dart';
 import 'package:riskore/core/providers/full_user_data_provider.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/screens/authentication/auth.dart';
@@ -57,15 +58,20 @@ class MyApp extends StatelessWidget {
               ),
               useMaterial3: true,
             ),
-            home: AuthWidgetTree(),
-            routes: {
-              SignUpScreen.routeName: (context) => SignUpScreen(),
-              LoginScreen.routeName: (context) => LoginScreen(),
-              DashboardScreen.routeName: (context) => const DashboardScreen(),
-              SplashScreen.routeName: (context) => const SplashScreen(),
-              OnboardingScreen.routeName: (context) => const OnboardingScreen(),
-              // ignore: equal_keys_in_map
-              LinkedAccountScreen.routeName: (context) =>
+            useMaterial3: true,
+          ),
+          home: AuthWidgetTree(),
+          routes: {
+            SignUpScreen.routeName: (context) => SignUpScreen(),
+            LoginScreen.routeName: (context) => LoginScreen(),
+            DashboardScreen.routeName: (context) => DashboardScreen(
+                  upcomingPaymentList: upcomingPaymentList,
+                  index: 0,
+                ),
+            SplashScreen.routeName: (context) => const SplashScreen(),
+            OnboardingScreen.routeName: (context) => const OnboardingScreen(),
+            // ignore: equal_keys_in_map
+            LinkedAccountScreen.routeName: (context) =>
                 const LinkedAccountScreen(),
             },
           ),
