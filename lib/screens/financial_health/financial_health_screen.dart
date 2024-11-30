@@ -142,7 +142,7 @@ class _FinancialHealthScreenState extends State<FinancialHealthScreen> {
                           SizedBox(
                             height: 32.sp,
                             child: Text(
-                              ((debt / income) * 100).toStringAsFixed(2) + "%",
+                              "${((debt / income) * 100).toStringAsFixed(2)}%",
                               style: AppFonts.normalLightText(context),
                             ),
                           ),
@@ -248,7 +248,7 @@ class _FinancialHealthScreenState extends State<FinancialHealthScreen> {
             axisLineWidth: 1,
             axisLineColor: AppColor.white,
             color: color,
-            trackball: SparkChartTrackball(
+            trackball: const SparkChartTrackball(
                 activationMode: SparkChartActivationMode.tap),
             marker: SparkChartMarker(
               color: AppColor.white,
