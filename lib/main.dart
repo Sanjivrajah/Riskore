@@ -4,6 +4,7 @@ import 'package:riskore/presets/colors.dart';
 import 'package:riskore/screens/credit_report/all_reports_screen.dart';
 import 'package:riskore/screens/profile/linked_account_screen.dart';
 import 'package:riskore/screens/profile/profile_screen.dart';
+import 'package:riskore/screens/spending_pattern/spending_pattern_screen.dart';
 import 'package:riskore/widget_library_1.dart';
 import 'package:riskore/widget_library_2.dart';
 import 'package:riskore/widgets/profile_container.dart';
@@ -46,7 +47,7 @@ class MyApp extends StatelessWidget {
             ),
             useMaterial3: true,
           ),
-          home: Navigation(),
+          home: NavigationDrawer(),
           routes: {
             SignUpScreen.routeName: (context) => SignUpScreen(),
             LoginScreen.routeName: (context) => LoginScreen(),

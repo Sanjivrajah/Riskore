@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/screens/dashboard/presentation/dashboard_screen.dart';
+
 import 'package:riskore/screens/financial_health/financial_health_screen.dart';
 import 'package:riskore/screens/loan_application/easy_loan_screen.dart';
 import 'package:riskore/screens/profile/profile_screen.dart';
@@ -15,7 +16,7 @@ class Navigation extends StatefulWidget {
 }
 
 class _NavigationState extends State<Navigation> {
-    static GlobalKey<_NavigationState> globalKey =
+  static GlobalKey<_NavigationState> globalKey =
       new GlobalKey<_NavigationState>();
   BottomNavigationBar get navigationBar {
     return _NavigationState.globalKey.currentWidget as BottomNavigationBar;
@@ -29,7 +30,6 @@ class _NavigationState extends State<Navigation> {
     FinancialHealthScreen(),
     ProfileScreen()
   ];
-
 
   @override
   Widget build(BuildContext context) {
@@ -87,7 +87,7 @@ class _NavigationState extends State<Navigation> {
                 child: Image.asset(
                   currentIndex == 2
                       ? "lib/assets/icons/tips_nav_selected.png" // Selected icon
-                      : "lib/assets/icons/tips_nav.png", 
+                      : "lib/assets/icons/tips_nav.png",
                   width: 22.sp,
                   alignment: Alignment.center,
                 ),
@@ -101,7 +101,7 @@ class _NavigationState extends State<Navigation> {
                 child: Image.asset(
                   currentIndex == 3
                       ? "lib/assets/icons/profile_nav_selected.png" // Selected icon
-                      : "lib/assets/icons/profile_nav.png", 
+                      : "lib/assets/icons/profile_nav.png",
                   width: 22.sp,
                 ),
               ),

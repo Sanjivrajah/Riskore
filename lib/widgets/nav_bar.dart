@@ -5,8 +5,7 @@ import 'package:sizer/sizer.dart';
 
 class NavBar extends StatefulWidget {
   static const routeName = '/navigation';
-  
-  
+
   const NavBar({super.key});
 
   @override
@@ -14,20 +13,18 @@ class NavBar extends StatefulWidget {
 }
 
 class _NavBarState extends State<NavBar> {
-  static GlobalKey<_NavBarState> globalKey =
-      new GlobalKey<_NavBarState>();
+  static GlobalKey<_NavBarState> globalKey = new GlobalKey<_NavBarState>();
   BottomNavigationBar get navigationBar {
     return _NavBarState.globalKey.currentWidget as BottomNavigationBar;
   }
 
   int currentIndex = 0;
-  
 
   List<Widget> screens = [
     DashboardScreen(),
     // (),
     // fina
-    ProfileScreen()
+    // ProfileScreen()
   ];
   @override
   Widget build(BuildContext context) {

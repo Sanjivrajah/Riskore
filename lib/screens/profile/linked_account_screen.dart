@@ -39,7 +39,6 @@ class LinkedAccountScreen extends StatelessWidget {
                       gradientColors: [
                         const Color(0xFFFE6033),
                         const Color(0xFFF7F7F7),
-                        
                       ], // Set the desired color
                       angle: 180.0,
                       imagePath:
@@ -53,7 +52,6 @@ class LinkedAccountScreen extends StatelessWidget {
                       gradientColors: [
                         const Color(0xFF00B14F),
                         const Color(0xFF343434),
-                        
                       ], // Set the desired color
                       angle: 270.0,
                       imagePath:
@@ -74,12 +72,16 @@ class LinkedAccountScreen extends StatelessWidget {
                           'lib/assets/images/TNG_logo.png', // Path to your image
                     ),
                   ],
-                ), 
-                SizedBox(height: 28.sp,),
-                FillButton(text: "Connect to a new account", press: (){}, width: MediaQuery.sizeOf(context).width,
+                ),
+                SizedBox(
+                  height: 28.sp,
+                ),
+                FillButton(
+                  text: "Connect to a new account",
+                  press: () {},
+                  width: MediaQuery.sizeOf(context).width,
                   height: 45,
                 )
-                
               ],
             ),
           ),
