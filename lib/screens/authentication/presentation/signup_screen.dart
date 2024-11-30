@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:riskore/presets/colors.dart' as colors;
 import 'package:riskore/screens/authentication/auth.dart';
 import 'package:riskore/screens/authentication/presentation/login_screen.dart';
+import 'package:riskore/widgets/fill_button.dart';
 
 class SignUpScreen extends StatefulWidget {
   static const routeName = '/signup-screen';
@@ -22,6 +23,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
       await _auth.createUserWithEmailAndPassword(
         _emailController.text.trim(),
         _passwordController.text.trim(),
+        _nameController.text.trim()
       );
       // Navigate to the main app screen after successful login
     } catch (e) {
@@ -42,15 +44,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
         width: double.infinity,
         height: double.infinity,
         decoration: BoxDecoration(
-            // gradient: LinearGradient(
-            //   begin: Alignment.topCenter,
-            //   end: Alignment.bottomCenter,
-            //   colors: [
-            //     Colors.black,
-            //     Color(0xFF1B1B1B),
-            //     Color.fromARGB(255, 0, 66, 33),
-            //   ],
-            // ),
+
             color: colors.AppColor.black),
         child: SingleChildScrollView(
           child: Padding(
@@ -120,7 +114,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     ),
                   ),
                 ),
-                SizedBox(height: 24),
+                // SizedBox(height: 24),
                 TextFormField(
                   obscureText: true,
                   style: TextStyle(color: Colors.white),
@@ -136,27 +130,13 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   ),
                 ),
                 SizedBox(height: 32),
-                SizedBox(
-                  width: double.infinity,
-                  height: 48,
-                  child: ElevatedButton(
-                    onPressed: _signUp,
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.white,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(24),
-                      ),
-                    ),
-                    child: Text(
-                      "Sign Up",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                  ),
+                FillButton(
+                  text: "Sign Up",
+                  press: _signUp,
+                  width: MediaQuery.sizeOf(context).width,
+                  height: MediaQuery.sizeOf(context).width * 0.125,
                 ),
+                
                 SizedBox(height: 24),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,

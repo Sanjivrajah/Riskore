@@ -19,7 +19,7 @@ class EasyLoanScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBarProfile(press: () {}),
       backgroundColor: AppColor.black,
-      bottomNavigationBar: const NavBar(),
+      
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
