@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/screens/dashboard/presentation/dashboard_screen.dart';
-import 'package:riskore/screens/profile/profile_screen.dart';
 import 'package:sizer/sizer.dart';
 
 class NavBar extends StatefulWidget {
@@ -43,12 +42,22 @@ class _NavBarState extends State<NavBar> {
         unselectedFontSize: 14.sp,
         items: [
           BottomNavigationBarItem(
-            icon: SizedBox(
-              width: 22.sp,
-              height: 25.sp,
-              child: Image.asset(
-                "lib/assets/icons/home_nav_selected.png",
-                height: 21.sp,
+            icon: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const DashboardScreen(),
+                  ),
+                );
+              },
+              child: SizedBox(
+                width: 22.sp,
+                height: 25.sp,
+                child: Image.asset(
+                  "lib/assets/icons/home_nav_selected.png",
+                  height: 21.sp,
+                ),
               ),
             ),
             label: 'Home',
