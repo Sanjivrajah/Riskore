@@ -12,6 +12,7 @@ import 'package:riskore/widgets/fill_button.dart';
 import 'package:sizer/sizer.dart';
 
 class OnboardingScreen extends StatelessWidget {
+  static const routeName = '/onboarding-screen';
   const OnboardingScreen({super.key});
 
   @override

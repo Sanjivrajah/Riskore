@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:riskore/presets/colors.dart' as colors;
 import 'package:riskore/screens/authentication/auth.dart';
 import 'package:riskore/screens/authentication/presentation/login_screen.dart';
+import 'package:riskore/screens/onboarding/presentation/onboarding_screen.dart';
 import 'package:riskore/widgets/fill_button.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -26,6 +27,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
         _nameController.text.trim()
       );
       // Navigate to the main app screen after successful login
+      Navigator.of(context).pushNamed(OnboardingScreen.routeName);
     } catch (e) {
       setState(() {
         _errorMessage = e.toString(); // Handle error
@@ -102,6 +104,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
                 TextFormField(
                   controller: _passwordController,
+                  obscureText: true,
                   style: TextStyle(color: Colors.white),
                   decoration: InputDecoration(
                     labelText: "Password",

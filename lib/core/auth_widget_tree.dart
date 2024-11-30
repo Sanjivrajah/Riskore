@@ -19,7 +19,7 @@ class _AuthWidgetTreeState extends State<AuthWidgetTree> {
   void initState() {
     super.initState();
     // Start a timer to switch screens after 5 seconds
-    Timer(const Duration(seconds: 5), () {
+    Timer(const Duration(seconds: 2), () {
       setState(() {
         _showWelcomeScreen = false; // Change the flag to show the next screen
       });

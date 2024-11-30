@@ -38,7 +38,11 @@ class Auth {
         'name': name,
         'birthDate': '',
         'place': '',
-        'connectedEWallets': ['']
+        'connectedEWallets': [''], 
+        'employment_status': '', 
+        'occupations': '',
+        'monthly_income': '', 
+        'hobbies': ['']
         
       });
     });
