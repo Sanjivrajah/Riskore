@@ -391,11 +391,11 @@ class _MonthlyReportScreenState extends State<MonthlyReportScreen> {
                         context,
                         MaterialPageRoute(
                           builder: (context) => ReportScreen(
-                            bankTotalAmount: bankTotalAmountInt,
-                            ewalletTotalAmount: ewalletTotalAmountInt,
-                            loanAmount: loanAmount.toInt(),
-                            repaymentAmount: repaymentAmount.toInt(),
-                          ),
+                              // bankTotalAmount: bankTotalAmountInt,
+                              // ewalletTotalAmount: ewalletTotalAmountInt,
+                              // loanAmount: loanAmount.toInt(),
+                              // repaymentAmount: repaymentAmount.toInt(),
+                              ),
                         ),
                       );
                     },
