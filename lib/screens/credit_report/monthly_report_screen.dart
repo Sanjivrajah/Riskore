@@ -11,6 +11,11 @@ import 'package:riskore/widgets/screen_title.dart';
 import 'package:riskore/widgets/tab_bar_dark.dart';
 import 'package:sizer/sizer.dart';
 import 'package:pie_chart/pie_chart.dart';
+import 'package:syncfusion_flutter_pdf/pdf.dart';
+import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:share_plus/share_plus.dart';
+import 'dart:io';
 
 class MonthlyReportScreen extends StatefulWidget {
   final List<Expenses> expensesList;
@@ -54,6 +59,194 @@ class _MonthlyReportScreenState extends State<MonthlyReportScreen> {
     AppColor.grabPayColor,
     AppColor.bigPayColor,
   ];
+
+  // Function to generate reports
+    Future<String> generateCreditReport() async {
+    try {
+      final PdfDocument document = PdfDocument();
+
+      // Page 1
+      PdfPage page = document.pages.add();
+      PdfGraphics graphics = page.graphics;
+
+      // Header for first page
+      graphics.drawString(
+        'RISKORE Credit Assessment Report',
+        PdfStandardFont(PdfFontFamily.helvetica, 20, style: PdfFontStyle.bold),
+        bounds: const Rect.fromLTWH(50, 20, 500, 40),
+      );
+
+      graphics.drawString(
+        'Generated: ${DateTime.now().toString().split('.')[0]}',
+        PdfStandardFont(PdfFontFamily.helvetica, 10),
+        bounds: const Rect.fromLTWH(50, 45, 500, 20),
+      );
+
+      // First page sections
+      addSection(
+          page,
+          'Bank Account Information',
+          [
+            {'Account Balance': 'RM 5,000'},
+            {'Transaction History': '45 transactions'},
+            {'Income Deposits': 'Monthly: RM 3,500'},
+            {'Recurring Payments': '3 active'},
+            {'Account Age': '2 years 3 months'},
+            {'Average Monthly Balance': 'RM 4,200'},
+            {'Overdraft Frequency': 'None'},
+            {'Standing Instructions': '2 active'}
+          ],
+          80);
+
+      addSection(
+          page,
+          'Digital Platform Activity',
+          [
+            {'Online Shopping': 'Active User'},
+            {'Monthly Transactions': '25'},
+            {'Subscription Services': '4 active'},
+            {'Average Spend': 'RM 500/month'},
+            {'Platform Usage': 'Multiple platforms'},
+            {'Payment Methods': 'Cards, E-wallet'},
+            {'Shopping Categories': 'Electronics, Fashion'},
+            {'Transaction Success Rate': '98%'}
+          ],
+          300);
+
+      addPageNumber(graphics, 1);
+
+      // Page 2
+      page = document.pages.add();
+      graphics = page.graphics;
+
+      addSection(
+          page,
+          'E-Wallet Usage Analysis',
+          [
+            {'Primary E-wallet': 'Touch n Go'},
+            {'Secondary E-wallets': 'GrabPay, Boost'},
+            {'Average Monthly Load': 'RM 800'},
+            {'Transaction Frequency': 'Daily'},
+            {'Common Merchants': 'Retail, F&B'},
+            {'Peer Transfers': '15 monthly'},
+            {'Bill Payments': 'RM 300 monthly'},
+            {'Rewards Points': '2,500 points'}
+          ],
+          50);
+
+      addSection(
+          page,
+          'BNPL (Buy Now Pay Later)',
+          [
+            {'Active BNPL Accounts': '2'},
+            {'Total Credit Limit': 'RM 3,000'},
+            {'Current Usage': 'RM 1,200'},
+            {'Payment History': 'Excellent'},
+            {'Missed Payments': 'None'},
+            {'Average Purchase': 'RM 400'},
+            {'Repayment Schedule': 'On track'},
+            {'Credit Utilization': '40%'}
+          ],
+          300);
+
+      addPageNumber(graphics, 2);
+
+      // Page 3
+      page = document.pages.add();
+      graphics = page.graphics;
+
+      addSection(
+          page,
+          'Credit Score Factors',
+          [
+            {'Payment History': '95/100'},
+            {'Credit Utilization': '85/100'},
+            {'Credit Mix': '75/100'},
+            {'Account Age': '80/100'},
+            {'Recent Inquiries': '90/100'},
+            {'Overall Score': '85/100'},
+            {'Score Trend': 'Improving'},
+            {'Risk Category': 'Low Risk'}
+          ],
+          50);
+
+      addSection(
+          page,
+          'Recommendations',
+          [
+            {'Credit Utilization': 'Maintain below 30%'},
+            {'Payment Schedule': 'Set up auto-payments'},
+            {'Credit Mix': 'Consider diversifying'},
+            {'Savings': 'Increase emergency fund'},
+            {'Credit Monitoring': 'Enable alerts'},
+            {'Account Security': 'Enable 2FA'},
+            {'Credit Report': 'Review quarterly'},
+            {'Financial Planning': 'Consider consultation'}
+          ],
+          300);
+
+      addPageNumber(graphics, 3);
+
+      final Directory directory = await getApplicationDocumentsDirectory();
+      final String path = '${directory.path}/credit_report.pdf';
+      final File file = File(path);
+      await file.writeAsBytes(await document.save());
+      document.dispose();
+      return path;
+    } catch (e) {
+      debugPrint('Error generating credit report: $e');
+      throw Exception('Failed to generate the report.');
+    }
+  }
+
+  // Helper function to add page numbers
+  void addPageNumber(PdfGraphics graphics, int pageNumber) {
+    graphics.drawString(
+      'Page $pageNumber of 3',
+      PdfStandardFont(PdfFontFamily.helvetica, 8),
+      bounds: const Rect.fromLTWH(250, 780, 500, 20),
+    );
+  }
+
+  // Modified addSection to accept PdfPage parameter
+  void addSection(PdfPage page, String title, List<Map<String, String>> data,
+      double yPosition) {
+    final PdfGrid grid = PdfGrid();
+    grid.columns.add(count: 2);
+    grid.headers.add(1);
+
+    PdfGridRow header = grid.headers[0];
+    header.cells[0].value = title;
+    header.cells[0].columnSpan = 2;
+
+    header.cells[0].style.font =
+        PdfStandardFont(PdfFontFamily.helvetica, 12, style: PdfFontStyle.bold);
+    header.cells[0].style.backgroundBrush =
+        PdfSolidBrush(PdfColor(240, 240, 240));
+
+    for (var item in data) {
+      item.forEach((key, value) {
+        PdfGridRow row = grid.rows.add();
+        row.cells[0].value = key;
+        row.cells[1].value = value;
+        row.cells[0].style.font = PdfStandardFont(PdfFontFamily.helvetica, 10);
+        row.cells[1].style.font = PdfStandardFont(PdfFontFamily.helvetica, 10);
+      });
+    }
+
+    grid.style.cellPadding = PdfPaddings(left: 5, right: 5, top: 8, bottom: 8);
+    grid.columns[0].width = 200;
+    grid.columns[1].width = 250;
+
+    for (int i = 0; i < grid.rows.count; i++) {
+      for (int j = 0; j < grid.columns.count; j++) {
+        grid.rows[i].cells[j].style.borders.all =
+            PdfPen(PdfColor(180, 180, 180));
+      }
+    }
+
+    grid.draw(page: page, bounds: Rect.fromLTWH(50, yPosition, 450, 0));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -385,19 +578,27 @@ class _MonthlyReportScreenState extends State<MonthlyReportScreen> {
                     width: MediaQuery.sizeOf(context).width,
                     height: 45,
                     text: "Generate Report",
-                    press: () {
-                      // Navigate to report screen
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => ReportScreen(
-                              // bankTotalAmount: bankTotalAmountInt,
-                              // ewalletTotalAmount: ewalletTotalAmountInt,
-                              // loanAmount: loanAmount.toInt(),
-                              // repaymentAmount: repaymentAmount.toInt(),
-                              ),
-                        ),
-                      );
+                    press: () async {
+                      try {
+              final path = await generateCreditReport();
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Scaffold(
+                    appBar: AppBar(title: const Text('Credit Report Preview')),
+                    body: SfPdfViewer.file(File(path)),
+                  ),
+                ),
+              );
+            } catch (e) {
+              debugPrint('Error previewing report: $e');
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                  content: Text('Failed to generate report.'),
+                ),
+              );
+            }
+                      
                     },
                   ),
                 ),

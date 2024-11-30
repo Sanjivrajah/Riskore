@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:riskore/core/providers/full_user_data_provider.dart';
+import 'package:riskore/core/providers/user_data_provider.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/presets/fonts.dart';
 import 'package:riskore/presets/styles.dart';
@@ -28,7 +28,7 @@ class _SpendingPatternScreenState extends State<SpendingPatternScreen> {
 
   // Generate a personalized prompt for AI
   String _generatePrompt(String basePrompt) {
-    var provider = Provider.of<FullDataUserProvider>(context, listen: false);
+    var provider = Provider.of<UserDataProvider>(context, listen: false);
     var userData = provider.userData;
 
     String personalContext = '''

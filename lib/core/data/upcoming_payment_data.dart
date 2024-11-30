@@ -1,4 +1,4 @@
-import 'package:riskore/core/models/upcoming_payment_data.dart';
+import 'package:riskore/core/models/upcoming_payment_model.dart';
 
 List<UpcomingPayment> upcomingPaymentList = [
   UpcomingPayment(

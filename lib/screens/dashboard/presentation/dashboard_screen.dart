@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:riskore/core/models/upcoming_payment_data.dart';
-import 'package:riskore/core/providers/full_user_data_provider.dart';
+import 'package:riskore/core/models/upcoming_payment_model.dart';
+import 'package:riskore/core/providers/user_data_provider.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/presets/fonts.dart';
 import 'package:riskore/presets/styles.dart';
@@ -51,7 +51,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     });
 
     try {
-      final provider = context.read<FullDataUserProvider>();
+      final provider = context.read<UserDataProvider>();
       await provider.fetchUserData();
 
       if (provider.userData != null) {
@@ -60,9 +60,12 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
         final result = await provider.predictUserRiskHttp(provider.userData!);
 
-        setState(() {
-          riskScore = result;
-          _isLoading = false;
+        // Use Future.delayed to ensure this runs after the build phase
+        Future.delayed(Duration.zero, () {
+          setState(() {
+            riskScore = result;
+            _isLoading = false;
+          });
         });
 
         print('Risk Score Results:');
@@ -85,29 +88,30 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final provider = context.read<FullDataUserProvider>();
+    final provider = context.read<UserDataProvider>();
     return Scaffold(
       appBar: AppBarProfile(press: () {}),
       backgroundColor: AppColor.black,
-      body: _isLoading
-          ? CircularProgressIndicator()
+      body:  _isLoading
+          ? Center(child: CircularProgressIndicator())
           : SafeArea(
-              child: SingleChildScrollView(
-                child: Padding(
-                  padding: AppStyles.edgeInsetsLR_20,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      // Welcome Text
-                      Text(
-                        "Welcome Back,",
-                        style: AppFonts.largeExtraLightText(context),
-                      ),
-                      Text(
-                        "${provider.userData?.full_name}",
-                        style: AppFonts.largestLightTextGreen(context),
-                      ),
-                      const SizedBox(height: 40),
+        child: SingleChildScrollView(
+          child: 
+          Padding(
+            padding: AppStyles.edgeInsetsLR_20,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Welcome Text
+                Text(
+                  "Welcome Back,",
+                  style: AppFonts.largeExtraLightText(context),
+                ),
+                Text(
+                  "${provider.userData?.full_name}",
+                  style: AppFonts.largestLightTextGreen(context),
+                ),
+                const SizedBox(height: 40),
 
                       // Credit Risk Score Section
                       Text(
@@ -125,13 +129,14 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 alignment: Alignment.center,
                                 children: [
                                   CircularArchProgressBar(
-                                      value: riskScore!['credit_score']
-                                          .toDouble()),
+                                      value: (riskScore?['credit_score']
+                                              ?.toDouble() ??
+                                          56.0)),
                                   Column(
                                     children: [
                                       const SizedBox(height: 15),
                                       Text(
-                                        "${riskScore!['credit_score']}%",
+                                        "${riskScore!['credit_score'] ?? 56}%",
                                         style: AppFonts.largeExtraLightText(
                                             context),
                                       ),
