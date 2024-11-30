@@ -23,30 +23,31 @@ class NavDrawer extends StatelessWidget {
               SizedBox(height: 10.sp),
               const NavDrawerRow(
                 text: 'My Details',
-                image: "lib/assets/icons/profile_nav.png",
+                image: "lib/assets/icons/my_details.png",
               ),
               SizedBox(height: 18.sp),
               const NavDrawerRow(
                 text: 'Change Password',
-                image: "lib/assets/icons/profile_nav.png",
+                image: "lib/assets/icons/change_password.png",
               ),
               SizedBox(height: 18.sp),
               const NavDrawerRow(
                 text: 'Address Book',
-                image: "lib/assets/icons/profile_nav.png",
+                image: "lib/assets/icons/address_book.png",
               ),
               SizedBox(height: 18.sp),
               GestureDetector(
-                onTap: () => Navigator.of(context).pushNamed(LinkedAccountScreen.routeName),
+                onTap: () => Navigator.of(context)
+                    .pushNamed(LinkedAccountScreen.routeName),
                 child: const NavDrawerRow(
                   text: 'Linked Accounts',
-                  image: "lib/assets/icons/profile_nav.png",
+                  image: "lib/assets/icons/linked_acc.png",
                 ),
               ),
               SizedBox(height: 18.sp),
               const NavDrawerRow(
                 text: 'Notifications',
-                image: "lib/assets/icons/profile_nav.png",
+                image: "lib/assets/icons/notifications.png",
               ),
               SizedBox(height: 10.sp),
             ],
@@ -64,17 +65,17 @@ class NavDrawer extends StatelessWidget {
               SizedBox(height: 10.sp),
               const NavDrawerRow(
                 text: 'Uploaded Documents',
-                image: "lib/assets/icons/profile_nav.png",
+                image: "lib/assets/icons/question_mark.png",
               ),
               SizedBox(height: 18.sp),
               const NavDrawerRow(
                 text: 'Credit Reports',
-                image: "lib/assets/icons/profile_nav.png",
+                image: "lib/assets/icons/question_mark.png",
               ),
               SizedBox(height: 18.sp),
               const NavDrawerRow(
                 text: 'Past Loan Applications',
-                image: "lib/assets/icons/profile_nav.png",
+                image: "lib/assets/icons/question_mark.png",
               ),
               SizedBox(height: 10.sp),
             ],
@@ -104,15 +105,15 @@ class NavDrawerRow extends StatelessWidget {
           height: 20.sp,
           child: Image.asset(image),
         ),
-        const SizedBox(width: 10),
+        SizedBox(width: 15.sp),
         Text(
           text,
           style: AppFonts.smallLightText(context),
         ),
         const Spacer(),
         SizedBox(
-          width: 18.sp,
-          height: 18.sp,
+          width: 15.sp,
+          height: 15.sp,
           child: Image.asset("lib/assets/icons/arrowright.png"),
         ),
       ],
