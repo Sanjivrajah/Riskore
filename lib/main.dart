@@ -8,7 +8,7 @@ import 'package:riskore/core/providers/bill_providers.dart';
 import 'package:riskore/core/providers/bnpl_providers.dart';
 import 'package:riskore/core/providers/digital_platform_providers.dart';
 import 'package:riskore/core/providers/e_wallet_providers.dart';
-import 'package:riskore/core/providers/full_user_data_provider.dart';
+import 'package:riskore/core/providers/user_data_provider.dart';
 import 'package:riskore/core/providers/upcoming_payment_providers.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/screens/authentication/auth.dart';
