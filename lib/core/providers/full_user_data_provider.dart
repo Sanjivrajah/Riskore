@@ -43,7 +43,7 @@ class FullDataUserProvider with ChangeNotifier {
   Future<void> fetchUserData() async {
     try {
       _isLoading = true;
-      notifyListeners();
+      // notifyListeners();
 
       final DocumentSnapshot doc =
           await _db.collection('full_user_data').doc(userId).get();
@@ -94,7 +94,7 @@ class FullDataUserProvider with ChangeNotifier {
       print('Error fetching user data: $error');
     } finally {
       _isLoading = false;
-      notifyListeners();
+      // notifyListeners();
     }
   }
 

@@ -60,9 +60,12 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
         final result = await provider.predictUserRiskHttp(provider.userData!);
 
-        setState(() {
-          riskScore = result;
-          _isLoading = false;
+        // Use Future.delayed to ensure this runs after the build phase
+        Future.delayed(Duration.zero, () {
+          setState(() {
+            riskScore = result;
+            _isLoading = false;
+          });
         });
 
         print('Risk Score Results:');
@@ -89,9 +92,12 @@ class _DashboardScreenState extends State<DashboardScreen> {
     return Scaffold(
       appBar: AppBarProfile(press: () {}),
       backgroundColor: AppColor.black,
-      body: _isLoading? CircularProgressIndicator(): SafeArea(
+      body:  _isLoading
+          ? Center(child: CircularProgressIndicator())
+          : SafeArea(
         child: SingleChildScrollView(
-          child: Padding(
+          child: 
+          Padding(
             padding: AppStyles.edgeInsetsLR_20,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
