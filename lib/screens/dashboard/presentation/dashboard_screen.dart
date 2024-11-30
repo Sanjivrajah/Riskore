@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:riskore/core/navigation/navigation.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/presets/fonts.dart';
 import 'package:riskore/presets/styles.dart';
@@ -243,11 +244,12 @@ class DashboardScreen extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            Navigator.push(
-                              context,
+                            Navigator.of(context).popUntil((route) =>
+                                route.isFirst); // Go back to the first route
+                            Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
                                 builder: (context) =>
-                                    const FinancialHealthScreen(),
+                                    Navigation(), // Navigate to Navigation
                               ),
                             );
                           },
