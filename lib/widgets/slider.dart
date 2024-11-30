@@ -22,19 +22,23 @@ class CustomSlider extends StatefulWidget {
 class _CustomSliderState extends State<CustomSlider> {
   @override
   Widget build(BuildContext context) {
-    return SliderTheme(
-      data: SliderThemeData(
-        trackHeight: 8.0,
-        thumbColor: Colors.white,
-        activeTrackColor: AppColor.green,
-        inactiveTrackColor: AppColor.white.withOpacity(0.3),
-        thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 12.0),
-      ),
-      child: Slider(
-        value: widget.value,
-        min: widget.min,
-        max: widget.max,
-        onChanged: widget.onChanged,
+    return Container(
+      width: 300,
+      height: 0,
+      child: SliderTheme(
+        data: SliderThemeData(
+          trackHeight: 5.0,
+          thumbColor: Colors.white,
+          activeTrackColor: AppColor.green,
+          inactiveTrackColor: AppColor.white.withOpacity(0.3),
+          thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 8.0),
+        ),
+        child: Slider(
+          value: widget.value,
+          min: widget.min,
+          max: widget.max,
+          onChanged: widget.onChanged,
+        ),
       ),
     );
   }
