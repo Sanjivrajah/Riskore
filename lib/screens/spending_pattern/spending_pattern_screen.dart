@@ -37,7 +37,9 @@ class _SpendingPatternScreenState extends State<SpendingPatternScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBarArrow(press: () {}),
+        appBar: AppBarArrow(press: () {
+          Navigator.pop(context);
+        }),
         backgroundColor: AppColor.black,
         //bottomNavigationBar: const NavBar(),
         body: SafeArea(
