@@ -3,7 +3,9 @@ import 'package:riskore/presets/colors.dart';
 import 'package:riskore/presets/fonts.dart';
 import 'package:riskore/presets/styles.dart';
 import 'package:riskore/widgets/appbar_arrow.dart';
+import 'package:riskore/widgets/expense_row.dart';
 import 'package:riskore/widgets/linear_progress.dart';
+import 'package:riskore/widgets/loan_offer_row.dart';
 import 'package:riskore/widgets/screen_title.dart';
 import 'package:riskore/widgets/section_heading.dart';
 import 'package:riskore/widgets/standard_container.dart';
@@ -64,7 +66,7 @@ class _YourLoanScreenState extends State<YourLoanScreen> {
                       SizedBox(
                         height: 15.sp,
                       ),
-                      LinearProgressBar(progress: 0.62),
+                      const LinearProgressBar(progress: 0.62),
                     ],
                   ),
                 ),
@@ -78,6 +80,194 @@ class _YourLoanScreenState extends State<YourLoanScreen> {
                       selectedTab = tab; // Update selected tab
                     });
                   },
+                ),
+                Column(
+                  children: [
+                    if (selectedTab == "Personal") ...[
+                      SizedBox(
+                        height: 15.sp,
+                      ),
+                      StandardContainer(
+                        width: MediaQuery.sizeOf(context).width,
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              width: MediaQuery.sizeOf(context).width,
+                              child: Text(
+                                "Personal Loan",
+                                style: AppFonts.normalLightTextGreen(context),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 15.sp,
+                            ),
+                            LoanOfferRow(
+                              image: "lib/assets/images/cimb_bank.png",
+                              bankName: "CIMB Bank",
+                              amount: "RM52,000.00",
+                              interest: "7% p.a. | 5 Years",
+                              press: () {},
+                            ),
+                            SizedBox(
+                              height: 18.sp,
+                            ),
+                            LoanOfferRow(
+                              image: "lib/assets/images/maybank.png",
+                              bankName: "Maybank",
+                              amount: "RM52,000.00",
+                              interest: "7% p.a. | 5 Years",
+                              press: () {},
+                            ),
+                            SizedBox(
+                              height: 18.sp,
+                            ),
+                            LoanOfferRow(
+                              image: "lib/assets/images/public_bank.png",
+                              bankName: "Public Bank",
+                              amount: "RM52,000.00",
+                              interest: "7% p.a. | 5 Years",
+                              press: () {},
+                            ),
+                            SizedBox(
+                              height: 18.sp,
+                            ),
+                            LoanOfferRow(
+                              image: "lib/assets/images/ocbc_bank.png",
+                              bankName: "OCBC Bank",
+                              amount: "RM52,000.00",
+                              interest: "7% p.a. | 5 Years",
+                              press: () {},
+                            ),
+                            SizedBox(
+                              height: 15.sp,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ] else if (selectedTab == "House") ...[
+                      SizedBox(
+                        height: 15.sp,
+                      ),
+                      StandardContainer(
+                        width: MediaQuery.sizeOf(context).width,
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              width: MediaQuery.sizeOf(context).width,
+                              child: Text(
+                                "House Loan",
+                                style: AppFonts.normalLightTextGreen(context),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 15.sp,
+                            ),
+                            LoanOfferRow(
+                              image: "lib/assets/images/cimb_bank.png",
+                              bankName: "CIMB Bank",
+                              amount: "RM52,000.00",
+                              interest: "7% p.a. | 5 Years",
+                              press: () {},
+                            ),
+                            SizedBox(
+                              height: 18.sp,
+                            ),
+                            LoanOfferRow(
+                              image: "lib/assets/images/maybank.png",
+                              bankName: "Maybank",
+                              amount: "RM52,000.00",
+                              interest: "7% p.a. | 5 Years",
+                              press: () {},
+                            ),
+                            SizedBox(
+                              height: 18.sp,
+                            ),
+                            LoanOfferRow(
+                              image: "lib/assets/images/public_bank.png",
+                              bankName: "Public Bank",
+                              amount: "RM52,000.00",
+                              interest: "7% p.a. | 5 Years",
+                              press: () {},
+                            ),
+                            SizedBox(
+                              height: 18.sp,
+                            ),
+                            LoanOfferRow(
+                              image: "lib/assets/images/ocbc_bank.png",
+                              bankName: "OCBC Bank",
+                              amount: "RM52,000.00",
+                              interest: "7% p.a. | 5 Years",
+                              press: () {},
+                            ),
+                            SizedBox(
+                              height: 15.sp,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ] else if (selectedTab == "Car") ...[
+                      SizedBox(
+                        height: 15.sp,
+                      ),
+                      StandardContainer(
+                        width: MediaQuery.sizeOf(context).width,
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              width: MediaQuery.sizeOf(context).width,
+                              child: Text(
+                                "Car Loan",
+                                style: AppFonts.normalLightTextGreen(context),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 15.sp,
+                            ),
+                            LoanOfferRow(
+                              image: "lib/assets/images/cimb_bank.png",
+                              bankName: "CIMB Bank",
+                              amount: "RM52,000.00",
+                              interest: "7% p.a. | 5 Years",
+                              press: () {},
+                            ),
+                            SizedBox(
+                              height: 18.sp,
+                            ),
+                            LoanOfferRow(
+                              image: "lib/assets/images/maybank.png",
+                              bankName: "Maybank",
+                              amount: "RM52,000.00",
+                              interest: "7% p.a. | 5 Years",
+                              press: () {},
+                            ),
+                            SizedBox(
+                              height: 18.sp,
+                            ),
+                            LoanOfferRow(
+                              image: "lib/assets/images/public_bank.png",
+                              bankName: "Public Bank",
+                              amount: "RM52,000.00",
+                              interest: "7% p.a. | 5 Years",
+                              press: () {},
+                            ),
+                            SizedBox(
+                              height: 18.sp,
+                            ),
+                            LoanOfferRow(
+                              image: "lib/assets/images/ocbc_bank.png",
+                              bankName: "OCBC Bank",
+                              amount: "RM52,000.00",
+                              interest: "7% p.a. | 5 Years",
+                              press: () {},
+                            ),
+                            SizedBox(
+                              height: 15.sp,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ],
                 ),
               ],
             ),

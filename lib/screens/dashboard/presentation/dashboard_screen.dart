@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:riskore/core/navigation/navigation.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/presets/fonts.dart';
 import 'package:riskore/presets/styles.dart';
+import 'package:riskore/screens/credit_report/all_reports_screen.dart';
 import 'package:riskore/screens/financial_health/financial_health_screen.dart';
 import 'package:riskore/screens/loan_application/easy_loan_screen.dart';
-import 'package:riskore/screens/loan_application/your_loan_screen.dart';
 import 'package:riskore/widgets/appbar_profile.dart';
-import 'package:riskore/widgets/nav_bar.dart';
 import 'package:riskore/widgets/semicircle_progress.dart';
 import 'package:riskore/widgets/shortcut_menu_button.dart';
 import 'package:riskore/widgets/standard_container.dart';
@@ -21,7 +21,6 @@ class DashboardScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBarProfile(press: () {}),
       backgroundColor: AppColor.black,
-      // bottomNavigationBar: const NavBar(),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -244,11 +243,12 @@ class DashboardScreen extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            Navigator.push(
-                              context,
+                            Navigator.of(context).popUntil((route) =>
+                                route.isFirst); // Go back to the first route
+                            Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
                                 builder: (context) =>
-                                    const FinancialHealthScreen(),
+                                    Navigation(), // Navigate to Navigation
                               ),
                             );
                           },
@@ -327,8 +327,7 @@ class DashboardScreen extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) =>
-                                    const FinancialHealthScreen(),
+                                builder: (context) => const AllReportsScreen(),
                               ),
                             );
                           },

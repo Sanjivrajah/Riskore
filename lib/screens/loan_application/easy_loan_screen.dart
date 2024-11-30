@@ -4,7 +4,6 @@ import 'package:riskore/presets/fonts.dart';
 import 'package:riskore/presets/styles.dart';
 import 'package:riskore/widgets/appbar_profile.dart';
 import 'package:riskore/widgets/loan_offer_row.dart';
-import 'package:riskore/widgets/nav_bar.dart';
 import 'package:riskore/widgets/screen_title.dart';
 import 'package:riskore/widgets/section_heading.dart';
 import 'package:riskore/widgets/shortcut_menu_button.dart';

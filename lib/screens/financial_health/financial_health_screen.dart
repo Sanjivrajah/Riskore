@@ -6,7 +6,7 @@ import 'package:riskore/screens/credit_report/all_reports_screen.dart';
 import 'package:riskore/screens/spending_pattern/spending_pattern_screen.dart';
 import 'package:riskore/widgets/appbar_profile.dart';
 import 'package:riskore/widgets/border_button.dart';
-import 'package:riskore/widgets/nav_bar.dart';
+
 import 'package:riskore/widgets/screen_title.dart';
 import 'package:riskore/widgets/section_heading.dart';
 import 'package:riskore/widgets/semicircle_progress.dart';

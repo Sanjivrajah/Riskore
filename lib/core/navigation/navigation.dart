@@ -23,6 +23,7 @@ class _NavigationState extends State<Navigation> {
   }
 
   int currentIndex = 0;
+  
 
   List<Widget> screens = [
     DashboardScreen(),
