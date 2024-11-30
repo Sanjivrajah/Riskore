@@ -84,14 +84,14 @@ class _WidgetLibrary2State extends State<WidgetLibrary2> {
                   height: 50,
                 ),
                 const SectionHeading(text: "Tab Bar"),
-                TabBarLight(
-                  selectedIndex: _selectedTabIndex1,
-                  onTabSelected: (int index) {
-                    setState(() {
-                      _selectedTabIndex1 = index;
-                    });
-                  },
-                ),
+                // TabBarLight(
+                //   selectedIndex: _selectedTabIndex1,
+                //   onTabSelected: (int index) {
+                //     setState(() {
+                //       _selectedTabIndex1 = index;
+                //     });
+                //   },
+                // ),
                 const SizedBox(
                   height: 20,
                 ),
@@ -104,7 +104,7 @@ class _WidgetLibrary2State extends State<WidgetLibrary2> {
                   height: 50,
                 ),
                 const SectionHeading(text: "Progress Indicator"),
-                RoundedLinearProgressBar(progress: 0.62),
+                LinearProgressBar(progress: 0.62),
                 const SizedBox(
                   height: 50,
                 ),

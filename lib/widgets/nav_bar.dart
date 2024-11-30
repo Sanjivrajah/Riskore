@@ -3,9 +3,32 @@ import 'package:riskore/presets/colors.dart';
 import 'package:riskore/screens/dashboard/presentation/dashboard_screen.dart';
 import 'package:sizer/sizer.dart';
 
-class NavBar extends StatelessWidget {
+class NavBar extends StatefulWidget {
+  static const routeName = '/navigation';
+  
+  
   const NavBar({super.key});
 
+  @override
+  State<NavBar> createState() => _NavBarState();
+}
+
+class _NavBarState extends State<NavBar> {
+  static GlobalKey<_NavBarState> globalKey =
+      new GlobalKey<_NavBarState>();
+  BottomNavigationBar get navigationBar {
+    return _NavBarState.globalKey.currentWidget as BottomNavigationBar;
+  }
+
+  int currentIndex = 0;
+  
+
+  List<Widget> screens = [
+    DashboardScreen(),
+    // (),
+    // fina
+    ProfileScreen()
+  ];
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -44,7 +67,7 @@ class NavBar extends StatelessWidget {
               width: 23.sp,
               height: 25.sp,
               child: Image.asset(
-                "lib/assets/icons/loan_nav.png",
+                "lib/assets/icons/koan_nav_selected.png",
                 width: 23.sp,
                 alignment: Alignment.center,
               ),
@@ -56,7 +79,7 @@ class NavBar extends StatelessWidget {
               width: 22.sp,
               height: 25.sp,
               child: Image.asset(
-                "lib/assets/icons/tips_nav.png",
+                "lib/assets/icons/tips_nav_selected.png",
                 width: 22.sp,
                 alignment: Alignment.center,
               ),
@@ -68,7 +91,7 @@ class NavBar extends StatelessWidget {
               width: 22.sp,
               height: 25.sp,
               child: Image.asset(
-                "lib/assets/icons/profile_nav.png",
+                "lib/assets/icons/profile_nav_selected.png",
                 width: 22.sp,
               ),
             ),

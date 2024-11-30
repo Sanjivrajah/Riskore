@@ -24,6 +24,7 @@ class Auth {
   Future<void>? createUserWithEmailAndPassword(
     String email,
     String password,
+    String name, 
   ) async {
     await _firebaseAuth
         .createUserWithEmailAndPassword(
@@ -34,7 +35,10 @@ class Auth {
       FirebaseFirestore.instance.collection('user').doc(value.user!.uid).set({
         "email": value.user!.email,
         "id": value.user!.uid,
-        'name': '',
+        'name': name,
+        'birthDate': '',
+        'place': '',
+        'connectedEWallets': ['']
         
       });
     });
@@ -47,14 +51,4 @@ class Auth {
     // Navigator.of(context).pushReplacementNamed(WelcomeScreen.routeName);
   }
 
-  // signInWithGoogle() async {
-  //   final GoogleSignInAccount? gUser = await GoogleSignIn().signIn();
-  //   final GoogleSignInAuthentication gAuth = await gUser!.authentication;
-  //   final credential = GoogleAuthProvider.credential(
-  //     accessToken: gAuth.accessToken,
-  //     idToken: gAuth.idToken,
-  //   );
-
-  //   return await FirebaseAuth.instance.signInWithCredential(credential);
-  // }
 }

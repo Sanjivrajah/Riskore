@@ -3,6 +3,7 @@ import 'package:riskore/presets/colors.dart' as colors;
 import 'package:riskore/screens/authentication/auth.dart';
 import 'package:riskore/screens/authentication/presentation/signup_screen.dart';
 import 'package:riskore/screens/dashboard/presentation/dashboard_screen.dart';
+import 'package:riskore/widgets/fill_button.dart';
 
 class LoginScreen extends StatefulWidget {
   static const routeName = '/login-screen';
@@ -128,28 +129,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ],
                 SizedBox(height: 48),
-                // Spacer(), // Push the login section to the bottom
-                SizedBox(
-                  width: double.infinity,
-                  height: 48,
-                  child: ElevatedButton(
-                    onPressed: _login,
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.white,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(24),
-                      ),
-                    ),
-                    child: Text(
-                      "Login",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                  ),
-                ),
+                
+                FillButton(text: "Login", press: _login, width: MediaQuery.sizeOf(context).width,
+                  height: MediaQuery.sizeOf(context).width * 0.125,),
                 SizedBox(height: 24),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
