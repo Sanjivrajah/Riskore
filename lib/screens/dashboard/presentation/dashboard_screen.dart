@@ -51,7 +51,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     });
 
     try {
-      final provider = context.read<FullDataUserProvider>();
+      final provider = context.read<UserDataProvider>();
       await provider.fetchUserData();
 
       if (provider.userData != null) {
@@ -88,7 +88,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final provider = context.read<FullDataUserProvider>();
+    final provider = context.read<UserDataProvider>();
     return Scaffold(
       appBar: AppBarProfile(press: () {}),
       backgroundColor: AppColor.black,

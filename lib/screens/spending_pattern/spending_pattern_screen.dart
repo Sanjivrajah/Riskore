@@ -28,7 +28,7 @@ class _SpendingPatternScreenState extends State<SpendingPatternScreen> {
 
   // Generate a personalized prompt for AI
   String _generatePrompt(String basePrompt) {
-    var provider = Provider.of<FullDataUserProvider>(context, listen: false);
+    var provider = Provider.of<UserDataProvider>(context, listen: false);
     var userData = provider.userData;
 
     String personalContext = '''

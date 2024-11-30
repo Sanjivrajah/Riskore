@@ -3,7 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:riskore/core/auth_widget_tree.dart';
 import 'package:riskore/core/data/upcoming_payment_data.dart';
+import 'package:riskore/core/providers/bank_providers.dart';
+import 'package:riskore/core/providers/bill_providers.dart';
+import 'package:riskore/core/providers/bnpl_providers.dart';
+import 'package:riskore/core/providers/digital_platform_providers.dart';
+import 'package:riskore/core/providers/e_wallet_providers.dart';
 import 'package:riskore/core/providers/full_user_data_provider.dart';
+import 'package:riskore/core/providers/upcoming_payment_providers.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/screens/authentication/auth.dart';
 import 'package:riskore/screens/credit_report/all_reports_screen.dart';
@@ -42,7 +48,13 @@ class MyApp extends StatelessWidget {
       builder: (BuildContext, Orientation, ScreenType) {
         return MultiProvider(
           providers: [
-            ChangeNotifierProvider(create: (_) => FullDataUserProvider()),
+            ChangeNotifierProvider(create: (_) => UserDataProvider()),
+            ChangeNotifierProvider(create: (_) => BankAccountProvider()),
+            ChangeNotifierProvider(create: (_) => BillPaymentProvider()),
+            ChangeNotifierProvider(create: (_) => DigitalPlatformActivityProvider()),
+            ChangeNotifierProvider(create: (_) => EWalletProvider()),
+            ChangeNotifierProvider(create: (_) => UpcomingPaymentProvider()),
+            ChangeNotifierProvider(create: (_) => BNPLProvider()),
           ],
           child: MaterialApp(
             title: 'Flutter Demo',

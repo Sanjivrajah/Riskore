@@ -4,8 +4,9 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:riskore/core/models/user_model.dart';
+import 'package:riskore/screens/authentication/auth.dart';
 
-class FullDataUserProvider with ChangeNotifier {
+class UserDataProvider with ChangeNotifier {
   final FirebaseFirestore _db = FirebaseFirestore.instance;
   UserModel? _userData = UserModel(
     userId: '',
@@ -43,7 +44,7 @@ class FullDataUserProvider with ChangeNotifier {
   UserModel? get userData => _userData;
   bool get isLoading => _isLoading;
 
-  final String userId = 'LfC4h9Um06O2zSxNonJSRTFTNsi2';
+  // final String userId = 'LfC4h9Um06O2zSxNonJSRTFTNsi2';
 
   int generateCreditScore(String creditCategory, int seed) {
     Random random = Random(seed);
@@ -71,7 +72,7 @@ class FullDataUserProvider with ChangeNotifier {
       _isLoading = true;
 
       final DocumentSnapshot doc =
-          await _db.collection('full_user_data').doc(userId).get();
+          await _db.collection('full_user_data').doc(Auth().currentUser?.uid).get();
 
       if (doc.exists && doc.data() != null) {
         final data = doc.data() as Map<String, dynamic>;
