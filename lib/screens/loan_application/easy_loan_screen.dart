@@ -1,0 +1,211 @@
+import 'package:flutter/material.dart';
+import 'package:riskore/presets/colors.dart';
+import 'package:riskore/presets/fonts.dart';
+import 'package:riskore/presets/styles.dart';
+import 'package:riskore/widgets/appbar_profile.dart';
+import 'package:riskore/widgets/loan_offer_row.dart';
+import 'package:riskore/widgets/nav_bar.dart';
+import 'package:riskore/widgets/screen_title.dart';
+import 'package:riskore/widgets/section_heading.dart';
+import 'package:riskore/widgets/shortcut_menu_button.dart';
+import 'package:riskore/widgets/standard_container.dart';
+import 'package:sizer/sizer.dart';
+
+class EasyLoanScreen extends StatelessWidget {
+  const EasyLoanScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBarProfile(press: () {}),
+      backgroundColor: AppColor.black,
+      bottomNavigationBar: const NavBar(),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: AppStyles.edgeInsetsLR_20,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                const ScreenTitle(text: "Easy Loan"),
+                const SectionHeading(text: "Common Loans (Banks/Institutions)"),
+                StandardContainer(
+                  width: MediaQuery.sizeOf(context).width,
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(vertical: 10.sp),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Column(
+                          children: [
+                            SizedBox(
+                              height: 32.sp,
+                              width: 32.sp,
+                              child:
+                                  Image.asset("lib/assets/images/maybank.png"),
+                            ),
+                            SizedBox(
+                              height: 10.sp,
+                            ),
+                            Text(
+                              "Maybank",
+                              style: AppFonts.smallLightText(context),
+                            )
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            SizedBox(
+                              height: 32.sp,
+                              width: 32.sp,
+                              child: Image.asset(
+                                  "lib/assets/images/cimb_bank.png"),
+                            ),
+                            SizedBox(
+                              height: 10.sp,
+                            ),
+                            Text(
+                              "CIMB",
+                              style: AppFonts.smallLightText(context),
+                            )
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            SizedBox(
+                              height: 32.sp,
+                              width: 32.sp,
+                              child: Image.asset(
+                                  "lib/assets/images/public_bank.png"),
+                            ),
+                            SizedBox(
+                              height: 10.sp,
+                            ),
+                            Text(
+                              "Public Bank",
+                              style: AppFonts.smallLightText(context),
+                            )
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            SizedBox(
+                              height: 32.sp,
+                              width: 32.sp,
+                              child: Image.asset(
+                                  "lib/assets/images/ocbc_bank.png"),
+                            ),
+                            SizedBox(
+                              height: 10.sp,
+                            ),
+                            Text(
+                              "OCBC",
+                              style: AppFonts.smallLightText(context),
+                            )
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 25.sp,
+                ),
+                const SectionHeading(text: "Quick Apply Loans"),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    ShortcutMenuButton(
+                      text: "Your Loan",
+                      image: 'lib/assets/icons/your_loan.png',
+                      press: () {},
+                    ),
+                    ShortcutMenuButton(
+                      text: "House Loan",
+                      image: 'lib/assets/icons/house_loan.png',
+                      press: () {},
+                    ),
+                    ShortcutMenuButton(
+                      text: "SME Loan",
+                      image: 'lib/assets/icons/sme_loan.png',
+                      press: () {},
+                    ),
+                    ShortcutMenuButton(
+                      text: "Car Loan",
+                      image: 'lib/assets/icons/car_loan.png',
+                      press: () {},
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 25.sp,
+                ),
+                const SectionHeading(text: "Based on Your AI Credit Score"),
+                StandardContainer(
+                  width: MediaQuery.sizeOf(context).width,
+                  child: Column(
+                    children: [
+                      SizedBox(
+                        width: MediaQuery.sizeOf(context).width,
+                        child: Text(
+                          "Personal Loan",
+                          style: AppFonts.normalLightTextGreen(context),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 15.sp,
+                      ),
+                      LoanOfferRow(
+                        image: "lib/assets/images/cimb_bank.png",
+                        bankName: "CIMB Bank",
+                        amount: "RM52,000.00",
+                        interest: "7% p.a. | 5 Years",
+                        press: () {},
+                      ),
+                      SizedBox(
+                        height: 18.sp,
+                      ),
+                      LoanOfferRow(
+                        image: "lib/assets/images/maybank.png",
+                        bankName: "Maybank",
+                        amount: "RM52,000.00",
+                        interest: "7% p.a. | 5 Years",
+                        press: () {},
+                      ),
+                      SizedBox(
+                        height: 18.sp,
+                      ),
+                      LoanOfferRow(
+                        image: "lib/assets/images/public_bank.png",
+                        bankName: "Public Bank",
+                        amount: "RM52,000.00",
+                        interest: "7% p.a. | 5 Years",
+                        press: () {},
+                      ),
+                      SizedBox(
+                        height: 18.sp,
+                      ),
+                      LoanOfferRow(
+                        image: "lib/assets/images/ocbc_bank.png",
+                        bankName: "OCBC Bank",
+                        amount: "RM52,000.00",
+                        interest: "7% p.a. | 5 Years",
+                        press: () {},
+                      ),
+                      SizedBox(
+                        height: 15.sp,
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 25.sp,
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
