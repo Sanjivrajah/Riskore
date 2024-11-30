@@ -1,40 +1,66 @@
 import 'dart:convert';
 import 'dart:math';
-import 'dart:typed_data';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:riskore/core/models/user_model.dart';
-import 'package:riskore/screens/authentication/auth.dart';
-import 'package:tflite_flutter/tflite_flutter.dart';
 import 'package:http/http.dart' as http;
+import 'package:riskore/core/models/user_model.dart';
 
 class FullDataUserProvider with ChangeNotifier {
   final FirebaseFirestore _db = FirebaseFirestore.instance;
-  UserModel? _userData;
+  UserModel? _userData = UserModel(
+    userId: '',
+    full_name: '',
+    age: 0,
+    gender: '',
+    employment_status: '',
+    occupation: '',
+    monthly_income: 0.0,
+    education_level: '',
+    residential_status: '',
+    marital_status: '',
+    employment_duration: 0,
+    industry: '',
+    hobbies: [],
+    num_of_accounts: 0,
+    total_account_balance: 0.0,
+    avg_daily_balance: 0.0,
+    total_monthly_inflow: 0.0,
+    total_monthly_outflow: 0.0,
+    num_wallets: 0,
+    total_wallet_balance: 0.0,
+    avg_wallet_transaction: 0.0,
+    num_utility_bills: 0,
+    avg_utility_amount: 0.0,
+    overdue_bills: 0,
+    rent_amount: 0.0,
+    rent_status: '',
+    monthly_plan_cost: 0.0,
+    credit_score: 0,
+  );
+
   bool _isLoading = false;
 
   UserModel? get userData => _userData;
   bool get isLoading => _isLoading;
 
   final String userId = 'LfC4h9Um06O2zSxNonJSRTFTNsi2';
+
   int generateCreditScore(String creditCategory, int seed) {
     Random random = Random(seed);
     int score;
 
     switch (creditCategory) {
       case 'Low':
-        score = random.nextInt(41); 
+        score = random.nextInt(41);
         break;
       case 'Medium':
-        score = random.nextInt(40) + 41; 
+        score = random.nextInt(40) + 41;
         break;
       case 'High':
-        score = random.nextInt(20) + 81; 
+        score = random.nextInt(20) + 81;
         break;
       default:
-        score = 0; 
+        score = 0;
     }
 
     return score;
@@ -43,12 +69,11 @@ class FullDataUserProvider with ChangeNotifier {
   Future<void> fetchUserData() async {
     try {
       _isLoading = true;
-      // notifyListeners();
 
       final DocumentSnapshot doc =
           await _db.collection('full_user_data').doc(userId).get();
 
-      if (doc.exists) {
+      if (doc.exists && doc.data() != null) {
         final data = doc.data() as Map<String, dynamic>;
         _userData = UserModel(
           userId: data['userId'] ?? '',
@@ -84,17 +109,16 @@ class FullDataUserProvider with ChangeNotifier {
           credit_score: data['credit_score'] ?? 0,
         );
 
-        // Convert to JSON and print
-        Map<String, dynamic> userDataJson = _userData!.toJson();
-
-        print('User Data in JSON format:');
-        print(const JsonEncoder.withIndent('  ').convert(userDataJson));
+        if (_userData != null) {
+          Map<String, dynamic> userDataJson = _userData!.toJson();
+          print('User Data in JSON format:');
+          print(const JsonEncoder.withIndent('  ').convert(userDataJson));
+        }
       }
     } catch (error) {
       print('Error fetching user data: $error');
     } finally {
       _isLoading = false;
-      // notifyListeners();
     }
   }
 
@@ -132,17 +156,6 @@ class FullDataUserProvider with ChangeNotifier {
         'credit_score': userData.credit_score
       };
 
-      print('Sending request to: $url');
-      print('Request data: ${json.encode(requestData)}');
-
-      final options = Options(
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        sendTimeout: const Duration(seconds: 30),
-        receiveTimeout: const Duration(seconds: 30),
-      );
-
       final response = await http.post(
         url,
         headers: {'Content-Type': 'application/json'},
@@ -151,16 +164,14 @@ class FullDataUserProvider with ChangeNotifier {
 
       if (response.statusCode == 200) {
         final responseData = json.decode(response.body);
-        // Extract risk_category from the response
-        final riskCategory = responseData['risk_category'];
-        // Generate a credit scroe based on the risk category
+        final riskCategory = responseData['risk_category'] ?? 'Low';
         int creditScore = generateCreditScore(riskCategory, 10);
 
         return {
           'risk_category': riskCategory,
-          'confidence': responseData['confidence'],
-          'status': responseData['status'],
-          'credit_score': creditScore, // Include the generated credit score
+          'confidence': responseData['confidence'] ?? 0.0,
+          'status': responseData['status'] ?? 'error',
+          'credit_score': creditScore,
         };
       } else {
         throw Exception('Failed to predict risk: ${response.statusCode}');

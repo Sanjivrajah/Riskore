@@ -6,16 +6,46 @@ import 'package:riskore/screens/credit_report/all_reports_screen.dart';
 import 'package:riskore/screens/spending_pattern/spending_pattern_screen.dart';
 import 'package:riskore/widgets/appbar_profile.dart';
 import 'package:riskore/widgets/border_button.dart';
-
 import 'package:riskore/widgets/screen_title.dart';
 import 'package:riskore/widgets/section_heading.dart';
 import 'package:riskore/widgets/semicircle_progress.dart';
 import 'package:riskore/widgets/shortcut_menu_button.dart';
 import 'package:riskore/widgets/standard_container.dart';
 import 'package:sizer/sizer.dart';
+import 'package:syncfusion_flutter_charts/charts.dart';
+import 'package:syncfusion_flutter_charts/sparkcharts.dart';
 
-class FinancialHealthScreen extends StatelessWidget {
+class FinancialHealthScreen extends StatefulWidget {
   const FinancialHealthScreen({super.key});
+
+  @override
+  State<FinancialHealthScreen> createState() => _FinancialHealthScreenState();
+}
+
+class _FinancialHealthScreenState extends State<FinancialHealthScreen> {
+  late List<_ChartData> data;
+  late List<_ChartData> data2;
+  late TooltipBehavior _tooltip;
+
+  final double debt = 2500;
+  final double income = 3500;
+
+  @override
+  void initState() {
+    super.initState();
+    data = [
+      _ChartData('Jul', 73),
+      _ChartData('Aug', 65),
+      _ChartData('Sep', 52),
+      _ChartData('Oct', 60),
+      _ChartData('Nov', 65),
+    ];
+    data2 = [
+      _ChartData('Debt', debt),
+      _ChartData('Income', income),
+    ];
+    _tooltip = TooltipBehavior(enable: true);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -32,87 +62,111 @@ class FinancialHealthScreen extends StatelessWidget {
                 const ScreenTitle(text: "Your Financial Health"),
                 SizedBox(height: 15.sp),
                 StandardContainer(
-                  width: (MediaQuery.sizeOf(context).width),
-                  child: Stack(
-                    alignment: Alignment.center,
+                  width: MediaQuery.sizeOf(context).width,
+                  child: Column(
                     children: [
-                      Column(
-                        children: [
-                          SizedBox(height: 15.sp),
-                          Text(
-                            "82%",
-                            style: AppFonts.largeExtraLightText(context),
-                          ),
-                          Text(
-                            "Healthy",
-                            style: AppFonts.smallLightTextGreen(context),
+                      Text(
+                        "Previous 5 Months Credit Scores",
+                        style: TextStyle(
+                          fontFamily: "Inter",
+                          fontSize: 16.sp,
+                          fontWeight: FontWeight.w300,
+                          color: AppColor.white,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                      SizedBox(height: 15.sp),
+                      SfCartesianChart(
+                        plotAreaBorderWidth: 0.3,
+                        plotAreaBackgroundColor:
+                            AppColor.maybankColor.withOpacity(0.2),
+                        primaryXAxis: CategoryAxis(
+                          labelStyle: AppFonts.smallLightText(context),
+                        ),
+                        primaryYAxis: NumericAxis(
+                          labelStyle: AppFonts.smallLightText(context),
+                          minimum: 0,
+                          maximum: 100,
+                          interval: 10,
+                        ),
+                        tooltipBehavior: _tooltip,
+                        series: <CartesianSeries<_ChartData, String>>[
+                          ColumnSeries<_ChartData, String>(
+                            dataSource: data,
+                            xValueMapper: (_ChartData data, _) => data.x,
+                            yValueMapper: (_ChartData data, _) => data.y,
+                            color: const Color.fromRGBO(255, 255, 255, 1),
                           ),
                         ],
                       ),
-                      Column(
+                      SizedBox(height: 15.sp),
+                    ],
+                  ),
+                ),
+                SizedBox(height: 18.sp),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    _buildSparklineContainer(
+                      context,
+                      "Income (k)",
+                      AppColor.green,
+                      valueList: [3.5, 3.5, 3.5, 3.5, 3.5],
+                    ),
+                    _buildSparklineContainer(
+                      context,
+                      "Expenses (k)",
+                      AppColor.red,
+                      valueList: [1.2, 0.9, 1.3, 2.1, 1.3],
+                    ),
+                  ],
+                ),
+                SizedBox(height: 18.sp),
+                StandardContainer(
+                  width: MediaQuery.sizeOf(context).width,
+                  child: Column(
+                    children: [
+                      Text(
+                        "Debt-to-Income Ratio",
+                        style: TextStyle(
+                          fontFamily: "Inter",
+                          fontSize: 16.sp,
+                          fontWeight: FontWeight.w300,
+                          color: AppColor.white,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                      Stack(
+                        alignment: Alignment.center,
                         children: [
-                          SizedBox(height: 15.sp),
-                          CircularArchProgressBar(value: 82.0),
-                          SizedBox(height: 15.sp),
+                          SizedBox(
+                            height: 32.sp,
+                            child: Text(
+                              ((debt / income) * 100).toStringAsFixed(2) + "%",
+                              style: AppFonts.normalLightText(context),
+                            ),
+                          ),
+                          SfCircularChart(
+                              palette: [AppColor.red, AppColor.green],
+                              margin: EdgeInsets.zero,
+                              legend: Legend(
+                                  isVisible: true,
+                                  position: LegendPosition.bottom,
+                                  textStyle: AppFonts.smallLightText(context)),
+                              tooltipBehavior: _tooltip,
+                              series: <CircularSeries<_ChartData, String>>[
+                                DoughnutSeries<_ChartData, String>(
+                                    dataSource: data2,
+                                    xValueMapper: (_ChartData data2, _) =>
+                                        data2.x,
+                                    yValueMapper: (_ChartData data2, _) =>
+                                        data2.y,
+                                    name: 'Gold')
+                              ]),
                         ],
                       ),
                     ],
                   ),
-                ),
-                SizedBox(height: 12.sp),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    StandardContainer(
-                      width: (MediaQuery.sizeOf(context).width / 2) - 25,
-                      child: Column(
-                        children: [
-                          Text(
-                            "Avg. Monthly Expenses",
-                            style: TextStyle(
-                              fontFamily: "Inter",
-                              fontSize: 14.sp,
-                              fontWeight: FontWeight.w300,
-                              color: AppColor.red,
-                            ),
-                            textAlign: TextAlign.center,
-                          ),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          Text(
-                            "RM 2000.80",
-                            style: AppFonts.largeExtraLightText(context),
-                            textAlign: TextAlign.center,
-                          ),
-                        ],
-                      ),
-                    ),
-                    StandardContainer(
-                        width: (MediaQuery.sizeOf(context).width / 2) - 25,
-                        child: Column(
-                          children: [
-                            Text(
-                              "Avg. Monthly Income",
-                              style: TextStyle(
-                                fontFamily: "Inter",
-                                fontSize: 14.sp,
-                                fontWeight: FontWeight.w300,
-                                color: AppColor.green,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                            const SizedBox(
-                              height: 10,
-                            ),
-                            Text(
-                              "RM 2560.90",
-                              style: AppFonts.largeExtraLightText(context),
-                              textAlign: TextAlign.center,
-                            ),
-                          ],
-                        )),
-                  ],
                 ),
                 SizedBox(height: 25.sp),
                 const SectionHeading(text: "What can you do to improve?"),
@@ -145,29 +199,20 @@ class FinancialHealthScreen extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    SizedBox(
-                      width: 40.sp,
-                      child: ShortcutMenuButton(
-                        text: "Emergency Fund Building",
-                        image: 'lib/assets/icons/your_loan.png',
-                        press: () {},
-                      ),
+                    _buildShortcutMenuButton(
+                      "Emergency Fund Building",
+                      'lib/assets/icons/your_loan.png',
+                      () {},
                     ),
-                    SizedBox(
-                      width: 40.sp,
-                      child: ShortcutMenuButton(
-                        text: "Manage Your Assets",
-                        image: 'lib/assets/icons/manage_your_assets.png',
-                        press: () {},
-                      ),
+                    _buildShortcutMenuButton(
+                      "Manage Your Assets",
+                      'lib/assets/icons/manage_your_assets.png',
+                      () {},
                     ),
-                    SizedBox(
-                      width: 40.sp,
-                      child: ShortcutMenuButton(
-                        text: "Investment Basics",
-                        image: 'lib/assets/icons/investment_basics.png',
-                        press: () {},
-                      ),
+                    _buildShortcutMenuButton(
+                      "Investment Basics",
+                      'lib/assets/icons/investment_basics.png',
+                      () {},
                     ),
                   ],
                 ),
@@ -179,4 +224,65 @@ class FinancialHealthScreen extends StatelessWidget {
       ),
     );
   }
+
+  Widget _buildSparklineContainer(
+      BuildContext context, String title, Color color,
+      {required List<double> valueList}) {
+    return StandardContainer(
+      width: (MediaQuery.sizeOf(context).width / 2) - 25,
+      child: Column(
+        children: [
+          Text(
+            title,
+            style: TextStyle(
+              fontFamily: "Inter",
+              fontSize: 16.sp,
+              fontWeight: FontWeight.w300,
+              color: color,
+            ),
+            textAlign: TextAlign.center,
+          ),
+          SizedBox(height: 15.sp),
+          SfSparkLineChart(
+            width: 1,
+            axisLineWidth: 1,
+            axisLineColor: AppColor.white,
+            color: color,
+            trackball: SparkChartTrackball(
+                activationMode: SparkChartActivationMode.tap),
+            marker: SparkChartMarker(
+              color: AppColor.white,
+              borderColor: AppColor.white,
+              borderWidth: 1,
+              size: 2,
+              displayMode: SparkChartMarkerDisplayMode.all,
+            ),
+            labelDisplayMode: SparkChartLabelDisplayMode.all,
+            labelStyle: AppFonts.extraSmallLightText(context),
+            data: valueList,
+          ),
+          SizedBox(height: 15.sp),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildShortcutMenuButton(
+      String text, String image, VoidCallback press) {
+    return SizedBox(
+      width: 40.sp,
+      child: ShortcutMenuButton(
+        text: text,
+        image: image,
+        press: press,
+      ),
+    );
+  }
+}
+
+class _ChartData {
+  _ChartData(this.x, this.y);
+
+  final String x;
+  final double y;
 }

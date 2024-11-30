@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/presets/fonts.dart';
 import 'package:riskore/presets/styles.dart';
+import 'package:riskore/widgets/appbar_arrow.dart';
 import 'package:riskore/widgets/appbar_profile.dart';
 import 'package:riskore/widgets/border_button.dart';
 import 'package:riskore/widgets/nav_bar.dart';
@@ -36,7 +37,9 @@ class _SpendingPatternScreenState extends State<SpendingPatternScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBarProfile(press: () {}),
+        appBar: AppBarArrow(press: () {
+          Navigator.pop(context);
+        }),
         backgroundColor: AppColor.black,
         //bottomNavigationBar: const NavBar(),
         body: SafeArea(

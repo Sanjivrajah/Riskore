@@ -113,191 +113,199 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 ),
                 const SizedBox(height: 40),
 
-                // Credit Risk Score Section
-                Text(
-                  "Your Credit Risk Score",
-                  style: AppFonts.normalLightText(context),
-                ),
-                const SizedBox(height: 5),
-                StandardContainer(
-                  width: MediaQuery.sizeOf(context).width,
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 15),
-                    child: Column(
-                      children: [
-                        Stack(
-                          alignment: Alignment.center,
-                          children: [
-                            CircularArchProgressBar(value: riskScore!['credit_score']
+                      // Credit Risk Score Section
+                      Text(
+                        "Your Credit Risk Score",
+                        style: AppFonts.normalLightText(context),
+                      ),
+                      const SizedBox(height: 5),
+                      StandardContainer(
+                        width: MediaQuery.sizeOf(context).width,
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 15),
+                          child: Column(
+                            children: [
+                              Stack(
+                                alignment: Alignment.center,
+                                children: [
+                                  CircularArchProgressBar(
+                                      value: riskScore!['credit_score']
                                           .toDouble()),
-                            Column(
-                              children: [
-                                const SizedBox(height: 15),
-                                Text(
-                                  "${riskScore!['credit_score']}%",
-                                  style: AppFonts.largeExtraLightText(context),
-                                ),
-                                Text(
-                                  "Credit Score",
-                                  style: AppFonts.smallLightText(context),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: 15),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            SizedBox(
-                              width: MediaQuery.sizeOf(context).width / 2.7,
-                              height: 35,
-                              child: TextButton(
-                                onPressed: () {
-                                  Navigator.of(context).push(
-                                    MaterialPageRoute(
-                                      builder: (context) =>
-                                          const FinancialHealthScreen(),
-                                    ),
-                                  );
-                                },
-                                style: ButtonStyle(
-                                  backgroundColor: WidgetStatePropertyAll(
-                                    AppColor.white,
+                                  Column(
+                                    children: [
+                                      const SizedBox(height: 15),
+                                      Text(
+                                        "${riskScore!['credit_score']}%",
+                                        style: AppFonts.largeExtraLightText(
+                                            context),
+                                      ),
+                                      Text(
+                                        "Credit Score",
+                                        style: AppFonts.smallLightText(context),
+                                      ),
+                                    ],
                                   ),
-                                  shape: const WidgetStatePropertyAll(
-                                    RoundedRectangleBorder(
-                                      borderRadius:
-                                          AppStyles.borderRadiusFullyRounded,
-                                    ),
-                                  ),
-                                ),
-                                child: Text(
-                                  "Improve Score",
-                                  style: TextStyle(
-                                    fontFamily: "Inter",
-                                    fontSize: 14.sp,
-                                    fontWeight: FontWeight.w600,
-                                    color: AppColor.black,
-                                  ),
-                                ),
+                                ],
                               ),
-                            ),
-                            SizedBox(
-                              width: MediaQuery.sizeOf(context).width / 2.6,
-                              height: 35,
-                              child: ElevatedButton(
-                                onPressed: () {},
-                                style: ElevatedButton.styleFrom(
-                                  backgroundColor: Colors.transparent,
-                                  foregroundColor: AppColor.white,
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius:
-                                        AppStyles.borderRadiusFullyRounded,
-                                    side: BorderSide(
-                                      color: AppColor.red,
+                              const SizedBox(height: 15),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  SizedBox(
+                                    width:
+                                        MediaQuery.sizeOf(context).width / 2.7,
+                                    height: 35,
+                                    child: TextButton(
+                                      onPressed: () {
+                                        Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                const FinancialHealthScreen(),
+                                          ),
+                                        );
+                                      },
+                                      style: ButtonStyle(
+                                        backgroundColor: WidgetStatePropertyAll(
+                                          AppColor.white,
+                                        ),
+                                        shape: const WidgetStatePropertyAll(
+                                          RoundedRectangleBorder(
+                                            borderRadius: AppStyles
+                                                .borderRadiusFullyRounded,
+                                          ),
+                                        ),
+                                      ),
+                                      child: Text(
+                                        "Improve Score",
+                                        style: TextStyle(
+                                          fontFamily: "Inter",
+                                          fontSize: 14.sp,
+                                          fontWeight: FontWeight.w600,
+                                          color: AppColor.black,
+                                        ),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                child: Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Image.asset(
-                                      "lib/assets/icons/red_triangle.png",
-                                      width: 10,
+                                  SizedBox(
+                                    width:
+                                        MediaQuery.sizeOf(context).width / 2.6,
+                                    height: 35,
+                                    child: ElevatedButton(
+                                      onPressed: () {},
+                                      style: ElevatedButton.styleFrom(
+                                        backgroundColor: Colors.transparent,
+                                        foregroundColor: AppColor.white,
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: AppStyles
+                                              .borderRadiusFullyRounded,
+                                          side: BorderSide(
+                                            color: AppColor.red,
+                                          ),
+                                        ),
+                                      ),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Image.asset(
+                                            "lib/assets/icons/red_triangle.png",
+                                            width: 10,
+                                          ),
+                                          Text(
+                                            "10% last month",
+                                            style: AppFonts.smallLightText(
+                                                context),
+                                          ),
+                                        ],
+                                      ),
                                     ),
-                                    Text(
-                                      "10% last month",
-                                      style: AppFonts.smallLightText(context),
-                                    ),
-                                  ],
-                                ),
+                                  ),
+                                ],
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
-                      ],
-                    ),
-                  ),
-                ),
-
-                SizedBox(height: 20.sp),
-
-                BorderButton(
-                  text: "Click to View Credit Report",
-                  press: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => const AllReportsScreen(),
                       ),
-                    );
-                  },
-                  width: MediaQuery.sizeOf(context).width,
-                  height: 45,
-                  borderColor: AppColor.white,
-                ),
-                SizedBox(height: 30.sp),
 
-                Text(
-                  "Upcoming Payments",
-                  style: AppFonts.normalLightText(context),
-                ),
-                const SizedBox(height: 10),
-                SizedBox(
-                  height: 28.sp,
-                  child: TabBarDashboard(
-                    onTabSelected: (tab) {
-                      setState(() {
-                        selectedTab = tab;
-                      });
-                    },
-                  ),
-                ),
-                const SizedBox(height: 15),
-                Column(
-                  children: [
-                    if (selectedTab == "Pay Later") ...[
-                      StandardContainer(
+                      SizedBox(height: 20.sp),
+
+                      BorderButton(
+                        text: "Click to View Credit Report",
+                        press: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) => const AllReportsScreen(),
+                            ),
+                          );
+                        },
                         width: MediaQuery.sizeOf(context).width,
-                        child: Column(
-                          children: [
-                            for (var offer in widget.upcomingPaymentList.where(
-                                (offer) => offer.category == "Pay Later"))
-                              UpcomingPaymentRow(
-                                image: offer.image,
-                                name: offer.name,
-                                amount: offer.amount,
-                                date: offer.date,
-                              ),
-                          ],
+                        height: 45,
+                        borderColor: AppColor.white,
+                      ),
+                      SizedBox(height: 30.sp),
+
+                      Text(
+                        "Upcoming Payments",
+                        style: AppFonts.normalLightText(context),
+                      ),
+                      const SizedBox(height: 10),
+                      SizedBox(
+                        height: 28.sp,
+                        child: TabBarDashboard(
+                          onTabSelected: (tab) {
+                            setState(() {
+                              selectedTab = tab;
+                            });
+                          },
                         ),
                       ),
-                    ] else if (selectedTab == "Subscription") ...[
-                      StandardContainer(
-                        width: MediaQuery.sizeOf(context).width,
-                        child: Column(
-                          children: [
-                            for (var offer in widget.upcomingPaymentList.where(
-                                (offer) => offer.category == "Subscription"))
-                              UpcomingPaymentRow(
-                                image: offer.image,
-                                name: offer.name,
-                                amount: offer.amount,
-                                date: offer.date,
+                      const SizedBox(height: 15),
+                      Column(
+                        children: [
+                          if (selectedTab == "Pay Later") ...[
+                            StandardContainer(
+                              width: MediaQuery.sizeOf(context).width,
+                              child: Column(
+                                children: [
+                                  for (var offer in widget.upcomingPaymentList
+                                      .where((offer) =>
+                                          offer.category == "Pay Later"))
+                                    UpcomingPaymentRow(
+                                      image: offer.image,
+                                      name: offer.name,
+                                      amount: offer.amount,
+                                      date: offer.date,
+                                    ),
+                                ],
                               ),
+                            ),
+                          ] else if (selectedTab == "Subscription") ...[
+                            StandardContainer(
+                              width: MediaQuery.sizeOf(context).width,
+                              child: Column(
+                                children: [
+                                  for (var offer in widget.upcomingPaymentList
+                                      .where((offer) =>
+                                          offer.category == "Subscription"))
+                                    UpcomingPaymentRow(
+                                      image: offer.image,
+                                      name: offer.name,
+                                      amount: offer.amount,
+                                      date: offer.date,
+                                    ),
+                                ],
+                              ),
+                            ),
                           ],
-                        ),
+                        ],
                       ),
+                      const SizedBox(height: 30),
                     ],
-                  ],
+                  ),
                 ),
-                const SizedBox(height: 30),
-              ],
+              ),
             ),
-          ),
-        ),
-      ),
     );
   }
 }
