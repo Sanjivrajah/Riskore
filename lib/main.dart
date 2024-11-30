@@ -48,7 +48,7 @@ class MyApp extends StatelessWidget {
             ),
             useMaterial3: true,
           ),
-          home: Navigation(),
+          home: AuthWidgetTree(),
           routes: {
             SignUpScreen.routeName: (context) => SignUpScreen(),
             LoginScreen.routeName: (context) => LoginScreen(),
