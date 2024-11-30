@@ -24,7 +24,7 @@ class _SpendingPatternScreenState extends State<SpendingPatternScreen> {
     'analysis': '',
     'actionable_advice': '',
   };
-  bool _isLoading = false;
+  bool _isLoading = true;
 
   // Generate a personalized prompt for AI
   String _generatePrompt(String basePrompt) {
@@ -120,8 +120,8 @@ Instructions:
                   style: AppFonts.largeExtraLightText(context),
                 ),
                 SizedBox(height: 20.sp),
-                SizedBox(
-                  height: 500,
+                Container(
+                  height: MediaQuery.sizeOf(context).width * 0.7, // Height for ~4 buttons
                   child: SingleChildScrollView(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -137,6 +137,7 @@ Instructions:
                           height: MediaQuery.sizeOf(context).width * 0.125,
                           borderColor: AppColor.green,
                         ),
+                        SizedBox(height: 15.sp),
                         BorderButton(
                           text: 'Save up 10% of your salary every month',
                           press: () {
@@ -148,6 +149,7 @@ Instructions:
                           height: MediaQuery.sizeOf(context).width * 0.125,
                           borderColor: AppColor.green,
                         ),
+                        SizedBox(height: 15.sp),
                         BorderButton(
                           text: 'Pay your BNPL on time',
                           press: () {
@@ -159,6 +161,7 @@ Instructions:
                           height: MediaQuery.sizeOf(context).width * 0.125,
                           borderColor: AppColor.green,
                         ),
+                        SizedBox(height: 15.sp),
                         BorderButton(
                           text: 'Have too many subscription plans',
                           press: () {
@@ -170,6 +173,7 @@ Instructions:
                           height: MediaQuery.sizeOf(context).width * 0.125,
                           borderColor: AppColor.green,
                         ),
+                        SizedBox(height: 15.sp),
                         BorderButton(
                           text: 'Apply for a new credit card',
                           press: () {
@@ -181,6 +185,7 @@ Instructions:
                           height: MediaQuery.sizeOf(context).width * 0.125,
                           borderColor: AppColor.green,
                         ),
+                        SizedBox(height: 15.sp),
                         BorderButton(
                           text: 'Reduce monthly inflows',
                           press: () {
@@ -192,6 +197,7 @@ Instructions:
                           height: MediaQuery.sizeOf(context).width * 0.125,
                           borderColor: AppColor.green,
                         ),
+                        SizedBox(height: 15.sp),
                         BorderButton(
                           text: 'Invest in high-risk options',
                           press: () {
@@ -203,6 +209,7 @@ Instructions:
                           height: MediaQuery.sizeOf(context).width * 0.125,
                           borderColor: AppColor.green,
                         ),
+                        SizedBox(height: 15.sp),
                         BorderButton(
                           text: 'Ignore credit card payments',
                           press: () {
@@ -214,6 +221,7 @@ Instructions:
                           height: MediaQuery.sizeOf(context).width * 0.125,
                           borderColor: AppColor.green,
                         ),
+                        SizedBox(height: 15.sp),
                       ],
                     ),
                   ),
@@ -221,40 +229,59 @@ Instructions:
                 SizedBox(height: 25.sp),
                 StandardContainer(
                   width: MediaQuery.sizeOf(context).width,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        "Overview:",
-                        style: AppFonts.normalLightText(context),
+                  child: _isLoading 
+                    ? Container(
+                        height: 200,
+                        child: Center(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              CircularProgressIndicator(
+                                color: AppColor.green,
+                              ),
+                              SizedBox(height: 15.sp),
+                              Text(
+                                "Getting AI Response...",
+                                style: AppFonts.normalLightText(context),
+                              ),
+                            ],
+                          ),
+                        ),
+                      )
+                    : Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Overview:",
+                            style: AppFonts.normalLightText(context),
+                          ),
+                          SizedBox(height: 10.sp),
+                          Text(
+                            _aiResponse['overview']!,
+                            style: AppFonts.normalLightText(context),
+                          ),
+                          SizedBox(height: 15.sp),
+                          Text(
+                            "Analysis:",
+                            style: AppFonts.normalLightText(context),
+                          ),
+                          SizedBox(height: 10.sp),
+                          Text(
+                            _aiResponse['analysis']!,
+                            style: AppFonts.normalLightText(context),
+                          ),
+                          SizedBox(height: 15.sp),
+                          Text(
+                            "Actionable Advice:",
+                            style: AppFonts.normalLightText(context),
+                          ),
+                          SizedBox(height: 10.sp),
+                          Text(
+                            _aiResponse['actionable_advice']!,
+                            style: AppFonts.normalLightText(context),
+                          ),
+                        ],
                       ),
-                      SizedBox(height: 10.sp),
-                      Text(
-                        _aiResponse['overview']!,
-                        style: AppFonts.normalLightText(context),
-                      ),
-                      SizedBox(height: 15.sp),
-                      Text(
-                        "Analysis:",
-                        style: AppFonts.normalLightText(context),
-                      ),
-                      SizedBox(height: 10.sp),
-                      Text(
-                        _aiResponse['analysis']!,
-                        style: AppFonts.normalLightText(context),
-                      ),
-                      SizedBox(height: 15.sp),
-                      Text(
-                        "Actionable Advice:",
-                        style: AppFonts.normalLightText(context),
-                      ),
-                      SizedBox(height: 10.sp),
-                      Text(
-                        _aiResponse['actionable_advice']!,
-                        style: AppFonts.normalLightText(context),
-                      ),
-                    ],
-                  ),
                 ),
               ],
             ),

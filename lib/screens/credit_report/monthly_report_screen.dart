@@ -3,7 +3,6 @@ import 'package:riskore/core/models/expenses_model.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/presets/fonts.dart';
 import 'package:riskore/presets/styles.dart';
-import 'package:riskore/screens/report_screen.dart';
 import 'package:riskore/widgets/appbar_arrow.dart';
 import 'package:riskore/widgets/expense_row.dart';
 import 'package:riskore/widgets/fill_button.dart';
