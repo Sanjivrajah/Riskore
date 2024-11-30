@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
             ),
             useMaterial3: true,
           ),
-          home: ProfileScreen(),
+          home: Navigation(),
           routes: {
             SignUpScreen.routeName: (context) => SignUpScreen(),
             LoginScreen.routeName: (context) => LoginScreen(),
