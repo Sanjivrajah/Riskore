@@ -3,7 +3,6 @@ import 'package:riskore/core/models/expenses_model.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/presets/fonts.dart';
 import 'package:riskore/presets/styles.dart';
-import 'package:riskore/screens/report_screen.dart';
 import 'package:riskore/widgets/appbar_arrow.dart';
 import 'package:riskore/widgets/expense_row.dart';
 import 'package:riskore/widgets/fill_button.dart';
@@ -61,7 +60,7 @@ class _MonthlyReportScreenState extends State<MonthlyReportScreen> {
   ];
 
   // Function to generate reports
-    Future<String> generateCreditReport() async {
+  Future<String> generateCreditReport() async {
     try {
       final PdfDocument document = PdfDocument();
 
@@ -580,25 +579,25 @@ class _MonthlyReportScreenState extends State<MonthlyReportScreen> {
                     text: "Generate Report",
                     press: () async {
                       try {
-              final path = await generateCreditReport();
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => Scaffold(
-                    appBar: AppBar(title: const Text('Credit Report Preview')),
-                    body: SfPdfViewer.file(File(path)),
-                  ),
-                ),
-              );
-            } catch (e) {
-              debugPrint('Error previewing report: $e');
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(
-                  content: Text('Failed to generate report.'),
-                ),
-              );
-            }
-                      
+                        final path = await generateCreditReport();
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Scaffold(
+                              appBar: AppBar(
+                                  title: const Text('Credit Report Preview')),
+                              body: SfPdfViewer.file(File(path)),
+                            ),
+                          ),
+                        );
+                      } catch (e) {
+                        debugPrint('Error previewing report: $e');
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          const SnackBar(
+                            content: Text('Failed to generate report.'),
+                          ),
+                        );
+                      }
                     },
                   ),
                 ),
