@@ -14,9 +14,9 @@ class AppColor {
   static Color publicBankColor = const Color(0xffAE2525);
   static Color ocbcBankColor = const Color(0xffF12312);
 
-  static Color grabPayColor = const Color(0xff00B14F);
+  static Color grabPayColor = const Color.fromARGB(255, 53, 222, 129);
   static Color bigPayColor = const Color(0xff53C5D8);
-  static Color shopeePayColor = const Color(0xffFE6033);
+  static Color shopeePayColor = const Color.fromARGB(255, 242, 112, 76);
   static Color tnGoColor = const Color(0xff005ABE);
 }
 

@@ -121,7 +121,8 @@ Instructions:
                 ),
                 SizedBox(height: 20.sp),
                 Container(
-                  height: MediaQuery.sizeOf(context).width * 0.7, // Height for ~4 buttons
+                  height: MediaQuery.sizeOf(context).width *
+                      0.7, // Height for ~4 buttons
                   child: SingleChildScrollView(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -135,19 +136,7 @@ Instructions:
                           },
                           width: MediaQuery.sizeOf(context).width,
                           height: MediaQuery.sizeOf(context).width * 0.125,
-                          borderColor: AppColor.green,
-                        ),
-                        SizedBox(height: 15.sp),
-                        BorderButton(
-                          text: 'Save up 10% of your salary every month',
-                          press: () {
-                            _getAIResponse(_generatePrompt(
-                              "How would saving 10% of my monthly salary impact my financial health, stability, and credit score?",
-                            ));
-                          },
-                          width: MediaQuery.sizeOf(context).width,
-                          height: MediaQuery.sizeOf(context).width * 0.125,
-                          borderColor: AppColor.green,
+                          borderColor: AppColor.red,
                         ),
                         SizedBox(height: 15.sp),
                         BorderButton(
@@ -171,14 +160,14 @@ Instructions:
                           },
                           width: MediaQuery.sizeOf(context).width,
                           height: MediaQuery.sizeOf(context).width * 0.125,
-                          borderColor: AppColor.green,
+                          borderColor: AppColor.red,
                         ),
                         SizedBox(height: 15.sp),
                         BorderButton(
-                          text: 'Apply for a new credit card',
+                          text: 'Save up 10% of your salary every month',
                           press: () {
                             _getAIResponse(_generatePrompt(
-                              "What factors should I consider before applying for a new credit card? How will it impact my credit score and financial situation?",
+                              "How would saving 10% of my monthly salary impact my financial health, stability, and credit score?",
                             ));
                           },
                           width: MediaQuery.sizeOf(context).width,
@@ -195,6 +184,18 @@ Instructions:
                           },
                           width: MediaQuery.sizeOf(context).width,
                           height: MediaQuery.sizeOf(context).width * 0.125,
+                          borderColor: AppColor.red,
+                        ),
+                        SizedBox(height: 15.sp),
+                        BorderButton(
+                          text: 'Apply for a new credit card',
+                          press: () {
+                            _getAIResponse(_generatePrompt(
+                              "What factors should I consider before applying for a new credit card? How will it impact my credit score and financial situation?",
+                            ));
+                          },
+                          width: MediaQuery.sizeOf(context).width,
+                          height: MediaQuery.sizeOf(context).width * 0.125,
                           borderColor: AppColor.green,
                         ),
                         SizedBox(height: 15.sp),
@@ -207,7 +208,7 @@ Instructions:
                           },
                           width: MediaQuery.sizeOf(context).width,
                           height: MediaQuery.sizeOf(context).width * 0.125,
-                          borderColor: AppColor.green,
+                          borderColor: AppColor.red,
                         ),
                         SizedBox(height: 15.sp),
                         BorderButton(
@@ -219,7 +220,7 @@ Instructions:
                           },
                           width: MediaQuery.sizeOf(context).width,
                           height: MediaQuery.sizeOf(context).width * 0.125,
-                          borderColor: AppColor.green,
+                          borderColor: AppColor.red,
                         ),
                         SizedBox(height: 15.sp),
                       ],
@@ -227,10 +228,12 @@ Instructions:
                   ),
                 ),
                 SizedBox(height: 25.sp),
-                StandardContainer(
-                  width: MediaQuery.sizeOf(context).width,
-                  child: _isLoading 
-                    ? Container(
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    if (_isLoading)
+                      Container(
+                        width: MediaQuery.sizeOf(context).width,
                         height: 200,
                         child: Center(
                           child: Column(
@@ -248,40 +251,62 @@ Instructions:
                           ),
                         ),
                       )
-                    : Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Overview:",
-                            style: AppFonts.normalLightText(context),
-                          ),
-                          SizedBox(height: 10.sp),
-                          Text(
-                            _aiResponse['overview']!,
-                            style: AppFonts.normalLightText(context),
-                          ),
-                          SizedBox(height: 15.sp),
-                          Text(
-                            "Analysis:",
-                            style: AppFonts.normalLightText(context),
-                          ),
-                          SizedBox(height: 10.sp),
-                          Text(
-                            _aiResponse['analysis']!,
-                            style: AppFonts.normalLightText(context),
-                          ),
-                          SizedBox(height: 15.sp),
-                          Text(
-                            "Actionable Advice:",
-                            style: AppFonts.normalLightText(context),
-                          ),
-                          SizedBox(height: 10.sp),
-                          Text(
-                            _aiResponse['actionable_advice']!,
-                            style: AppFonts.normalLightText(context),
-                          ),
-                        ],
+                    else ...[
+                      StandardContainer(
+                        width: MediaQuery.sizeOf(context).width,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Overview:",
+                              style: AppFonts.normalLightTextGreen(context),
+                            ),
+                            SizedBox(height: 10.sp),
+                            Text(
+                              _aiResponse['overview']!,
+                              style: AppFonts.normalLightText(context),
+                            ),
+                          ],
+                        ),
                       ),
+                      SizedBox(height: 15.sp),
+                      StandardContainer(
+                        width: MediaQuery.sizeOf(context).width,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Analysis:",
+                              style: AppFonts.normalLightTextGreen(context),
+                            ),
+                            SizedBox(height: 10.sp),
+                            Text(
+                              _aiResponse['analysis']!,
+                              style: AppFonts.normalLightText(context),
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(height: 15.sp),
+                      StandardContainer(
+                        width: MediaQuery.sizeOf(context).width,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Actionable Advice:",
+                              style: AppFonts.normalLightTextGreen(context),
+                            ),
+                            SizedBox(height: 10.sp),
+                            Text(
+                              _aiResponse['actionable_advice']!,
+                              style: AppFonts.normalLightText(context),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ],
                 ),
               ],
             ),

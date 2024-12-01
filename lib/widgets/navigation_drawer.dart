@@ -21,6 +21,15 @@ class NavDrawer extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(height: 10.sp),
+              GestureDetector(
+                onTap: () => Navigator.of(context)
+                    .pushNamed(LinkedAccountScreen.routeName),
+                child: const NavDrawerRow(
+                  text: 'Linked Accounts',
+                  image: "lib/assets/icons/linked_acc.png",
+                ),
+              ),
+              SizedBox(height: 18.sp),
               const NavDrawerRow(
                 text: 'My Details',
                 image: "lib/assets/icons/my_details.png",
@@ -34,15 +43,6 @@ class NavDrawer extends StatelessWidget {
               const NavDrawerRow(
                 text: 'Address Book',
                 image: "lib/assets/icons/address_book.png",
-              ),
-              SizedBox(height: 18.sp),
-              GestureDetector(
-                onTap: () => Navigator.of(context)
-                    .pushNamed(LinkedAccountScreen.routeName),
-                child: const NavDrawerRow(
-                  text: 'Linked Accounts',
-                  image: "lib/assets/icons/linked_acc.png",
-                ),
               ),
               SizedBox(height: 18.sp),
               const NavDrawerRow(

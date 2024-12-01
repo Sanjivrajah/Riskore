@@ -36,51 +36,41 @@ class LinkedAccountScreen extends StatelessWidget {
                       name: 'Ahmad',
                       accountNumber: '012-5889654',
                       height: 80.sp, // Set the desired height
-                      gradientColors: [
-                        const Color(0xFFFE6033),
-                        const Color(0xFFF7F7F7),
-                      ], // Set the desired color
-                      angle: 180.0,
-                      imagePath:
-                          'lib/assets/images/grabpay.png', // Path to your image
+                      gradient: [
+                        AppColor.shopeePayColor,
+                        AppColor.shopeePayColor
+                      ],
+                      imagePath: 'lib/assets/images/grabpay.png',
                     ),
                     LinkedAccountContainer(
-                      accounts: 'Grabpay',
+                      accounts: 'GrabPay',
                       name: 'Ahmad',
                       accountNumber: '012-5889654',
                       height: 72.sp, // Set the desired height
-                      gradientColors: [
-                        const Color(0xFF00B14F),
-                        const Color(0xFF343434),
-                      ], // Set the desired color
-                      angle: 270.0,
-                      imagePath:
-                          'lib/assets/images/TNG_logo.png', // Path to your image
+                      gradient: [AppColor.grabPayColor, AppColor.grabPayColor],
+                      imagePath: 'lib/assets/images/grabpay.png',
                     ),
                     LinkedAccountContainer(
                       accounts: 'Touch \'n Go',
                       name: 'Ahmad',
                       accountNumber: '012-5889654',
-                      height: 64.sp, // Set the desired height
-                      gradientColors: [
+                      height: 64.sp,
+                      gradient: [
                         const Color(0xFF9EDAF8),
                         const Color(0xFFF4D1F2),
-                        const Color(0xFF292C69)
-                      ], // Set the desired color
-                      angle: -160.0,
-                      imagePath:
-                          'lib/assets/images/TNG_logo.png', // Path to your image
+                      ],
+                      imagePath: 'lib/assets/images/TNG_logo.png',
                     ),
-                  ],
+                  ], // Set the desired color
                 ),
                 SizedBox(
-                  height: 28.sp,
+                  height: 30.sp,
                 ),
                 FillButton(
                   text: "Connect to a new account",
                   press: () {},
                   width: MediaQuery.sizeOf(context).width,
-                  height: 45,
+                  height: 50,
                 )
               ],
             ),

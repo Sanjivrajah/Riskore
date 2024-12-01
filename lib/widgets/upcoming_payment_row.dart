@@ -34,7 +34,7 @@ class UpcomingPaymentRow extends StatelessWidget {
               ),
               SizedBox(height: 10.sp),
               Text(
-                amount,
+                "RM " + amount,
                 style: AppFonts.smallLightText(context),
                 textAlign: TextAlign.start,
               ),

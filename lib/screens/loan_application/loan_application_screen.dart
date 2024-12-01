@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:riskore/core/models/bank_offers_model.dart';
+import 'package:riskore/core/navigation/navigation.dart';
 import 'package:riskore/presets/colors.dart';
 import 'package:riskore/presets/fonts.dart';
 import 'package:riskore/presets/styles.dart';
@@ -368,7 +369,33 @@ class _LoanApplicationScreenState extends State<LoanApplicationScreen> {
                     SizedBox(height: 10.sp),
                     FillButton(
                       text: "Submit",
-                      press: () {},
+                      press: () {
+                        showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return AlertDialog(
+                              title: Text("Submitted!"),
+                              content:
+                                  Text("You have submitted your application."),
+                              actions: [
+                                TextButton(
+                                  onPressed: () {
+                                    Navigator.of(context)
+                                        .pop(); // Close the dialog
+                                    Navigator.of(context).push(
+                                      MaterialPageRoute(
+                                        builder: (context) =>
+                                            const Navigation(),
+                                      ),
+                                    );
+                                  },
+                                  child: Text("Close"),
+                                ),
+                              ],
+                            );
+                          },
+                        );
+                      },
                       width: MediaQuery.sizeOf(context).width,
                       height: 45,
                     ),

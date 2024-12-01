@@ -13,18 +13,18 @@ class LinkedAccountContainer extends StatelessWidget {
     required this.name,
     required this.accountNumber,
     required this.height,
-    required this.gradientColors,
+    required this.gradient,
     required this.imagePath,
-    required this.angle,
+    // required this.angle,
   });
 
   final String accounts;
   final double height;
-  final List<Color> gradientColors;
+  final List<Color> gradient;
   final String name;
   final String accountNumber;
   final String imagePath;
-  final double angle;
+  // final double angle;
 
   @override
   Widget build(BuildContext context) {
@@ -32,14 +32,7 @@ class LinkedAccountContainer extends StatelessWidget {
       width: MediaQuery.sizeOf(context).width,
       height: height,
       decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: gradientColors,
-          begin: Alignment(
-            cos(angle * pi / 180), // Calculate x based on angle
-            sin(angle * pi / 180), // Calculate y based on angle
-          ),
-          end: Alignment.bottomCenter,
-        ),
+        gradient: LinearGradient(colors: gradient),
         borderRadius: AppStyles.borderRadiusAllSides30,
       ),
       child: Padding(
@@ -52,8 +45,7 @@ class LinkedAccountContainer extends StatelessWidget {
               padding: const EdgeInsets.only(top: 10),
               child: Text(
                 accounts,
-                style: AppFonts.normalLightTextBlack(context),
-                
+                style: AppFonts.smallRegularTextBlack(context),
               ),
             ),
             Row(
@@ -67,14 +59,14 @@ class LinkedAccountContainer extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 5),
                       child: Text(
                         name,
-                        style: AppFonts.normalLightTextBlack(context),
+                        style: AppFonts.smallRegularTextBlack(context),
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.only(bottom: 24),
                       child: Text(
                         accountNumber,
-                        style: AppFonts.normalLightTextBlack(context),
+                        style: AppFonts.smallRegularTextBlack(context),
                       ),
                     ),
                   ],
